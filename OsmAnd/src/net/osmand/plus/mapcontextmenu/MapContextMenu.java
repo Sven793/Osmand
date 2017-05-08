@@ -55,6 +55,8 @@ import java.lang.ref.WeakReference;
 import java.util.LinkedList;
 import java.util.List;
 
+import js.myroute.Routing.Logic.Vertex;
+
 public class MapContextMenu extends MenuTitleController implements StateChangedListener<ApplicationMode>,
 		MapMarkerChangedListener, TargetPointChangedListener {
 
@@ -589,6 +591,7 @@ public class MapContextMenu extends MenuTitleController implements StateChangedL
 	}
 
 	public void onSingleTapOnMap() {
+        mapActivity.setLastClickedLocation(new Vertex(latLon.getLatitude(), latLon.getLongitude()));
 		if (menuController == null || !menuController.handleSingleTapOnMap()) {
 			hide();
 			if (mapActivity.getMapLayers().getMapQuickActionLayer().isLayerOn())

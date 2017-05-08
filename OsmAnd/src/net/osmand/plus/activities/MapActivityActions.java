@@ -352,7 +352,7 @@ public class MapActivityActions implements DialogProvider {
 			GPXRouteParamsBuilder params = new GPXRouteParamsBuilder(result, mapActivity.getMyApplication()
 					.getSettings());
 			if (result.hasRtePt() && !result.hasTrkPt()) {
-				settings.GPX_CALCULATE_RTEPT.set(true);
+				settings.GPX_CALCULATE_RTEPT.set(false);
 			} else {
 				settings.GPX_CALCULATE_RTEPT.set(false);
 			}

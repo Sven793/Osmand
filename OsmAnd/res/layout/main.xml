@@ -49,6 +49,42 @@
             <include layout="@layout/map_hud_bottom"/>
 
             <include layout="@layout/map_hud_quick_actions"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom">
+
+                <Button
+                    android:text="Start Routing"
+                    android:layout_width="130dp"
+                    android:layout_height="52dp"
+                    android:layout_marginBottom="@dimen/map_button_margin"
+                    android:layout_gravity="center"
+                    android:id="@+id/btnGenRoute" />
+
+                <LinearLayout
+                    android:id="@+id/LLhelpBar"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@android:color/white"
+                    android:visibility="visible"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Help Line"
+                        android:textColor="#ff0000"
+                        android:layout_gravity="center"
+                        android:visibility="visible"
+                        android:id="@+id/tVhelpLine" />
+
+                </LinearLayout>
+            </LinearLayout>
         </FrameLayout>
 
         <FrameLayout
