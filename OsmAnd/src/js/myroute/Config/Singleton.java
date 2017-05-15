@@ -91,6 +91,28 @@ public class Singleton {
     private boolean setupComplete = false;
     public boolean isSetupComplete() {return setupComplete;}
     public void setSetupComplete(boolean setupComplete) {this.setupComplete = setupComplete;}
+
+    private int environmentImportance = 1;
+    public int getEnvironmentImportance() {
+        return environmentImportance;
+    }
+    public void setEnvironmentImportance(int environmentImportance) {
+        this.environmentImportance = environmentImportance;
+    }
+    private int elevationImportance = 1;
+    public int getElevationImportance() {
+        return elevationImportance;
+    }
+    public void setElevationImportance(int elevationImportance) {
+        this.elevationImportance = elevationImportance;
+    }
+    private int viewImportance = 1;
+    public int getViewImportance() {
+        return viewImportance;
+    }
+    public void setViewImportance(int viewImportance) {
+        this.viewImportance = viewImportance;
+    }
     /*private boolean bAlg1Checked = true;
     private boolean bAlg2Checked = false;
     private boolean bAlg3Checked = false;

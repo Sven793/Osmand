@@ -2174,6 +2174,7 @@ public class MapActivity extends OsmandActionBarActivity implements DownloadEven
 
         protected void onPostExecute(final Boolean result) {
             displayRoute();
+            stopProgressDialog();
             showRouteGenButton("Regenerate Route");
         }
     }
@@ -2198,7 +2199,7 @@ public class MapActivity extends OsmandActionBarActivity implements DownloadEven
                     routingFinished = true;
                     currentlyRouting = false;
                     routeGenerated = false;
-                    stopProgressDialog();
+//                    stopProgressDialog();
                     return null;
                 }
                 System.out.println(initRoad.toString());
@@ -2213,7 +2214,7 @@ public class MapActivity extends OsmandActionBarActivity implements DownloadEven
                 routingFinished = true;
                 currentlyRouting = false;
                 routeGenerated = true;
-                stopProgressDialog();
+//                stopProgressDialog();
 
                 return null;
             }

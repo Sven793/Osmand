@@ -21,6 +21,7 @@ import java.io.IOException;
 import java.util.LinkedList;
 
 import js.myroute.Config.ServerConfig;
+import js.myroute.Config.Singleton;
 import js.myroute.Routing.Logic.Vertex;
 
 /*
@@ -49,6 +50,9 @@ public class ServerCommunicator {
     LinkedList<mCoordinate> getRoutes(@NotNull Vertex start, @NotNull Vertex end, int length) {
         long startTime = System.nanoTime();
         String routingType = "Angle";
+        int environment = Singleton.getInstance().getEnvironmentImportance();
+        int elevation = Singleton.getInstance().getElevationImportance();
+        int view = Singleton.getInstance().getViewImportance();
 
         //check if valid db file is already available
         Log.d(TAG, "querying route with start: " + start + ", end: " + end);
@@ -70,7 +74,7 @@ public class ServerCommunicator {
 
             //setting Param
             String param = "startLat=" + start.getLatitude() + "&" + "startLon="+ start.getLongitude() +"&" + "endLat="+ end.getLatitude() +"&"
-                    + "endLon="+ end.getLongitude() +"&" + "length="+length+"&" + "routingType="+routingType+"";
+                    + "endLon="+ end.getLongitude() +"&" + "length="+length+"&" + "routingType="+routingType+"&environment="+environment+"&elevation="+elevation+"&view="+view+"";
             System.out.println(path +"?"+ param);
             HttpGet httpget = new HttpGet(path +"?"+ param);
 

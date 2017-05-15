@@ -694,12 +694,12 @@ public class ContextMenuLayer extends OsmandMapLayer {
 			return true;
 		}
 
-		if (!disableSingleTap()) {
-			boolean res = showContextMenu(point, tileBox, false);
-			if (res) {
-				return true;
-			}
-		}
+//		if (!disableSingleTap()) {
+//			boolean res = showContextMenu(point, tileBox, false);
+//			if (res) {
+//				return true;
+//			}
+//		}
 
 		hideVisibleMenues();
 		menu.onSingleTapOnMap();

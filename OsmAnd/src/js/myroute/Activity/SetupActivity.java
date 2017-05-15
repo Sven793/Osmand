@@ -3,9 +3,13 @@ package js.myroute.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.CheckBox;
 import android.widget.SeekBar;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 import java.io.FileInputStream;
@@ -17,7 +21,7 @@ import net.osmand.plus.activities.MapActivity;
 
 import js.myroute.Routing.Logic.Vertex;
 
-public class SetupActivity extends AppCompatActivity {
+public class SetupActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
     private double l = 2.0;
 
@@ -27,6 +31,29 @@ public class SetupActivity extends AppCompatActivity {
         setContentView(R.layout.activity_setup);
 
         readUserData();
+
+        Spinner environment = (Spinner) findViewById(R.id.spinner_environment);
+        Spinner elevation = (Spinner) findViewById(R.id.spinner_elevation);
+        Spinner view = (Spinner) findViewById(R.id.spinner_view);
+        String[] choices = {"not important", "normal", "very important"};
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.spinner_selection, R.layout.spinner_dropdown_item);
+        ArrayAdapter<CharSequence> adapter2 = ArrayAdapter.createFromResource(this, R.array.spinner_selection, R.layout.spinner_dropdown_item);
+        ArrayAdapter<CharSequence> adapter3 = ArrayAdapter.createFromResource(this, R.array.spinner_selection, R.layout.spinner_dropdown_item);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        environment.setAdapter(adapter);
+        environment.setOnItemSelectedListener(this);
+        environment.setSelection(Singleton.getInstance().getEnvironmentImportance());
+        elevation.setAdapter(adapter2);
+        elevation.setOnItemSelectedListener(this);
+        elevation.setSelection(Singleton.getInstance().getElevationImportance());
+        view.setAdapter(adapter3);
+        view.setOnItemSelectedListener(this);
+        view.setSelection(Singleton.getInstance().getViewImportance());
+
+
+
+        view.setOnItemSelectedListener(this);
+        environment.setSelection(Singleton.getInstance().getEnvironmentImportance());
 
         CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox);
         if (Singleton.getInstance().getSameEndAsStart())
@@ -137,5 +164,25 @@ public class SetupActivity extends AppCompatActivity {
             Singleton.getInstance().setSameEndAsStart(true);
         else if (!box.isChecked())
             Singleton.getInstance().setSameEndAsStart(false);
+    }
+
+    @Override
+    public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+        Log.d("Setup", "onItemselected called");
+        if (adapterView.equals(findViewById(R.id.spinner_environment))) {
+            Log.d("Setup", "environment: " + i);
+            Singleton.getInstance().setEnvironmentImportance(i);
+        } else if (adapterView.equals(findViewById(R.id.spinner_elevation))) {
+            Log.d("Setup", "elevation: " + i);
+            Singleton.getInstance().setElevationImportance(i);
+        } else if (adapterView.equals(findViewById(R.id.spinner_view))) {
+            Log.d("Setup", "view: " + i);
+            Singleton.getInstance().setViewImportance(i);
+        }
+    }
+
+    @Override
+    public void onNothingSelected(AdapterView<?> adapterView) {
+        /* do nothing */
     }
 }

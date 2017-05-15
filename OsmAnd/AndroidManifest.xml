@@ -742,6 +742,7 @@
         <activity android:name=".liveupdates.OsmLiveActivity"
             android:label="@string/osm_live"/>
         <receiver android:name="net.osmand.plus.liveupdates.LiveUpdatesAlarmReceiver"/>
-		<activity android:name="js.myroute.Activity.SetupActivity"/>
+		<activity android:name="js.myroute.Activity.SetupActivity"
+			android:theme="@style/OsmandLightTheme"/>
 </application>
 </manifest> 
