@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinner_selection">
+        <item>Not important</item>
+        <item>Normal</item>
+        <item>Very important</item>
+    </string-array>
+    <string-array name="spinner_selection_activity">
+        <item>Biking</item>
+        <item>Running</item>
+    </string-array>
+    <string-array name="spinner_selection_elevation">
+        <item>Flat</item>
+        <item>Not important</item>
+        <item>Steep</item>
+    </string-array>
+</resources>

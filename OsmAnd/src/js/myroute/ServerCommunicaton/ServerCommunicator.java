@@ -53,6 +53,7 @@ public class ServerCommunicator {
         int environment = Singleton.getInstance().getEnvironmentImportance();
         int elevation = Singleton.getInstance().getElevationImportance();
         int view = Singleton.getInstance().getViewImportance();
+        int activity = Singleton.getInstance().getTypeOfActivity();
 
         //check if valid db file is already available
         Log.d(TAG, "querying route with start: " + start + ", end: " + end);
@@ -74,7 +75,7 @@ public class ServerCommunicator {
 
             //setting Param
             String param = "startLat=" + start.getLatitude() + "&" + "startLon="+ start.getLongitude() +"&" + "endLat="+ end.getLatitude() +"&"
-                    + "endLon="+ end.getLongitude() +"&" + "length="+length+"&" + "routingType="+routingType+"&environment="+environment+"&elevation="+elevation+"&view="+view+"";
+                    + "endLon="+ end.getLongitude() +"&" + "length="+length+"&" + "routingType="+routingType+"&environment="+environment+"&elevation="+elevation+"&view="+view+"&activity="+activity+"";
             System.out.println(path +"?"+ param);
             HttpGet httpget = new HttpGet(path +"?"+ param);
 

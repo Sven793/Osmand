@@ -99,7 +99,7 @@ public class Singleton {
     public void setEnvironmentImportance(int environmentImportance) {
         this.environmentImportance = environmentImportance;
     }
-    private int elevationImportance = 1;
+    private int elevationImportance = 0;
     public int getElevationImportance() {
         return elevationImportance;
     }
@@ -112,6 +112,13 @@ public class Singleton {
     }
     public void setViewImportance(int viewImportance) {
         this.viewImportance = viewImportance;
+    }
+    private int typeOfActivity = 1;
+    public int getTypeOfActivity() {
+        return typeOfActivity;
+    }
+    public void setTypeOfActivity(int typeOfActivity) {
+        this.typeOfActivity = typeOfActivity;
     }
     /*private boolean bAlg1Checked = true;
     private boolean bAlg2Checked = false;

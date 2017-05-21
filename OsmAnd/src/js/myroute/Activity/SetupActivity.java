@@ -35,20 +35,27 @@ public class SetupActivity extends AppCompatActivity implements AdapterView.OnIt
         Spinner environment = (Spinner) findViewById(R.id.spinner_environment);
         Spinner elevation = (Spinner) findViewById(R.id.spinner_elevation);
         Spinner view = (Spinner) findViewById(R.id.spinner_view);
-        String[] choices = {"not important", "normal", "very important"};
+        Spinner activity = (Spinner) findViewById(R.id.spinner_activity);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.spinner_selection, R.layout.spinner_dropdown_item);
-        ArrayAdapter<CharSequence> adapter2 = ArrayAdapter.createFromResource(this, R.array.spinner_selection, R.layout.spinner_dropdown_item);
+        ArrayAdapter<CharSequence> adapter2 = ArrayAdapter.createFromResource(this, R.array.spinner_selection_elevation, R.layout.spinner_dropdown_item);
         ArrayAdapter<CharSequence> adapter3 = ArrayAdapter.createFromResource(this, R.array.spinner_selection, R.layout.spinner_dropdown_item);
+        ArrayAdapter<CharSequence> adapter4 = ArrayAdapter.createFromResource(this, R.array.spinner_selection_activity, R.layout.spinner_dropdown_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        adapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        adapter3.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        adapter4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         environment.setAdapter(adapter);
         environment.setOnItemSelectedListener(this);
         environment.setSelection(Singleton.getInstance().getEnvironmentImportance());
         elevation.setAdapter(adapter2);
         elevation.setOnItemSelectedListener(this);
-        elevation.setSelection(Singleton.getInstance().getElevationImportance());
+        elevation.setSelection(Singleton.getInstance().getElevationImportance() + 1);
         view.setAdapter(adapter3);
         view.setOnItemSelectedListener(this);
         view.setSelection(Singleton.getInstance().getViewImportance());
+        activity.setAdapter(adapter4);
+        activity.setOnItemSelectedListener(this);
+        activity.setSelection(Singleton.getInstance().getTypeOfActivity());
 
 
 
@@ -168,16 +175,14 @@ public class SetupActivity extends AppCompatActivity implements AdapterView.OnIt
 
     @Override
     public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-        Log.d("Setup", "onItemselected called");
         if (adapterView.equals(findViewById(R.id.spinner_environment))) {
-            Log.d("Setup", "environment: " + i);
             Singleton.getInstance().setEnvironmentImportance(i);
         } else if (adapterView.equals(findViewById(R.id.spinner_elevation))) {
-            Log.d("Setup", "elevation: " + i);
-            Singleton.getInstance().setElevationImportance(i);
+            Singleton.getInstance().setElevationImportance(i - 1);
         } else if (adapterView.equals(findViewById(R.id.spinner_view))) {
-            Log.d("Setup", "view: " + i);
             Singleton.getInstance().setViewImportance(i);
+        } else if (adapterView.equals(findViewById(R.id.spinner_activity))) {
+            Singleton.getInstance().setTypeOfActivity(i);
         }
     }
 
