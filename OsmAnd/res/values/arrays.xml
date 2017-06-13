@@ -8,6 +8,7 @@
     <string-array name="spinner_selection_activity">
         <item>Biking</item>
         <item>Running</item>
+        <item>Cycling</item>
     </string-array>
     <string-array name="spinner_selection_elevation">
         <item>Flat</item>
