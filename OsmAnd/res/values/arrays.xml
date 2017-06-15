@@ -9,6 +9,8 @@
         <item>Biking</item>
         <item>Running</item>
         <item>Cycling</item>
+        <item>Hiking</item>
+        <item>Skating</item>
     </string-array>
     <string-array name="spinner_selection_elevation">
         <item>Flat</item>
