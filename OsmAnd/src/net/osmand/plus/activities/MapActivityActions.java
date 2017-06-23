@@ -540,7 +540,7 @@ public class MapActivityActions implements DialogProvider {
 				for (int i = 0; i < width; i++) {
 					for (int j = 0; j < height; j++) {
 						((OsmandApplication) mapActivity.getApplication()).getResourceManager().
-								clearTileImageForMap(null, mapSource, i + left, j + top, zoom);
+								clearTileForMap(null, mapSource, i + left, j + top, zoom);
 					}
 				}
 
@@ -605,7 +605,9 @@ public class MapActivityActions implements DialogProvider {
 					public boolean onContextMenuClick(ArrayAdapter<ContextMenuItem> adapter, int itemId, int pos, boolean isChecked) {
 						app.logEvent(mapActivity, "drawer_dashboard_open");
 						MapActivity.clearPrevActivityIntent();
-						mapActivity.closeDrawer();
+						if (!settings.NEW_MAP_VIEW.get()) {
+							mapActivity.closeDrawer();
+						}
 						mapActivity.getDashboard().setDashboardVisibility(true, DashboardType.DASHBOARD);
 						return true;
 					}
@@ -925,7 +927,9 @@ public class MapActivityActions implements DialogProvider {
 				ContextMenuAdapter.ItemClickListener click = item.getItemClickListener();
 				if (click != null && click.onContextMenuClick(simpleListAdapter, item.getTitleId(),
 						position, false)) {
-					mapActivity.closeDrawer();
+					if (!settings.NEW_MAP_VIEW.get()) {
+						mapActivity.closeDrawer();
+					}
 				}
 			}
 		});

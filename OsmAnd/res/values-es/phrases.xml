@@ -1814,7 +1814,7 @@
 	<string name="poi_shelter_type_abandoned">Refugio abandonado</string>
 
 	<string name="poi_internet_access_type_wlan">Wi-Fi</string>
-	<string name="poi_internet_access_type_terminal">Terminal</string>
+	<string name="poi_internet_access_type_terminal">Terminal (PC con internet)</string>
 	<string name="poi_internet_access_type_wired">Cableado</string>
 	<string name="poi_internet_access_type_public">Tipo de Internet: Público</string>
 	<string name="poi_internet_access_type_service">Tipo de Internet: Servicio</string>
@@ -3081,7 +3081,7 @@
 	<string name="poi_covered">Cubierto</string>
 	<string name="poi_subway_station_filter">Estación de metro</string>
 	<string name="poi_ferry_terminal_cargo">Mercancías</string>
-	<string name="poi_bicycle_parking_type">Tipo</string>
+	<string name="poi_bicycle_parking_type">Tipu</string>
 	<string name="poi_aerialway_bicycle">Transporte de bicicletas</string>
 	<string name="poi_aerialway_heating">Calefacción</string>
 	<string name="poi_pump">Bomba</string>
@@ -3193,21 +3193,21 @@
 	<string name="poi_cuisine_seafood">Marisco</string>
 	<string name="poi_cuisine_barbecue">Barbacoa</string>
 	<string name="poi_cuisine_noodle">Tallarines</string>
-	<string name="poi_cuisine_donut">Donut</string>
+	<string name="poi_cuisine_donut">Rosquilla</string>
 	<string name="poi_cuisine_ramen">Ramen</string>
-	<string name="poi_cuisine_crepe">Crepe</string>
+	<string name="poi_cuisine_crepe">Crepé</string>
 	<string name="poi_cuisine_breakfast">Desayuno</string>
-	<string name="poi_cuisine_beef_bowl">Gyudon</string>
+	<string name="poi_cuisine_beef_bowl">Gyudon (Bol de ternera)</string>
 	<string name="poi_cuisine_steak">Filete/bistec (carne roja)</string>
 	<string name="poi_cuisine_tapas">Tapas</string>
 	<string name="poi_cuisine_gastropub">Gastropub</string>
 	<string name="poi_cuisine_heuriger">Heuriger</string>
-	<string name="poi_cuisine_curry">Curry</string>
+	<string name="poi_cuisine_curry">Curri</string>
 	<string name="poi_cuisine_buschenschank">Buschenschank</string>
 	<string name="poi_cuisine_grill">Parrilla</string>
-	<string name="poi_cuisine_bagel">Bagel</string>
+	<string name="poi_cuisine_bagel">Bagel (rosca de pan)</string>
 	<string name="poi_cuisine_diner">Cena</string>
-	<string name="poi_cuisine_sausage">Embutido</string>
+	<string name="poi_cuisine_sausage">Salchicha</string>
 	<string name="poi_cuisine_cake">Pastel</string>
 	<string name="poi_cuisine_pancake">Panqueque</string>
 	<string name="poi_cuisine_pasta">Pasta</string>
@@ -3219,27 +3219,27 @@
 	<string name="poi_cuisine_soup">Sopa</string>
 	<string name="poi_cuisine_pie">Tarta</string>
 	<string name="poi_cuisine_hotdog">Perrito caliente</string>
-	<string name="poi_cuisine_deli">Deli</string>
+	<string name="poi_cuisine_deli">Delicatessen</string>
 	<string name="poi_cuisine_salad">Ensalada</string>
 	<string name="poi_cuisine_frozen_yogurt">Helado de yogur</string>
 	<string name="poi_cuisine_fried_food">Alimentos fritos</string>
 	<string name="poi_cuisine_savory_pancakes">Panqueques salados</string>
-	<string name="poi_cuisine_bistro">Bistro</string>
+	<string name="poi_cuisine_bistro">Bistró</string>
 	<string name="poi_cuisine_bakery">Panadería</string>
 	<string name="poi_cuisine_couscous">Cuscús</string>
 	<string name="poi_cuisine_fried_chicken">Pollo frito</string>
 	<string name="poi_cuisine_dessert">Postre</string>
 	<string name="poi_cuisine_canteen">Cantina</string>
 	<string name="poi_cuisine_tacos">Tacos</string>
-	<string name="poi_cuisine_piadina">Piadina</string>
-	<string name="poi_cuisine_falafel">Falafel</string>
+	<string name="poi_cuisine_piadina">Piadina romañola</string>
+	<string name="poi_cuisine_falafel">Faláfel</string>
 	<string name="poi_cuisine_smoothie">Batido de frutas</string>
 	<string name="poi_cuisine_souvlaki">Souvlaki</string>
 	<string name="poi_cuisine_snack">Bocado</string>
 	<string name="poi_cuisine_yogurt">Yogur</string>
 	<string name="poi_cuisine_gyros">Gyros</string>
 	<string name="poi_cuisine_empanada">Empanada</string>
-	<string name="poi_cuisine_crepes">Crepes</string>
+	<string name="poi_cuisine_crepes">Crepes (panqueques)</string>
 	<string name="poi_cuisine_yakiniku">Yakiniku</string>
 	<string name="poi_cuisine_suki">Suki</string>
 	<string name="poi_cuisine_brasserie">Brasserie</string>
@@ -3249,11 +3249,11 @@
 	<string name="poi_cuisine_chocolate">Chocolate</string>
 	<string name="poi_cuisine_wine">Vino</string>
 	<string name="poi_cuisine_potato">Patata</string>
-	<string name="poi_cuisine_brunch">Brunch</string>
-	<string name="poi_cuisine_sub">Sub</string>
-	<string name="poi_cuisine_pita">Pita</string>
+	<string name="poi_cuisine_brunch">Desayuno y almuerzo</string>
+	<string name="poi_cuisine_sub">Sándwich submarino</string>
+	<string name="poi_cuisine_pita">Pan Pita</string>
 	<string name="poi_cuisine_fondue">Fondue</string>
-	<string name="poi_cuisine_baguette">Baguette</string>
+	<string name="poi_cuisine_baguette">Baguette (pan francés)</string>
 	<string name="poi_cuisine_pastel">Pastel</string>
 	<string name="poi_cuisine_burrito">QBurrito</string>
 	<string name="poi_cuisine_teriyaki">Teriyaki</string>
@@ -3331,7 +3331,7 @@
 	<string name="poi_cuisine_english">Inglés</string>
 	<string name="poi_cuisine_pakistani">Paquistaní</string>
 	<string name="poi_cuisine_taiwanese">Taiwanés</string>
-	<string name="poi_cuisine_tex_mex">Tex-mex</string>
+	<string name="poi_cuisine_tex_mex">Comida mexicano-estadounidense (tex-mex)</string>
 	<string name="poi_cuisine_dutch">Holandés</string>
 	<string name="poi_cuisine_syrian">Sirio</string>
 	<string name="poi_cuisine_australian">Australiano</string>
@@ -3406,6 +3406,42 @@
 	<string name="poi_music_school">Escuela de música</string>
 	<string name="poi_language_school">Escuela de idiomas</string>
 
-<string name="poi_life_ring">Salvavidas</string>
+<string name="poi_life_ring">Aro salvavidas</string>
+
+<string name="poi_zoo_type">Tipo de zoológico</string>
+	<string name="poi_motorcycle_services">Servicios</string>
+	<string name="poi_motorcycle_type">Tipo de motocicleta</string>
+
+<string name="poi_zoo_petting_zoo">Zoológico interactivo</string>
+	<string name="poi_zoo_wildlife_park">Reserva natural</string>
+	<string name="poi_zoo_enclosure">Recinto</string>
+	<string name="poi_zoo_safari_park">Parque safari</string>
+	<string name="poi_zoo_birds">Aves</string>
+	<string name="poi_zoo_aviary">Pajarera</string>
+	<string name="poi_zoo_falconry">Cetrería</string>
+	<string name="poi_zoo_reptile">Reptiles</string>
+
+	<string name="poi_stands">Gradas</string>
+
+	<string name="poi_motorcycle_sales_yes">Ventas</string>
+	<string name="poi_motorcycle_sales_no">Venden motocicletas: no</string>
+	<string name="poi_motorcycle_sales_yes_used">Venden motocicletas: si; usadas</string>
+	<string name="poi_motorcycle_sales_used">Venden motocicletas: usadas</string>
+	<string name="poi_motorcycle_rental_yes">Alquiler</string>
+	<string name="poi_motorcycle_rental_no">Alquilan motocicletas: no</string>
+	<string name="poi_motorcycle_repair_yes">Reparación</string>
+	<string name="poi_motorcycle_repair_no">Reparan motocicletas: no</string>
+	<string name="poi_motorcycle_parts_yes">Repuestos para motocicletas</string>
+	<string name="poi_motorcycle_parts_no">Repuestos para motocicletas: no</string>
+	<string name="poi_motorcycle_tyres_yes">Neumáticos</string>
+	<string name="poi_motorcycle_tyres_no">Neumáticos: no</string>
+	<string name="poi_motorcycle_clothes_yes">Ropa de motocicleta</string>
+	<string name="poi_motorcycle_clothes_no">Ropa de motocicleta: no</string>
+	<string name="poi_motorcycle_type_scooter">Scooter (motoneta)</string>
+	<string name="poi_motorcycle_type_sportbike">Deportiva</string>
+	<string name="poi_motorcycle_type_chopper">Chopper</string>
+	<string name="poi_motorcycle_type_offroad">Todo terreno</string>
+	<string name="poi_motorcycle_type_dualsport">Doble propósito</string>
+	<string name="poi_motorcycle_type_standard">Estándar</string>
 
 </resources>

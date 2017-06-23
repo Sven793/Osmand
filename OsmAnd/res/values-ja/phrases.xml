@@ -7,7 +7,7 @@
 	<string name="poi_car_wash">洗車場(Car wash)</string>
 	<string name="poi_casino">賭場・カジノ(Casino)</string>
 	<string name="poi_city">市(City)</string>
-	<string name="poi_college">大学(College)</string>
+	<string name="poi_college">大学(単科)(College)</string>
 	<string name="poi_dentist">歯科医(Dentist)</string>
 	<string name="poi_embassy">大使館(Embassy)</string>
 	<string name="poi_hotel">ホテル(Hotel)</string>
@@ -19,7 +19,7 @@
 	<string name="poi_shop_yes">雑貨店(General store)</string>
 	<string name="poi_taxi">タクシー乗り場(Taxi)</string>
 	<string name="poi_theme_park">テーマパーク(Theme park)</string>
-	<string name="poi_university">大学(University)</string>
+	<string name="poi_university">大学(総合)(University)</string>
 	<string name="poi_zoo">動物園(Zoo)</string>
 <string name="poi_shop">店(Store)</string>
 		<string name="poi_shop_food">コンビニ・スーパーマーケット(Convenience store and supermarket)</string>
@@ -127,7 +127,7 @@
 	<string name="poi_musical_instrument">楽器(Musical instruments)</string>
 	<string name="poi_newsagent">新聞・週刊誌販売店(Newsagent)</string>
 	<string name="poi_optician">検眼医(Optometrist)</string>
-	<string name="poi_organic">自然食品(Organic food)</string>
+	<string name="poi_organic">自然食品</string>
 	<string name="poi_outdoor">アウトドア用品店(Outdoor store)</string>
 	<string name="poi_paint">ペンキ・塗装屋(Paint store)</string>
 	<string name="poi_medical_supply">医療器具(Medical supply)</string>
@@ -178,10 +178,10 @@
 	<string name="poi_traffic_calming_bump">減速帯(Bump)</string>
 	<string name="poi_traffic_calming_hump">減速帯(Hump)</string>
 	<string name="poi_traffic_calming_cushion">減速帯(Cushion)</string>
-	<string name="poi_traffic_calming_chicane">減速用障害物・減速帯(Chicane)</string>
+	<string name="poi_traffic_calming_chicane">減速帯・減速用障害物(Chicane)</string>
 	<string name="poi_traffic_calming_rumble_strip">ランブルストリップス・段差舗装(Rumble strip)</string>
-	<string name="poi_traffic_calming_table">上げ横断歩道・減速帯(Table)</string>
-	<string name="poi_traffic_calming_choker">減速用車線・減速帯(Choker)</string>
+	<string name="poi_traffic_calming_table">減速帯・上げ横断歩道(Table)</string>
+	<string name="poi_traffic_calming_choker">減速帯・減速用車線(Choker)</string>
 	<string name="poi_traffic_signals">信号機(Stop light)</string>
 
 	<string name="poi_car_repair">車両修理(Car repair)</string>
@@ -240,7 +240,7 @@
 
 	<string name="poi_speed_camera">スピードカメラ(Speed camera)</string>
 	<string name="poi_turning_circle">転回所(Turning circle)</string>
-	<string name="poi_motorway_junction">高速道路ジャンクション・JCT(Motorway junction)</string>
+	<string name="poi_motorway_junction">JCT・高速道路ジャンクション(Motorway junction)</string>
 
 	<string name="poi_water_well">井戸(Water well)</string>
 	<string name="poi_standpipe">消火栓(Standpipe)</string>
@@ -284,7 +284,7 @@
 	<string name="poi_fuel_lh2">液体水素</string>
 	<string name="poi_fuel_electricity">電気(Electricity)</string>
 	<string name="poi_junction">ジャンクション(Junction)</string>
-	<string name="poi_rest_area">パーキングエリア・PA</string>
+	<string name="poi_rest_area">PA・パーキングエリア</string>
 
 	<string name="poi_post_office">郵便局(Post office)</string>
 	<string name="poi_post_box">郵便ポスト(Post box)</string>
@@ -1131,7 +1131,7 @@
 	<string name="poi_payment_type">対応支払い方法(Payment type)</string>
 	<string name="poi_payment_fuel_type">燃料カード(Fuel cards)</string>
 	<string name="poi_additional_type">追加(Additional)</string>
-	<string name="poi_internet_access_type">インターネット接続の種類(Internet access type)</string>
+	<string name="poi_internet_access_type">インターネット接続の種類</string>
 	<string name="poi_vending_type">自動販売機の種類</string>
 	<string name="poi_bicycle_service">自転車サービス(Bicycle service)</string>
 	<string name="poi_fire_hydrant_water_source">水源(Water Source)</string>
@@ -1160,7 +1160,7 @@
 	<string name="poi_wheelchair_designated">専用通路、トイレなど完備</string>
 	<string name="poi_payment_coins_50c12">硬貨_50セント、1ユーロ、2ユーロ硬貨(50c, 1€, and 2€ coins)</string>
 	<string name="poi_payment_cash_yes">現金(Cash)</string>
-	<string name="poi_payment_ep_cash_yes">キャッシュカード(ゲルトカルテ)(Cash card (Geldkarte))</string>
+	<string name="poi_payment_ep_cash_yes">キャッシュカード_ゲルトカルテ(電子マネー機能付き)</string>
 	<string name="poi_free_flying_characteristics">飛行対応ジャンル(Characteristic)</string>
 	<string name="poi_free_flying_hanggliding_yes">ハンググライディング(Hanggliding)</string>
 	<string name="poi_free_flying_site_takeoff">離陸場所(Takeoff)</string>
@@ -1337,7 +1337,7 @@
 
 	<string name="poi_fuel_adblue">アドブルー・尿素水還元剤(AdBlue fuel)</string>
 
-	<string name="poi_drive_through">ドライブスルー(Drive through)</string>
+	<string name="poi_drive_through">ドライブスルー</string>
 	<string name="poi_drive_through_yes">有り</string>
 	<string name="poi_drive_through_no">無し</string>
 
@@ -1545,9 +1545,9 @@
 	<string name="poi_microbrewery_yes">地ビール醸造有り(Microbrewery)</string>
 	<string name="poi_microbrewery_no">地ビール醸造無し</string>
 
-	<string name="poi_organic_yes">自然食品:有り(Organic food: yes)</string>
-	<string name="poi_organic_no">自然食品:無し(Organic food: no)</string>
-	<string name="poi_organic_only">自然食品のみ(Organic food only)</string>
+	<string name="poi_organic_yes">有り</string>
+	<string name="poi_organic_no">無し</string>
+	<string name="poi_organic_only">自然食品のみ取り扱い</string>
 
 	<string name="poi_outdoor_seating">屋外席(Outdoor seating)</string>
 	<string name="poi_outdoor_seating_filter_yes">有り(Yes)</string>
@@ -1677,42 +1677,42 @@
 	<string name="poi_car_wash_yes">有り(Yes)</string>
 
 	<string name="poi_payment_transport_type">送金の種類(Payment type (transport))</string>
-	<string name="poi_payment_coins_yes">硬貨(Coins)</string>
-	<string name="poi_payment_coins_no">硬貨不可(Coins not accepted)</string>
-	<string name="poi_payment_coins_0.5">硬貨_50セント硬貨($0.5 coins)</string>
+	<string name="poi_payment_coins_yes">硬貨</string>
+	<string name="poi_payment_coins_no">硬貨不可</string>
+	<string name="poi_payment_coins_0.5">硬貨_50セント硬貨</string>
 	<string name="poi_payment_telephone_cards_yes">電話による支払_テレホンカード(Telephone cards)</string>
 	<string name="poi_payment_telephone_cards_no">電話による支払_テレホンカード不可(Telephone cards not accepted)</string>
-	<string name="poi_payment_credit_cards_yes">クレジットカード(Credit cards)</string>
-	<string name="poi_payment_credit_cards_no">クレジットカード不可(Credit cards not accepted)</string>
+	<string name="poi_payment_credit_cards_yes">クレジットカード</string>
+	<string name="poi_payment_credit_cards_no">クレジットカード不可</string>
 	<string name="poi_payment_notes_yes">紙幣(Banknotes)</string>
 	<string name="poi_payment_notes_no">紙幣不可(Banknotes not accepted)</string>
-	<string name="poi_payment_electronic_purses_yes">電子マネー可(Electronic purses)</string>
-	<string name="poi_payment_electronic_purses_no">電子マネー不可(Electronic purses not accepted)</string>
+	<string name="poi_payment_electronic_purses_yes">電子マネー可</string>
+	<string name="poi_payment_electronic_purses_no">電子マネー不可</string>
 	<string name="poi_payment_cash_no">現金不可(Cash not accepted)</string>
-	<string name="poi_payment_debit_cards_yes">デビットカード(Debit cards)</string>
-	<string name="poi_payment_debit_cards_no">デビットカード不可(Debit cards not accepted)</string>
+	<string name="poi_payment_debit_cards_yes">デビットカード</string>
+	<string name="poi_payment_debit_cards_no">デビットカード不可</string>
 	<string name="poi_payment_bitcoin_yes">暗号通貨_ビットコイン(Bitcoin)</string>
 	<string name="poi_payment_bitcoin_no">暗号通貨_ビットコイン不可(Bitcoin not accepted)</string>
-	<string name="poi_payment_visa_yes">クレジットカード_VISA(Visa)</string>
-	<string name="poi_payment_visa_no">クレジットカード_VISA不可(Visa cards not accepted)</string>
-	<string name="poi_payment_mastercard_yes">クレジットカード_MasterCard(MasterCard)</string>
-	<string name="poi_payment_mastercard_no">クレジットカード_MasterCard不可(MasterCard not accepted)</string>
-	<string name="poi_payment_maestro_yes">デビットカード_Maestro(Maestro cards)</string>
-	<string name="poi_payment_maestro_no">デビットカード_Maestroカード不可(Maestro cards not accepted)</string>
-	<string name="poi_payment_american_express_yes">クレジットカード_American Express (AMEX)(American Express (AMEX))</string>
-	<string name="poi_payment_american_express_no">クレジットカード_American Express (AMEX)不可</string>
-	<string name="poi_payment_diners_club_yes">クレジットカード_ダイナースクラブ(Diners Club)</string>
-	<string name="poi_payment_diners_club_no">クレジットカード_ダイナースクラブカード不可(Diners Club cards not accepted)</string>
+	<string name="poi_payment_visa_yes">クレジットカード_VISA</string>
+	<string name="poi_payment_visa_no">クレジットカード_VISA不可</string>
+	<string name="poi_payment_mastercard_yes">クレジットカード_MasterCard</string>
+	<string name="poi_payment_mastercard_no">クレジットカード_MasterCard不可</string>
+	<string name="poi_payment_maestro_yes">デビットカード_Maestro</string>
+	<string name="poi_payment_maestro_no">デビットカード_Maestroカード不可</string>
+	<string name="poi_payment_american_express_yes">クレジットカード_American Express(AMEX)</string>
+	<string name="poi_payment_american_express_no">クレジットカード_American Express(AMEX)不可</string>
+	<string name="poi_payment_diners_club_yes">クレジットカード_ダイナースクラブ</string>
+	<string name="poi_payment_diners_club_no">クレジットカード_ダイナースクラブカード不可</string>
 	<string name="poi_payment_dkv_yes">燃料カード_DKV(DKV)</string>
 	<string name="poi_payment_dkv_no">燃料カード_DKV不可(DKV not accepted)</string>
 	<string name="poi_payment_uta_yes">燃料カード_UTA(UTA)</string>
 	<string name="poi_payment_uta_no">燃料カード_UTA不可(UTA cards not accepted)</string>
-	<string name="poi_payment_girocard_yes">デビットカード_Girocard(Girocard)</string>
-	<string name="poi_payment_girocard_no">デビットカード_Girocard不可(Girocard not accepted)</string>
-	<string name="poi_payment_discover_card_yes">クレジットカード_ディスカバーカード(Discover Card)</string>
-	<string name="poi_payment_discover_card_no">クレジットカード_ディスカバーカード不可(Discover Card not accepted)</string>
-	<string name="poi_payment_visa_electron_yes">デビットカード_Visaエレクトロン(Visa Electron)</string>
-	<string name="poi_payment_visa_electron_no">デビットカード_Visaエレクトロン不可(Visa Electron cards not accepted)</string>
+	<string name="poi_payment_girocard_yes">デビットカード_Girocard</string>
+	<string name="poi_payment_girocard_no">デビットカード_Girocard不可</string>
+	<string name="poi_payment_discover_card_yes">クレジットカード_ディスカバーカード</string>
+	<string name="poi_payment_discover_card_no">クレジットカード_ディスカバーカード不可</string>
+	<string name="poi_payment_visa_electron_yes">デビットカード_Visaエレクトロン</string>
+	<string name="poi_payment_visa_electron_no">デビットカード_Visaエレクトロン不可</string>
 	<string name="poi_payment_litecoin_yes">暗号通貨_ライトコイン(Litecoin)</string>
 	<string name="poi_payment_litecoin_no">暗号通貨_Litecoin不可(Litecoin not accepted)</string>
 	<string name="poi_payment_cheque_yes">小切手(Checks)</string>
@@ -1720,48 +1720,48 @@
 	<string name="poi_payment_pikepass_yes">有料道路_PIKEPASS(PIKEPASS)</string>
 	<string name="poi_payment_pikepass_no">有料道路_PIKEPASS不可(PIKEPASS not accepted)</string>
 	<string name="poi_payment_pikepass_designated">有料道路_PIKEPASS指定(PIKEPASS (designated))</string>
-	<string name="poi_payment_visa_debit_yes">デビットカード_Visaデビットカード(Visa Debit cards)</string>
-	<string name="poi_payment_visa_debit_no">デビットカード_Visaデビットカード不可(Visa Debit cards not accepted)</string>
+	<string name="poi_payment_visa_debit_yes">デビットカード_Visaデビットカード</string>
+	<string name="poi_payment_visa_debit_no">デビットカード_Visaデビットカード不可</string>
 	<string name="poi_payment_cryptocurrencies_no">暗号通貨不可(Cryptocurrencies not accepted)</string>
 	<string name="poi_payment_others_yes">その他(Others)</string>
 	<string name="poi_payment_others_no">その他該当支払い方法不可(Other payment methods not accepted)</string>
 	<string name="poi_payment_routex_yes">燃料カード_Routex(Routex)</string>
 	<string name="poi_payment_routex_no">燃料カード_Routex不可(Routex fuel cards not accepted)</string>
-	<string name="poi_payment_bancomat_yes">デビットカード_Bancomat(Bancomat)</string>
-	<string name="poi_payment_bancomat_no">デビットカード_Bancomat不可(Bancomat not accepted)</string>
+	<string name="poi_payment_bancomat_yes">デビットカード_Bancomat</string>
+	<string name="poi_payment_bancomat_no">デビットカード_Bancomat不可</string>
 	<string name="poi_payment_icsf_yes">公共交通機関_ICストアドフェアカード(Suica等)(IC Stored Fare)</string>
 	<string name="poi_payment_icsf_no">公共交通機関_ICストアドフェアカード(Suica等)(IC Stored Fare)</string>
 	<string name="poi_payment_prepaid_ticket_yes">公共交通機関_プリペイドチケット(Prepaid tickets)</string>
-	<string name="poi_payment_jcb_yes">クレジットカード_JCB(JCB)</string>
-	<string name="poi_payment_jcb_no">クレジットカード_JCB不可(JCB cards not accepted)</string>
-	<string name="poi_payment_laser_yes">デビットカード_Laser(Laser)</string>
-	<string name="poi_payment_laser_no">デビットカード_Laser不可(Laser cards not accepted)</string>
-	<string name="poi_payment_ep_quick_yes">電子マネー_Quick(Quick)</string>
-	<string name="poi_payment_ep_quick_no">電子マネー_Quickカード不可(Quick cards not accepted)</string>
+	<string name="poi_payment_jcb_yes">クレジットカード_JCB</string>
+	<string name="poi_payment_jcb_no">クレジットカード_JCB不可</string>
+	<string name="poi_payment_laser_yes">デビットカード_Laser</string>
+	<string name="poi_payment_laser_no">デビットカード_Laser不可</string>
+	<string name="poi_payment_ep_quick_yes">電子マネー_Quick</string>
+	<string name="poi_payment_ep_quick_no">電子マネー_Quickカード不可</string>
 	<string name="poi_payment_eurowag_yes">燃料カード_Eurowag(Eurowag)</string>
 	<string name="poi_payment_eurowag_no">燃料カード_Eurowag不可(Eurowag cards not accepted)</string>
 	<string name="poi_payment_e_zpass_yes">有料道路_E-ZPass(E‑ZPass)</string>
 	<string name="poi_payment_e_zpass_no">有料道路_E-ZPass不可(E‑ZPass not accepted)</string>
-	<string name="poi_payment_euroshell_yes">燃料カード_Euroshell(Euroshell)</string>
-	<string name="poi_payment_euroshell_no">燃料カード_Euroshell不可(Euroshell fuel cards not accepted)</string>
+	<string name="poi_payment_euroshell_yes">燃料カード_Euroshell</string>
+	<string name="poi_payment_euroshell_no">燃料カード_Euroshell不可</string>
 	<string name="poi_payment_dogecoin_yes">暗号通貨_Dogecoin(Dogecoin)</string>
 	<string name="poi_payment_dogecoin_no">暗号通貨_Dogecoin不可(Dogecoin not accepted)</string>
-	<string name="poi_payment_ep_cash_no">キャッシュカード(ゲルトカルテ)不可(Cash card (Geldkarte) not accepted)</string>
-	<string name="poi_payment_ep_proton_yes">電子マネー_Proton(Proton)</string>
-	<string name="poi_payment_ep_proton_no">電子マネー_Proton不可(Proton cards not accepted)</string>
-	<string name="poi_payment_ep_avant_yes">電子マネー_AvantCard(AvantCard)</string>
-	<string name="poi_payment_ep_avant_no">電子マネー_AvantCard不可(AvantCard)</string>
-	<string name="poi_payment_ep_mep_yes">電子マネー_MEP(MEP)</string>
-	<string name="poi_payment_ep_mep_no">電子マネー_MEP不可(MEP)</string>
-	<string name="poi_payment_ep_minipay_yes">電子マネー_Minipay(Minipay)</string>
-	<string name="poi_payment_ep_minipay_no">電子マネー_Minipay不可(Minipay)</string>
-	<string name="poi_payment_ep_minicash_yes">電子マネー_MiniCash(MiniCash)</string>
-	<string name="poi_payment_ep_minicash_no">電子マネー_MiniCash不可(MiniCash)</string>
-	<string name="poi_payment_ep_moneo_yes">電子マネー_Moneo(Moneo)</string>
-	<string name="poi_payment_ep_moneo_no">電子マネー_Moneo不可(Moneo)</string>
-	<string name="poi_payment_ep_monedero4b_yes">電子マネー_Monedero 4B（Monedero 4B)</string>
-	<string name="poi_payment_ep_monedero4b_no">電子マネー_Monedero 4B不可(Monedero 4B not accepted)</string>
-	<string name="poi_payment_ep_monedero_yes">電子マネー_Monedero(Monedero)</string>
+	<string name="poi_payment_ep_cash_no">キャッシュカード_ゲルトカルテ(電子マネー機能付き)不可</string>
+	<string name="poi_payment_ep_proton_yes">電子マネー_Proton</string>
+	<string name="poi_payment_ep_proton_no">電子マネー_Proton不可</string>
+	<string name="poi_payment_ep_avant_yes">電子マネー_AvantCard</string>
+	<string name="poi_payment_ep_avant_no">電子マネー_AvantCard不可</string>
+	<string name="poi_payment_ep_mep_yes">電子マネー_MEP</string>
+	<string name="poi_payment_ep_mep_no">電子マネー_MEP不可</string>
+	<string name="poi_payment_ep_minipay_yes">電子マネー_Minipay</string>
+	<string name="poi_payment_ep_minipay_no">電子マネー_Minipay不可</string>
+	<string name="poi_payment_ep_minicash_yes">電子マネー_MiniCash</string>
+	<string name="poi_payment_ep_minicash_no">電子マネー_MiniCash不可</string>
+	<string name="poi_payment_ep_moneo_yes">電子マネー_Moneo</string>
+	<string name="poi_payment_ep_moneo_no">電子マネー_Moneo不可</string>
+	<string name="poi_payment_ep_monedero4b_yes">電子マネー_Monedero 4B</string>
+	<string name="poi_payment_ep_monedero4b_no">電子マネー_Monedero 4B不可</string>
+	<string name="poi_payment_ep_monedero_yes">電子マネー_Monedero</string>
 	<string name="poi_payment_ep_monedero_no">電子マネー_Monedero不可</string>
 	<string name="poi_payment_bankaxess_yes">デビットカード_BankAxess</string>
 	<string name="poi_payment_bankaxess_no">デビットカード_BankAxess不可</string>
@@ -2187,7 +2187,7 @@
 	<string name="poi_motorcycle_repair">オートバイ修理</string>
 	<string name="poi_public_bath">公衆浴場</string>
 
-	<string name="poi_services">サービスエリア・SA</string>
+	<string name="poi_services">SA・サービスエリア</string>
 	<string name="poi_water_tap">水道の蛇口・給水栓</string>
 	<string name="poi_badminton">バドミントン</string>
 	<string name="poi_bandy">バンディ(Bandy)</string>
@@ -2270,22 +2270,22 @@
 	<string name="poi_historic_threshing_floor">歴史的な脱穀場</string>
 	<string name="poi_historic_railway">歴史的な鉄道</string>
 
-	<string name="poi_iwn_ref">複数の国境を越える長いハイキングネットワークの交点</string>
-	<string name="poi_route_hiking_iwn_poi">複数の国境を越える長いハイキング経路</string>
-	<string name="poi_lwn_ref">地域内の小さなハイキングネットワークの交点</string>
+	<string name="poi_iwn_ref">ハイキングネットワークの交点(複数の国境越えがある超長距離)</string>
+	<string name="poi_route_hiking_iwn_poi">ハイキング経路(複数の国境越えがある超長距離)</string>
+	<string name="poi_lwn_ref">ハイキングネットワークの交点(地域内の短距離)</string>
 
-	<string name="poi_route_hiking_lwn_poi">地域内の小さなハイキング経路</string>
+	<string name="poi_route_hiking_lwn_poi">ハイキング経路(地域内の短距離)</string>
 	<string name="poi_locomotive">展示機関車(Locomotive)</string>
 
-	<string name="poi_nwn_ref">国を横断するような長距離にわたるハイキングネットワークの交点</string>
-	<string name="poi_route_hiking_nwn_poi">国を横断するような長距離にわたるハイキング経路</string>
+	<string name="poi_nwn_ref">ハイキングネットワークの交点(国を横断するような長距離)</string>
+	<string name="poi_route_hiking_nwn_poi">ハイキング経路(国を横断するような長距離)</string>
 	<string name="poi_pa">Pa(マオリ族の要塞居留地)</string>
 
 	<string name="poi_bird_hide">野鳥観察舎</string>
 	<string name="poi_wildlife_hide">野生動物観察舎</string>
 
-	<string name="poi_rwn_ref">地域を越えるハイキングネットワークの交点</string>
-	<string name="poi_route_hiking_rwn_poi">地域を越えるハイキング経路</string>
+	<string name="poi_rwn_ref">ハイキングネットワークの交点(地域をまたぐ中距離)</string>
+	<string name="poi_route_hiking_rwn_poi">ハイキング経路(地域をまたぐ中距離)</string>
 	<string name="poi_sanitary_dump_station_yes">トレーラーハウス等のタンク内排泄物処理所:有り</string>
 	<string name="poi_sanitary_dump_station_no">トレーラーハウス等のタンク内排泄物処理所:無し</string>
 	<string name="poi_sanitary_dump_station">トレーラーハウス等のタンク内排泄物処理所</string>
@@ -2316,10 +2316,10 @@
 	<string name="poi_enforcement_check">取締装置:検問所</string>
 	<string name="poi_escape_lane">非常用避難及び強制減速車線(Escape lane)</string>
 
-	<string name="poi_icn_ref">複数の国境を越える長いサイクリングネットワークの交点</string>
-	<string name="poi_ncn_ref">国を横断するような長距離にわたるサイクリングネットワークの交点</string>
-	<string name="poi_rcn_ref">地域を越えるサイクリングネットワークの交点</string>
-	<string name="poi_lcn_ref">地域内の小さなサイクリングネットワークの交点</string>
+	<string name="poi_icn_ref">サイクリングネットワークの交点(複数の国境越えがある超長距離)</string>
+	<string name="poi_ncn_ref">サイクリングネットワークの交点(国を横断するような長距離)</string>
+	<string name="poi_rcn_ref">サイクリングネットワークの交点(地域をまたぐ中距離)</string>
+	<string name="poi_lcn_ref">サイクリングネットワークの交点(地域内の短距離)</string>
 	<string name="poi_node_networks">ハイキング／サイクリングに用いられるネットワークの交点</string>
 	<string name="poi_railway_yard">貨物駅・車両基地</string>
 
@@ -2956,4 +2956,152 @@
 	<string name="poi_historic_civilization_roman">文明:ローマ文明</string>
 	<string name="poi_historic_civilization_byzantine">文明:ビザンティン文化 (西暦285年 – 1453年)</string>
 	<string name="poi_historic_civilization_imperial_chinese">文明:皇帝王朝 (紀元前221年 – 西暦1911年)</string>
+	<string name="poi_historic_civilization_ancient_egyptian">文明:古代エジプト(紀元前332年まで)</string>
+	<string name="poi_historic_civilization_celtic">文明:ケルト文明</string>
+	<string name="poi_historic_civilization_western_roman">文明:西ローマ帝国(西暦285 – 476年)</string>
+	<string name="poi_historic_civilization_mycenaean">文明:ミケーネ文明</string>
+	<string name="poi_historic_civilization_dacian">文明:ダキア文化</string>
+	<string name="poi_historic_civilization_hernici">文明:ヘルニキ文化</string>
+	<string name="poi_historic_civilization_greek_egyptian">文明:プトレマイオス朝(紀元前332 – 紀元前30年)</string>
+	<string name="poi_historic_civilization_roman_and_byzantine_egyptian">文明:東ローマ帝国またはビザンツ帝国</string>
+	<string name="poi_historic_civilization_helladic">文明:ヘラディック文明</string>
+	<string name="poi_historic_civilization_cycladic">文明:キクラデス文明</string>
+	<string name="poi_historic_civilization_minoan">文明:ミノア文明</string>
+	<string name="poi_historic_civilization_tiahuanacota">文明:ティワナク帝国</string>
+
+	<string name="poi_horse_no">馬の通行不可</string>
+	<string name="poi_horse_yes">馬の通行可</string>
+	<string name="poi_animal_yes">動物同伴可</string>
+	<string name="poi_animal_no">動物同伴不可</string>
+
+	<string name="poi_historic_period_nuragic">文明期:ヌラーゲ(nuragic)</string>
+	<string name="poi_historic_period_stone_bronze_undetermined">文明期:石器時代 / 青銅器時代(未確定)</string>
+	<string name="poi_historic_period_bronze_age">文明期:青銅器時代</string>
+	<string name="poi_historic_period_principate">文明期:プリンキパトゥス(紀元前27 – 西暦284年)</string>
+	<string name="poi_historic_period_classical_greece">文明期:ギリシア・古典期(紀元前5 – 4世紀)</string>
+	<string name="poi_historic_period_archaic_greece">文明期:ギリシア・アルカイック期</string>
+	<string name="poi_historic_period_iron_age">文明期:鉄器時代</string>
+	<string name="poi_historic_period_roman_republic">文明期:共和政ローマ(紀元前508年 – 紀元前27年)</string>
+	<string name="poi_historic_period_hellenistic_greece">文明期:ギリシア・ヘレニズム時代</string>
+	<string name="poi_historic_period_new_kingdom">文明期:エジプト新王国(紀元前1550年 – 1069年)</string>
+	<string name="poi_historic_period_middle_kingdom">文明期:エジプト中王国(紀元前2055年 – 1650年)</string>
+	<string name="poi_historic_period_predynastic_egypt">文明期:エジプト先王朝時代</string>
+	<string name="poi_historic_period_early_dynastic_period">文明期:エジプト初期王朝時代(紀元前3100年 – 2686年)</string>
+	<string name="poi_historic_period_old_kingdom">文明期:エジプト古王国(紀元前2686年 – 2181年)</string>
+	<string name="poi_historic_period_first_intermediate_period">文明期:エジプト第1中間期(紀元前2181年 – 2055年)</string>
+	<string name="poi_historic_period_second_intermediate_period">文明期:エジプト第2中間期(紀元前1650年 – 1550年)</string>
+	<string name="poi_historic_period_third_intermediate_period">"文明期:エジプト第3中間期(紀元前1069年 – 664年) "</string>
+	<string name="poi_historic_period_first_persian_period">文明期:第1次ペルシア支配時代(エジプト第27王朝)</string>
+	<string name="poi_historic_period_late_period">文明期:エジプト末期王朝(紀元前664年 – 332年)</string>
+	<string name="poi_historic_period_second_persian_period">文明期:第2次ペルシア支配時代(エジプト第31王朝)</string>
+	<string name="poi_historic_period_alexander_the_great">文明期:アレクサンドロス大王</string>
+	<string name="poi_historic_period_ptolemaic_egypt">文明期:プトレマイオス朝(紀元前305年 – 30年)</string>
+	<string name="poi_historic_period_christian_egypt">文明期:アエギュプトゥス(キリスト教が伝播した時代)</string>
+	<string name="poi_historic_period_byzantine_egypt">文明期:ビザンチンエジプト・東ローマ帝国時代(紀元前30年 – 紀元後641年)</string>
+	<string name="poi_historic_period_persian_occupation">文明期:ペルシア属国(サーサーン朝)</string>
+	<string name="poi_historic_period_greek_dark_ages">文明期:ギリシア暗黒時代(紀元前1100年 – 800年)</string>
+	<string name="poi_historic_period_roman_greece">文明期:ギリシアのローマ帝国支配下時代(紀元前146年 – 西暦330年)</string>
+	<string name="poi_historic_period_roman_kingdom">文明期:王政ローマ時代(紀元前753年 – 509年)</string>
+	<string name="poi_historic_period_dominate">文明期:ローマ専制君主制・ドミナートゥス時代(西暦285年 – 476年)</string>
+	<string name="poi_historic_period_villager">文明期:ティワナク文化村民期・先史時代(I、II期 紀元前1580年 – 西暦133年)</string>
+	<string name="poi_historic_period_urban">文明期:ティワナク文化都市期(III期、西暦133年 – 374年)</string>
+	<string name="poi_historic_period_classical">文明期:ティワナク文化古典期(IV期、西暦374年 – 900年)</string>
+	<string name="poi_historic_period_imperial">文明期:ティワナク文化インカ帝国による征服時代(V期、西暦900年 – 1200年)</string>
+
+	<string name="poi_historic_era_paleolithic">"時代区分:旧石器時代（260万年 -  1万年代前）"</string>
+	<string name="poi_historic_era_mesolithic">時代区分:中石器時代</string>
+	<string name="poi_historic_era_neolithic">時代区分:新石器時代</string>
+	<string name="poi_historic_era_chalcolithic">時代区分:金石併用時代・銅器時代(紀元前4～3千年)</string>
+
+	<string name="poi_stone_type_conciliation_cross">追悼記念碑・慰霊碑</string>
+	<string name="poi_stone_type_coat_of_arms">紋章</string>
+
+	<string name="poi_material_wood">材質:木</string>
+	<string name="poi_material_metal">材質:金属</string>
+	<string name="poi_material_reinforced_concrete">材質:鉄筋コンクリート</string>
+	<string name="poi_material_concrete">材質:コンクリート</string>
+	<string name="poi_material_steel">材質:鉄鋼</string>
+	<string name="poi_material_stone">材質:石</string>
+	<string name="poi_material_masonry">材質:石積み</string>
+	<string name="poi_material_brick">材質:レンガ</string>
+	<string name="poi_material_plastic">材質:プラスチック</string>
+	<string name="poi_material_granite_stone">材質:花崗岩</string>
+	<string name="poi_material_metal_wood">材質:金属;木</string>
+	<string name="poi_material_glass">材質:ガラス</string>
+	<string name="poi_material_bronze">材質:青銅</string>
+	<string name="poi_material_earth">材質:地面、土</string>
+	<string name="poi_material_composite">材質:複合</string>
+	<string name="poi_material_limestone">材質：石灰岩</string>
+	<string name="poi_material_marble">材質：大理石</string>
+	<string name="poi_material_aluminium">材質：アルミニウム</string>
+
+	<string name="poi_megalith_type_menhir">巨石記念物の種類:立石・メンヒル</string>
+	<string name="poi_megalith_type_dolmen">巨石記念物の種類:支石墓・ドルメン</string>
+	<string name="poi_megalith_type_nuraghe">巨石記念物の種類:積み石建造物・ヌラーゲ</string>
+	<string name="poi_megalith_type_stone_circle">巨石記念物の種類:環状列石・ストーンサークル</string>
+	<string name="poi_megalith_type_passage_grave">巨石記念物の種類:羨道墳・パッセージグレーヴ</string>
+	<string name="poi_fortification_type_hill_fort">要塞の種類:土塁・ヒルフォート</string>
+	<string name="poi_fortification_type_limes">要塞の種類:古代ローマの国境防衛砦(limes)</string>
+	<string name="poi_fortification_type_sconce">要塞の種類:砲兵用防御要塞・スカンス</string>
+	<string name="poi_fortification_type_ring_ditch">要塞の種類:新石器時代の円形の囲い(ring ditch)</string>
+
+	<string name="poi_artist_name">作者名</string>
+	<string name="poi_sculptor">彫刻工房</string>
+
+	<string name="poi_concentration_camp">種類:強制収容所</string>
+	<string name="poi_pow_camp">種類:捕虜収容所</string>
+	<string name="poi_labor_camp">種類:強制労働収容所</string>
+	<string name="poi_concentration_camp_nazism">種類:ナチズム</string>
+	<string name="poi_concentration_camp_gulag">種類:(旧ソビエト)強制労働収容所・矯正収容所</string>
+
+	<string name="poi_temperature">温度</string>
+	<string name="poi_bathing_yes">入浴：可</string>
+	<string name="poi_bathing_no">入浴：不可</string>
+
+	<string name="poi_conveying_yes">エスカレーター・動く歩道</string>
+
+	<string name="poi_bridge_ref">橋の参照番号・記号</string>
+	<string name="poi_tunnel_ref">トンネルの参照番号・記号</string>
+
+	<string name="poi_ref">番号・記号</string>
+
+	<string name="poi_fireworks">花火屋</string>
+
+	<string name="poi_aerialway_length">長さ</string>
+
+	<string name="poi_microwave_oven_yes">オーブンレンジ:有り</string>
+	<string name="poi_microwave_oven_no">オーブンレンジ:無し</string>
+	<string name="poi_water_heater_yes">湯沸かし器:有り</string>
+	<string name="poi_water_heater_no">湯沸かし器:無し</string>
+
+	<string name="poi_official_name">公式名称</string>
+
+	<string name="poi_construction_yes">建設中</string>
+	<string name="poi_additional_atm_yes">ATM:有り</string>
+	<string name="poi_atm_no">ATM:無し</string>
+
+	<string name="poi_fair_trade_yes">フェアトレード製品:有り</string>
+	<string name="poi_fair_trade_no">フェアトレード製品:無し</string>
+	<string name="poi_fair_trade_only">フェアトレード製品のみ</string>
+
+
+	<string name="poi_protection_title">保護の種類(Protection title)</string>
+	<string name="poi_protection_object_historic">保護対象:歴史的な物</string>
+	<string name="poi_protection_object_nature">保護対象:自然物</string>
+	<string name="poi_protection_object_habitat">保護対象:生息地</string>
+	<string name="poi_protection_object_water">保護対象:水・水源</string>
+
+	<string name="poi_addr_housename">家名</string>
+
+
+	<string name="poi_health_facility_type_field_hospital">保健施設:野外病院</string>
+	<string name="poi_health_facility_type_counselling_centre">保健施設:カウンセリングセンター</string>
+	<string name="poi_health_facility_type_laboratory">保健施設:医療研究機関</string>
+	<string name="poi_health_facility_type_therapy">保健施設:健康増進施設</string>
+	<string name="poi_health_facility_type_department">保健施設:特定分野(department)</string>
+	<string name="poi_health_facility_type_dispensary">保健施設:薬局</string>
+	<string name="poi_health_facility_type_first_aid">保健施設:応急措置施設</string>
+	<string name="poi_health_facility_type_nursing_home">保健施設:介護福祉施設</string>
+	<string name="poi_health_facility_type_support_group_home">保健施設:支援団体の相談所(support group home)</string>
+
 	</resources>

@@ -952,7 +952,10 @@ public class GpxUiHelper {
 
 		XAxis xAxis = mChart.getXAxis();
 		xAxis.setDrawAxisLine(false);
-		xAxis.setDrawGridLines(false);
+		xAxis.setDrawGridLines(true);
+		xAxis.setGridLineWidth(1.5f);
+		xAxis.setGridColor(ActivityCompat.getColor(mChart.getContext(), R.color.gpx_chart_black_grid));
+		xAxis.enableGridDashedLine(25f, Float.MAX_VALUE, 0f);
 		xAxis.setPosition(BOTTOM);
 		xAxis.setTextColor(light ? mChart.getResources().getColor(R.color.secondary_text_light) : mChart.getResources().getColor(R.color.secondary_text_dark));
 
@@ -1257,8 +1260,14 @@ public class GpxUiHelper {
 		} else {
 			yAxis = mChart.getAxisLeft();
 		}
-		yAxis.setTextColor(ActivityCompat.getColor(mChart.getContext(), R.color.gpx_chart_orange_label));
-		yAxis.setGridColor(ActivityCompat.getColor(mChart.getContext(), R.color.gpx_chart_orange_grid));
+		if (analysis.hasSpeedInTrack()) {
+			yAxis.setTextColor(ActivityCompat.getColor(mChart.getContext(), R.color.gpx_chart_orange_label));
+			yAxis.setGridColor(ActivityCompat.getColor(mChart.getContext(), R.color.gpx_chart_orange_grid));
+		} else {
+			yAxis.setTextColor(ActivityCompat.getColor(mChart.getContext(), R.color.gpx_chart_red_label));
+			yAxis.setGridColor(ActivityCompat.getColor(mChart.getContext(), R.color.gpx_chart_red_grid));
+		}
+
 		yAxis.setAxisMinimum(0f);
 
 		ArrayList<Entry> values = new ArrayList<>();
@@ -1320,11 +1329,19 @@ public class GpxUiHelper {
 		}
 		dataSet.units = mainUnitY;
 
-		dataSet.setColor(ContextCompat.getColor(mChart.getContext(), R.color.gpx_chart_orange));
+		if (analysis.hasSpeedInTrack()) {
+			dataSet.setColor(ContextCompat.getColor(mChart.getContext(), R.color.gpx_chart_orange));
+		} else {
+			dataSet.setColor(ContextCompat.getColor(mChart.getContext(), R.color.gpx_chart_red));
+		}
 		dataSet.setLineWidth(1f);
 		if (drawFilled) {
 			dataSet.setFillAlpha(128);
-			dataSet.setFillColor(ContextCompat.getColor(mChart.getContext(), R.color.gpx_chart_orange));
+			if (analysis.hasSpeedInTrack()) {
+				dataSet.setFillColor(ContextCompat.getColor(mChart.getContext(), R.color.gpx_chart_orange));
+			} else {
+				dataSet.setFillColor(ContextCompat.getColor(mChart.getContext(), R.color.gpx_chart_red));
+			}
 			dataSet.setDrawFilled(true);
 		} else {
 			dataSet.setDrawFilled(false);
@@ -1677,6 +1694,7 @@ public class GpxUiHelper {
 						textSlpView.setVisibility(GONE);
 						break;
 					case SPEED:
+						((TextView) textSpdView.findViewById(R.id.text_spd_value)).setTextColor(dataSet.getColor());
 						((TextView) textSpdView.findViewById(R.id.text_spd_value)).setText(value);
 						((TextView) textSpdView.findViewById(R.id.text_spd_units)).setText(units);
 						textAltView.setVisibility(GONE);
@@ -1729,6 +1747,7 @@ public class GpxUiHelper {
 				}
 				if (spdSetIndex != -1) {
 					float y = getInterpolatedY(spdSetIndex == 0 ? dataSet1 : dataSet2, e);
+					((TextView) textSpdView.findViewById(R.id.text_spd_value)).setTextColor((spdSetIndex == 0 ? dataSet1 : dataSet2).getColor());
 					((TextView) textSpdView.findViewById(R.id.text_spd_value)).setText(Integer.toString((int) y) + " ");
 					((TextView) textSpdView.findViewById(R.id.text_spd_units)).setText(spdSetIndex == 0 ? dataSet1.units : dataSet2.units);
 					textSpdView.setVisibility(VISIBLE);

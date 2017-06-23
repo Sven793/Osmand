@@ -3452,4 +3452,41 @@
 
 <string name="poi_life_ring">Redningskrans</string>
 
+<string name="poi_zoo_type">Type</string>
+
+<string name="poi_zoo_petting_zoo">Børnezoo</string>
+	<string name="poi_zoo_enclosure">Indhegning</string>
+	<string name="poi_zoo_safari_park">Safaripark</string>
+	<string name="poi_zoo_birds">Fugle</string>
+	<string name="poi_zoo_aviary">Voliere</string>
+	<string name="poi_zoo_falconry">Falkoneri</string>
+	<string name="poi_zoo_reptile">Krybdyr</string>
+
+<string name="poi_zoo_wildlife_park">Dyrepark</string>
+	<string name="poi_stands">Stande</string>
+
+<string name="poi_motorcycle_services">Service</string>
+	<string name="poi_motorcycle_type">Motorcykeltype</string>
+
+<string name="poi_motorcycle_sales_yes">Salg</string>
+	<string name="poi_motorcycle_sales_no">Salg: nej</string>
+	<string name="poi_motorcycle_sales_yes_used">Salg: ja; brugt</string>
+	<string name="poi_motorcycle_sales_used">Salg: brugt</string>
+	<string name="poi_motorcycle_rental_yes">Udlejning</string>
+	<string name="poi_motorcycle_rental_no">Udlejning: nej</string>
+	<string name="poi_motorcycle_repair_yes">Reparation</string>
+	<string name="poi_motorcycle_repair_no">Reparation: nej</string>
+	<string name="poi_motorcycle_parts_yes">Reservedele</string>
+	<string name="poi_motorcycle_parts_no">Reservedele: nej</string>
+	<string name="poi_motorcycle_tyres_yes">Dæk</string>
+	<string name="poi_motorcycle_tyres_no">Dæk: nej</string>
+	<string name="poi_motorcycle_clothes_yes">Motorcykelbeklædning</string>
+	<string name="poi_motorcycle_clothes_no">Motorcykelbeklædning: nej</string>
+	<string name="poi_motorcycle_type_scooter">Scooter</string>
+	<string name="poi_motorcycle_type_sportbike">Sportsbike</string>
+	<string name="poi_motorcycle_type_chopper">Chopper</string>
+	<string name="poi_motorcycle_type_offroad">Offroad</string>
+	<string name="poi_motorcycle_type_dualsport">Enduro</string>
+	<string name="poi_motorcycle_type_standard">Standard</string>
+
 </resources>

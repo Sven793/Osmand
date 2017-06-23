@@ -1706,7 +1706,7 @@
 	<string name="poi_recycling_hardcore">(Bau)Schutt</string>
 	<string name="poi_brownfield">Bauland</string>
 	<string name="poi_religion_unitarian_universalist">Unitarischer Universalismus</string>
-	<string name="poi_religion_multifaith">Mehrfachgläubig</string>
+	<string name="poi_religion_multifaith">Multikonfessionell</string>
 	<string name="poi_religion_scientologist">Scientology</string>
 	<string name="poi_denomination_uniting">Vereinigung</string>
 	<string name="poi_denomination_congregational">Kongregationalistisch</string>
@@ -1767,7 +1767,7 @@
 	<string name="poi_payment_electronic_purses_yes">Elektronische Geldbörsen</string>
 	<string name="poi_payment_uta_yes">UTA</string>
 	<string name="poi_payment_uta_no">UTA Karten nicht akzeptiert</string>
-	<string name="poi_payment_efectivo_yes">Bar</string>
+	<string name="poi_payment_efectivo_yes">Efectivo</string>
 	<string name="poi_payment_efectivo_no">Nachnahme nicht akzeptiert</string>
 	<string name="poi_payment_girocard_yes">Girokarte</string>
 	<string name="poi_payment_girocard_no">Girokarte nicht akzeptiert</string>
@@ -2552,8 +2552,8 @@
 <string name="poi_seamark_dyke">Seezeichen Deich</string>
 	<string name="poi_dolphin">Dalbe</string>
 
-	<string name="poi_forestry_compartment">Schild: Forstabteilung</string>
-	<string name="poi_forestry_allotment">Schild: Forstparzelle</string>
+	<string name="poi_forestry_compartment">Wegweiser: Forstabteilung</string>
+	<string name="poi_forestry_allotment">Wegweiser: Forstparzelle</string>
 	<string name="poi_inscription_n">Beschriftung: N</string>
 	<string name="poi_inscription_nw">Beschriftung: NW</string>
 	<string name="poi_inscription_w">Beschriftung: W</string>
@@ -2856,7 +2856,7 @@
 
 	<string name="poi_bicycle_parking_lockers">Schließfächer</string>
 	<string name="poi_bicycle_parking_tree">Fahrrad-Baum</string>
-	<string name="poi_bicycle_parking_streetpod">Straßenschale</string>
+	<string name="poi_bicycle_parking_streetpod">Straßenunterstand</string>
 
 	<string name="poi_salt_yes">Salz</string>
 	<string name="poi_salt_no">Salz: Nein</string>
@@ -2979,9 +2979,9 @@
 	<string name="poi_aquaculture_mussels">Aquakultur: Muscheln</string>
 
 	<string name="poi_mdf">Hauptverteiler</string>
-	<string name="poi_organic_yes">Bio-Lebensmittel: ja</string>
-	<string name="poi_organic_no">Bio-Lebensmittel: Nein</string>
-	<string name="poi_organic_only">Nur Bio-Lebensmittel</string>
+	<string name="poi_organic_yes">Ja</string>
+	<string name="poi_organic_no">Nein</string>
+	<string name="poi_organic_only">Ausschließlich</string>
 
 	<string name="poi_diplomatic_consulate">Konsulat</string>
 	<string name="poi_diplomatic_permanent_mission">Ständige Vertretung</string>
@@ -3365,5 +3365,44 @@
 <string name="poi_resort_kids_camp">Kinderferienlager</string>
 	<string name="poi_music_school">Musikschule</string>
 	<string name="poi_language_school">Sprachschule</string>
+
+<string name="poi_life_ring">Rettungsring</string>
+
+<string name="poi_zoo_petting_zoo">Streichelzoo</string>
+	<string name="poi_zoo_wildlife_park">Wildpark</string>
+	<string name="poi_zoo_enclosure">Gehege</string>
+	<string name="poi_zoo_safari_park">Safaripark</string>
+	<string name="poi_zoo_aviary">Voliere</string>
+	<string name="poi_zoo_falconry">Falknerei</string>
+	<string name="poi_zoo_reptile">Reptilien</string>
+
+<string name="poi_zoo_type">Typ</string>
+
+<string name="poi_zoo_birds">Vögel</string>
+	<string name="poi_motorcycle_services">Kundendienst</string>
+	<string name="poi_motorcycle_type">Motorradtyp</string>
+
+<string name="poi_stands">Standplätze</string>
+
+	<string name="poi_motorcycle_sales_yes">Verkauf</string>
+	<string name="poi_motorcycle_sales_no">Verkauf: nein</string>
+	<string name="poi_motorcycle_sales_yes_used">Verkauf: ja; gebraucht</string>
+	<string name="poi_motorcycle_sales_used">Verkauf: gebraucht</string>
+	<string name="poi_motorcycle_rental_yes">Vermietung</string>
+	<string name="poi_motorcycle_rental_no">Vermietung: nein</string>
+	<string name="poi_motorcycle_repair_yes">Reparatur</string>
+	<string name="poi_motorcycle_repair_no">Reparatur: nein</string>
+	<string name="poi_motorcycle_parts_yes">Ersatzteile</string>
+	<string name="poi_motorcycle_parts_no">Ersatzteile: nein</string>
+	<string name="poi_motorcycle_tyres_yes">Reifen</string>
+	<string name="poi_motorcycle_tyres_no">Reifen: nein</string>
+	<string name="poi_motorcycle_clothes_yes">Motorradbekleidung</string>
+	<string name="poi_motorcycle_clothes_no">Motorradbekleidung: nein</string>
+	<string name="poi_motorcycle_type_scooter">Motorroller</string>
+	<string name="poi_motorcycle_type_sportbike">Supersportler</string>
+	<string name="poi_motorcycle_type_chopper">Chopper</string>
+	<string name="poi_motorcycle_type_offroad">Gelände</string>
+	<string name="poi_motorcycle_type_dualsport">Reiseenduro</string>
+	<string name="poi_motorcycle_type_standard">Standard</string>
 
 </resources>

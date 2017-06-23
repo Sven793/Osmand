@@ -52,6 +52,8 @@ import net.osmand.plus.mapcontextmenu.controllers.TransportStopController;
 import net.osmand.plus.mapcontextmenu.controllers.TransportStopController.TransportStopRoute;
 import net.osmand.plus.mapcontextmenu.controllers.WptPtMenuController;
 import net.osmand.plus.mapcontextmenu.other.ShareMenu;
+import net.osmand.plus.mapillary.MapillaryImage;
+import net.osmand.plus.mapillary.MapillaryMenuController;
 import net.osmand.plus.osmedit.EditPOIMenuController;
 import net.osmand.plus.osmedit.OsmBugMenuController;
 import net.osmand.plus.osmedit.OsmBugsLayer.OpenStreetNote;
@@ -127,7 +129,6 @@ public abstract class MenuController extends BaseMenuController {
 	public static MenuController getMenuController(MapActivity mapActivity,
 												   LatLon latLon, PointDescription pointDescription, Object object,
 												   MenuType menuType) {
-		OsmandApplication app = mapActivity.getMyApplication();
 		MenuController menuController = null;
 		if (object != null) {
 			if (object instanceof Amenity) {
@@ -170,6 +171,8 @@ public abstract class MenuController extends BaseMenuController {
 				menuController = new ImpassibleRoadsMenuController(mapActivity, pointDescription, (RouteDataObject) object);
 			} else if (object instanceof RenderedObject) {
 				menuController = new RenderedObjectMenuController(mapActivity, pointDescription, (RenderedObject) object);
+			} else if (object instanceof MapillaryImage) {
+				menuController = new MapillaryMenuController(mapActivity, pointDescription, (MapillaryImage) object);
 			}
 		}
 		if (menuController == null) {
@@ -197,8 +200,9 @@ public abstract class MenuController extends BaseMenuController {
 		return active;
 	}
 
-	public void setActive(boolean active) {
+	public boolean setActive(boolean active) {
 		this.active = active;
+		return true;
 	}
 
 	public void addPlainMenuItem(int iconId, String text, boolean needLinks, boolean isUrl, OnClickListener onClickListener) {
@@ -217,9 +221,9 @@ public abstract class MenuController extends BaseMenuController {
 		OsmandSettings st = ((OsmandApplication) getMapActivity().getApplicationContext()).getSettings();
 		addPlainMenuItem(R.drawable.ic_action_get_my_location, PointDescription.getLocationName(getMapActivity(),
 				latLon.getLatitude(), latLon.getLongitude(), true).replaceAll("\n", " "), false, false, null);
-		if (st.COORDINATES_FORMAT.get() != PointDescription.OLC_FORMAT)
-			addPlainMenuItem(R.drawable.ic_action_get_my_location, PointDescription.getLocationOlcName(
-					latLon.getLatitude(), latLon.getLongitude()).replaceAll("\n", " "), false, false, null);
+		//if (st.COORDINATES_FORMAT.get() != PointDescription.OLC_FORMAT)
+		//	addPlainMenuItem(R.drawable.ic_action_get_my_location, PointDescription.getLocationOlcName(
+		//			latLon.getLatitude(), latLon.getLongitude()).replaceAll("\n", " "), false, false, null);
 	}
 
 	public PointDescription getPointDescription() {

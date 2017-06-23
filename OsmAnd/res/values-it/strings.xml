@@ -2998,8 +2998,18 @@ Copertura e qualità approssimativamente:
     <string name="mapillary_widget_descr">Permette di contribuire facilmente a Mapillary</string>
     <string name="mapillary_descr">Foto a livello stradale per tutti. Scopri luoghi, collabora, fotografa il mondo.</string>
     <string name="shared_string_add_photos">Aggiungi foto</string>
-    <string name="mapillary_action_descr">Contribuisci con le tue foto stradali di questo luogo con Mapillary</string>
+    <string name="mapillary_action_descr">Contribuisci con le tue foto stradali di questo luogo con Mapillary.</string>
     <string name="plugin_mapillary_descr">Foto stradali per tutti. Scopri luoghi, collabora, fotografa il mondo.</string>
     <string name="online_photos">Foto online</string>
     <string name="no_photos_descr">Non ci sono foto per questa posizione</string>
+    <string name="open_mapillary">Apri Mapillary</string>
+    <string name="shared_string_install">Installa</string>
+    <string name="improve_coverage_mapillary">Migliora la copertura fotografica con Mapillary</string>
+    <string name="improve_coverage_install_mapillary_desc">Puoi scattare una foto singola o una serie e aggiungerle a questa posizione della mappa.
+\n
+\nPer farlo è necessario installare l\'app Mapillary da Google Play.</string>
+    <string name="mapillary_image">Immagine Mapillary</string>
+    <string name="distance_moving">Distanza corretta</string>
+    <string name="shared_string_permissions">Permessi</string>
+    <string name="import_gpx_failed_descr">OsmAnd non può importare il file. Controlla se OsmAnd ha i permessi per leggere file dalla posizione.</string>
     </resources>

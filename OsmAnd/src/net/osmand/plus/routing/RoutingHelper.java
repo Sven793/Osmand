@@ -66,7 +66,7 @@ public class RoutingHelper {
 	private Location lastFixedLocation;
 	
 	private static final int RECALCULATE_THRESHOLD_COUNT_CAUSING_FULL_RECALCULATE = 3;
-	private static final int RECALCULATE_THRESHOLD_CAUSING_FULL_RECALCULATE_INTERVAL = 120000;
+	private static final int RECALCULATE_THRESHOLD_CAUSING_FULL_RECALCULATE_INTERVAL = 2*60*1000;
 	private Thread currentRunningJob;
 	private long lastTimeEvaluatedRoute = 0;
 	private String lastRouteCalcError;
@@ -676,10 +676,10 @@ public class RoutingHelper {
 						l.newRouteIsCalculated(newRoute, showToast);
 					}
 				}
-				if (showToast.value) {
+				if (showToast.value && OsmandPlugin.isDevelopment()) {
 					String msg = app.getString(R.string.new_route_calculated_dist) + ": "
 							+ OsmAndFormatter.getFormattedDistance(res.getWholeDistance(), app);
-					if (OsmandPlugin.isDevelopment() && res.getRoutingTime() != 0f) {
+					if (res.getRoutingTime() != 0f) {
 						msg += " (" + Algorithms.formatDuration((int) res.getRoutingTime(), app.accessibilityEnabled()) + ")";
 					}
 					app.showToastMessage(msg);
@@ -871,7 +871,7 @@ public class RoutingHelper {
 				if (res.isCalculated()) {
 					route = res;
 				} else {
-					evalWaitInterval = evalWaitInterval * 3 / 2;
+					evalWaitInterval = Math.max(3000, evalWaitInterval * 3 / 2); // for Issue #3899
 					evalWaitInterval = Math.min(evalWaitInterval, 120000);
 				}
 				currentRunningJob = null;

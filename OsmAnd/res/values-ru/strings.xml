@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
+    <string name="favorite_empty_place_name">Место</string>
     <string name="private_access_routing_req">Пункт назначения находится в области с частным доступом. Вы хотите разрешить доступ к частным дорогам для этой поездки?</string>
     <string name="restart_search">Искать снова</string>
     <string name="increase_search_radius">Увеличить радиус поиска</string>
@@ -8,12 +9,12 @@
     <string name="quick_action_showhide_osmbugs_title">Показать/скрыть заметки OSM</string>
     <string name="quick_action_osmbugs_show">Показать заметки OSM</string>
     <string name="quick_action_osmbugs_hide">Скрыть заметки OSM</string>
-    <string name="quick_action_showhide_osmbugs_descr">Нажатие на кнопку действия отобразит/скроет заметки OSM с карты</string>
+    <string name="quick_action_showhide_osmbugs_descr">Нажатие на кнопку действия отобразит/скроет заметки OSM с карты.</string>
     <string name="sorted_by_distance">Отсортировано по расстоянию</string>
     <string name="search_favorites">Поиск в избранном</string>
     <string name="hillshade_menu_download_descr">Для того, чтобы отобразить затенение рельефа, вам нужно загрузить специальную карту для этой области</string>
     <string name="hillshade_purchase_header">Для того, чтобы отобразить затенение рельефа, вам нужно купить и установить плагин</string>
-    <string name="srtm_menu_download_descr">Для того, чтобы отобразить линии контуров рельефа, вам нужно загрузить специальную карту для этой области</string>
+    <string name="srtm_menu_download_descr">Для того, чтобы отобразить линии контуров рельефа, вам нужно загрузить специальную карту для этой области.</string>
     <string name="shared_string_plugin">Плагин</string>
     <string name="srtm_purchase_header">Для того, чтобы отобразить линии контуров рельефа, вам нужно купить и установить плагин</string>
     <string name="srtm_color_scheme">Цветовая схема</string>
@@ -60,7 +61,7 @@
     <string name="index_item_depth_contours_osmand_ext">Контуры глубин</string>
     <string name="index_item_depth_points_southern_hemisphere">Точки глубин (южное полушарие)</string>
     <string name="index_item_depth_points_northern_hemisphere">Точки глубин (северное полушарие)</string>
-    <string name="depth_contour_descr">Контуры и точки глубин (основано на сетке в 30 угловых секунд)</string>
+    <string name="depth_contour_descr">Контуры и точки глубин</string>
     <string name="subscribe_email_desc">Подпишитесь на нашу email рассылку про скидки на OsmAnd и получите 3 дополнительные загрузки карт!</string>
     <string name="subscribe_email_error">Ошибка</string>
     <string name="quick_action_auto_zoom">Автомасштаб карты вкл/выкл</string>
@@ -116,31 +117,31 @@
 
     <string name="quick_action_duplicates">Указанное имя для быстрого действия уже используется. Действие будет сохранено как %1$s чтобы избежать дублирования.</string>
     <string name="quick_action_duplicate">Обнаружен дубликат имени</string>
-    <string name="quick_action_showhide_favorites_descr">Нажатие на кнопку действия приведёт к отображению/скрытию избранных точек с карты</string>
-    <string name="quick_action_showhide_poi_descr">Нажатие на кнопку действия приведёт к отображению/скрытию POI с карты</string>
+    <string name="quick_action_showhide_favorites_descr">Нажатие на кнопку действия приведёт к отображению/скрытию избранных точек с карты.</string>
+    <string name="quick_action_showhide_poi_descr">Нажатие на кнопку действия приведёт к отображению/скрытию POI с карты.</string>
     <string name="quick_action_showhide_favorites_title">Показать/скрыть избранные</string>
     <string name="quick_action_add_category">Добавить категорию</string>
     <string name="quick_action_add_create_items">Действия</string>
     <string name="quick_action_fav_name_descr">Если оставить это поле пустым, то оно будет автоматически заполнено адресом или названием места</string>
-    <string name="quick_action_bug_descr">Это сообщение будет отправлено как комментарий</string>
+    <string name="quick_action_bug_descr">Это сообщение будет отправлено как комментарий.</string>
     <string name="quick_action_category_descr">Выберите категорию для сохранения точки избранного</string>
     <string name="quick_action_gpx_category_descr">Выберите категорию (опционально)</string>
     <string name="quick_action_poi_list">Список категорий</string>
-    <string name="quick_action_sh_poi_descr">Вы можете добавить одну или несколько категорий POI для отображения на карте</string>
-    <string name="quick_action_page_list_descr">Нажатие на кнопку быстрого действия позволит циклически переключать элементы данного списка</string>
+    <string name="quick_action_sh_poi_descr">Вы можете добавить одну или несколько категорий POI для отображения на карте.</string>
+    <string name="quick_action_page_list_descr">Нажатие на кнопку быстрого действия позволит циклически переключать элементы данного списка.</string>
     <string name="quick_action_empty_param_error">Параметры не должны быть пустыми</string>
     <string name="quick_action_map_overlay">Сменить карту покрытия</string>
     <string name="quick_action_map_overlay_title">Карты покрытия</string>
     <string name="quick_action_map_overlay_action">Добавить карту покрытия</string>
-    <string name="quick_action_map_overlay_switch">Карта покрытия изменена на \"%s\"</string>
-    <string name="quick_action_map_underlay_switch">Подложка карты изменена на \"%s\"</string>
+    <string name="quick_action_map_overlay_switch">Карта покрытия изменена на \"%s\".</string>
+    <string name="quick_action_map_underlay_switch">Подложка карты изменена на \"%s\".</string>
     <string name="quick_action_map_underlay">Сменить подложку карты</string>
     <string name="quick_action_map_underlay_title">Подложки карты</string>
     <string name="quick_action_map_underlay_action">Добавить подложку</string>
     <string name="quick_action_map_source">Сменить источник карты</string>
     <string name="quick_action_map_source_title">Источники карты</string>
     <string name="quick_action_map_source_action">Добавить источник карты</string>
-    <string name="quick_action_map_source_switch">Источник карты изменён на \"%s\"</string>
+    <string name="quick_action_map_source_switch">Источник карты изменён на \"%s\".</string>
     <string name="quick_action_btn_tutorial_descr">Долгое нажатие и перетаскивание позволит переместить кнопку</string>
 
     <string name="rendering_attr_depthContours_description">Отображать данные о глубинах</string>
@@ -326,7 +327,7 @@
     <string name="srtm_plugin_name">Линии высот</string>
     <string name="rendering_attr_noAdminboundaries_name">Границы</string>
     <string name="rendering_attr_noAdminboundaries_description">Скрыть региональные границы (admin levels 5-9)</string>
-    <string name="no_buildings_found">Здания не найдены</string>
+    <string name="no_buildings_found">Здания не найдены.</string>
     <string name="incremental_search_city">Выберите город</string>
     <string name="search_villages_and_postcodes">Поиск по деревням и почт. индексу</string>
     <string name="rendering_attr_showRoadMaps_description">Выберите как отображать только дорожные карты:</string>
@@ -1181,7 +1182,7 @@
     <string name="precise_routing_mode">Точный маршрут (alpha)</string>
     <string name="support_new_features_descr">Пожертвуйте, чтобы увидеть новые опции реализованными в приложении</string>
     <string name="precise_routing_mode_descr">Включите, для расчёта точных маршрутов без затруднений. Всё ещё ограниченн расстоянием и медленный.</string>
-    <string name="download_hillshade_maps">Затемнение рельефа</string>
+    <string name="download_hillshade_maps">Затенение рельефа</string>
     <string name="av_use_external_camera_descr">Использовать системную программу для фото</string>
     <string name="av_use_external_camera">Использовать приложение Камера</string>
     <string name="index_name_openmaps">OpenMaps - Европа</string>
@@ -1278,11 +1279,11 @@
     <string name="osb_author_or_password_not_specified">Пожалуйста, укажите в настройках пароль и имя пользователя OSM</string>
     <string name="route_descr_map_location">Карта: </string>
     <string name="osb_author_dialog_password">Пароль OSM (опционально)</string>
-    <string name="driving_region_descr">Выберите регион вождения: США, Европа, Англия, Азия и другие</string>
+    <string name="driving_region_descr">Выберите регион вождения: США, Европа, Великобритания, Азия и другие</string>
     <string name="driving_region">Регион вождения</string>
     <string name="driving_region_japan">Япония</string>
     <string name="driving_region_us">США</string>
-    <string name="driving_region_europe_asia">Европа и Азия</string>
+    <string name="driving_region_europe_asia">Европа, Азия, Латинская Америка и т.п.</string>
     <string name="driving_region_uk">Великобритания, Индия и др.</string>
     <string name="context_menu_item_directions_to">Проложить маршрут</string>
     <string name="context_menu_item_directions_from">Пункт отправления</string>
@@ -2390,4 +2391,14 @@
     <string name="file_can_not_be_moved">Файл не может быть перемещен.</string>
     <string name="sea_depth_thanks">Спасибо за покупку контуров глубин!</string>
     <string name="shared_string_add_photos">Добавить фотографии</string>
+    <string name="shared_string_permissions">Разрешения</string>
+    <string name="online_photos">Онлайн фото</string>
+    <string name="no_photos_descr">У нас нет фотографий для этого места</string>
+    <string name="mapillary_action_descr">Поделиться своим собственным уличным видом этого места через Mapillary.</string>
+    <string name="mapillary_widget">Виджет Mapillary</string>
+    <string name="mapillary_widget_descr">Позволяет быстро внести свой вклад в Mapillary</string>
+    <string name="mapillary_descr">Уличные онлайн фотографии для всех. Исследуйте места, сотрудничайте, снимайте мир.</string>
+    <string name="mapillary">Mapillary</string>
+    <string name="plugin_mapillary_descr">Уличные фотографии для всех. Исследуйте места, сотрудничайте, снимайте мир.</string>
+    <string name="save_poi_too_many_uppercase">Название содержит слишком много заглавных букв. Вы действительно хотите продолжить?</string>
     </resources>

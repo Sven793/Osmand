@@ -229,7 +229,7 @@
 	<string name="poi_bay">Öböl</string>
 	<string name="poi_fjord">Fjord</string>
 	<string name="poi_reef">Zátony</string>
-	<string name="poi_wetland">Láp</string>
+	<string name="poi_wetland">Vizenyős terület</string>
 	<string name="poi_nature_reserve">Természetvédelmi terület</string>
 	<string name="poi_island">Sziget</string>
 	<string name="poi_shop">Üzlet</string>
@@ -394,7 +394,7 @@
 	<string name="poi_tower">Torony</string>
 	<string name="poi_mast">Pózna</string>
 	<string name="poi_radar">Radar</string>
-	<string name="poi_works">Üzem</string>
+	<string name="poi_works">Gyár</string>
 	<string name="poi_mineshaft">Bányaakna (függőleges)</string>
 	<string name="poi_adit">Bányatárna (vízszintes)</string>
 	<string name="poi_petroleum_well">Olajkút</string>
@@ -1367,7 +1367,7 @@
 	<string name="poi_historic_quarry">Történelmi kőfejtő</string>
 
 	<string name="poi_wetland_wet_meadow">Láprét</string>
-	<string name="poi_wetland_swamp">Ingovány</string>
+	<string name="poi_wetland_swamp">Erdős mocsár</string>
 	<string name="poi_wetland_bog">Láp</string>
 	<string name="poi_wetland_marsh">Mocsár</string>
 	<string name="poi_wetland_reedbed">Nádas</string>
@@ -3378,4 +3378,32 @@
 
 <string name="poi_life_ring">Mentőöv</string>
 
-</resources>
+<string name="poi_zoo_type">Típus</string>
+	<string name="poi_motorcycle_services">Szolgáltatások</string>
+	<string name="poi_motorcycle_type">Motorkerékpár típus</string>
+
+<string name="poi_zoo_petting_zoo">Állatsimogató</string>
+	<string name="poi_zoo_wildlife_park">Vadaspark</string>
+	<string name="poi_zoo_safari_park">Szafari park</string>
+	<string name="poi_zoo_birds">Madarak</string>
+	<string name="poi_zoo_aviary">Madárház</string>
+	<string name="poi_zoo_reptile">Hüllők</string>
+
+	<string name="poi_motorcycle_sales_yes">Értékesítés</string>
+	<string name="poi_motorcycle_sales_no">Értékesítés: nincs</string>
+	<string name="poi_motorcycle_sales_yes_used">Értékesítés: van; használt</string>
+	<string name="poi_motorcycle_sales_used">Értékesítés: használt</string>
+	<string name="poi_motorcycle_rental_yes">Kölcsönzés</string>
+	<string name="poi_motorcycle_rental_no">Kölcsönzés: nincs</string>
+	<string name="poi_motorcycle_repair_yes">Szerviz</string>
+	<string name="poi_motorcycle_repair_no">Szerviz: nincs</string>
+	<string name="poi_motorcycle_parts_yes">Alkatrész</string>
+	<string name="poi_motorcycle_parts_no">Alkatrész: nincs</string>
+	<string name="poi_motorcycle_tyres_yes">Gumi</string>
+	<string name="poi_motorcycle_tyres_no">Gumi: nincs</string>
+	<string name="poi_motorcycle_clothes_yes">Motoros ruha</string>
+	<string name="poi_motorcycle_clothes_no">Motoros ruha: nincs</string>
+	<string name="poi_motorcycle_type_scooter">Robogó</string>
+	<string name="poi_zoo_enclosure">Kifutó</string>
+	<string name="poi_zoo_falconry">Solymászat</string>
+	</resources>

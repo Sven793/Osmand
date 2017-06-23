@@ -2,6 +2,7 @@ package net.osmand.plus.development;
 
 
 import android.annotation.SuppressLint;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Debug;
@@ -13,6 +14,7 @@ import android.preference.PreferenceCategory;
 import android.preference.PreferenceScreen;
 import android.support.v7.app.AlertDialog;
 import android.view.View;
+import android.widget.Toast;
 
 import net.osmand.plus.ApplicationMode;
 import net.osmand.plus.OsmAndLocationSimulation;
@@ -67,6 +69,19 @@ public class SettingsDevelopmentActivity extends SettingsBaseActivity {
 				R.string.animate_my_location,
 				R.string.animate_my_location_desc));
 
+        CheckBoxPreference newMapViewPref = createCheckBoxPreference(settings.NEW_MAP_VIEW,
+                R.string.new_map_view,
+                R.string.new_map_view_desc);
+		newMapViewPref.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
+			@Override
+			public boolean onPreferenceChange(Preference preference, Object o) {
+				SettingsDevelopmentActivity.super.onPreferenceChange(preference, o);
+				restartApp();
+				return true;
+			}
+		});
+        cat.addPreference(newMapViewPref);
+
 		final Preference firstRunPreference = new Preference(this);
 		firstRunPreference.setTitle(R.string.simulate_initial_startup);
 		firstRunPreference.setSummary(R.string.simulate_initial_startup_descr);
@@ -77,6 +92,7 @@ public class SettingsDevelopmentActivity extends SettingsBaseActivity {
 				getMyApplication().getAppInitializer().resetFirstTimeRun();
 				getMyApplication().getSettings().FIRST_MAP_IS_DOWNLOADED.set(false);
 				getMyApplication().getSettings().MAPILLARY_FIRST_DIALOG_SHOWN.set(false);
+				getMyApplication().getSettings().WEBGL_SUPPORTED.set(true);
 				getMyApplication().showToastMessage(R.string.shared_string_ok);
 				return true;
 			}
@@ -248,6 +264,17 @@ public class SettingsDevelopmentActivity extends SettingsBaseActivity {
 		b.show();
 	}
 
+	private void restartApp() {
+		AlertDialog.Builder bld = new AlertDialog.Builder(this);
+		bld.setMessage(R.string.restart_is_required);
+		bld.setPositiveButton(R.string.shared_string_ok, new DialogInterface.OnClickListener() {
 
+			@Override
+			public void onClick(DialogInterface dialog, int which) {
+				android.os.Process.killProcess(android.os.Process.myPid());
+			}
+		});
+		bld.show();
+	}
 
 }

@@ -703,6 +703,8 @@ public class OsmandSettings {
 		return p;
 	}
 
+	public final CommonPreference<RulerMode> RULER_MODE = new EnumIntPreference<>("ruler_mode", RulerMode.FIRST, RulerMode.values()).makeGlobal();
+
 	public final CommonPreference<Boolean> USE_FAST_RECALCULATION = new BooleanPreference("use_fast_recalculation", true).makeGlobal().cache();
 	public final CommonPreference<Boolean> FORCE_PRIVATE_ACCESS_ROUTING_ASKED = new BooleanPreference("force_private_access_routing", false).makeProfile().cache();
 
@@ -896,6 +898,7 @@ public class OsmandSettings {
 	public final OsmandPreference<Boolean> SHOW_MAPILLARY = new BooleanPreference("show_mapillary", false).makeGlobal();
 	public final OsmandPreference<Boolean> MAPILLARY_FIRST_DIALOG_SHOWN = new BooleanPreference("mapillary_first_dialog_shown", false).makeGlobal();
 	public final OsmandPreference<Boolean> MAPILLARY_MENU_COLLAPSED = new BooleanPreference("mapillary_menu_collapsed", false).makeGlobal();
+	public final OsmandPreference<Boolean> WEBGL_SUPPORTED = new BooleanPreference("webgl_supported", true).makeGlobal();
 
 	// this value string is synchronized with settings_pref.xml preference name
 	public final OsmandPreference<String> PREFERRED_LOCALE = new StringPreference("preferred_locale", "").makeGlobal();
@@ -998,6 +1001,7 @@ public class OsmandSettings {
 
 	public final CommonPreference<Boolean> INTERRUPT_MUSIC = new BooleanPreference("interrupt_music", false).makeProfile();
 
+	public final CommonPreference<Boolean> ENABLE_PROXY = new BooleanPreference("enable_proxy", false).makeGlobal();
 	public final CommonPreference<String> PROXY_HOST = new StringPreference("proxy_host", "127.0.0.1").makeGlobal();
 	public final CommonPreference<Integer> PROXY_PORT = new IntPreference("proxy_port", 8118).makeGlobal();
 
@@ -1297,6 +1301,8 @@ public class OsmandSettings {
 
 	public final OsmandPreference<Boolean> ANIMATE_MY_LOCATION = new BooleanPreference("animate_my_location", true).makeGlobal().cache();
 
+	public final OsmandPreference<Boolean> NEW_MAP_VIEW = new BooleanPreference("new_map_view", false).makeGlobal().cache();
+
 	public final OsmandPreference<Boolean> ROUTE_MAP_MARKERS_START_MY_LOC = new BooleanPreference("route_map_markers_start_my_loc", false).makeGlobal().cache();
 
 	public ITileSource getMapTileSource(boolean warnWhenSelected) {
@@ -1406,7 +1412,11 @@ public class OsmandSettings {
 			}
 		}
 		for (TileSourceTemplate l : TileSourceManager.getKnownSourceTemplates()) {
-			map.put(l.getName(), l.getName());
+			if (!l.isHidden()) {
+				map.put(l.getName(), l.getName());
+			} else {
+				map.remove(l.getName());
+			}
 		}
 		return map;
 
@@ -3021,4 +3031,9 @@ public class OsmandSettings {
 		}
 	}
 
+	public enum RulerMode {
+		FIRST,
+		SECOND,
+		EMPTY
+	}
 }

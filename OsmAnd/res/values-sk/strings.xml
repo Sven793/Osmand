@@ -77,13 +77,10 @@
     <string name="shared_string_online_maps">Online mapy</string>
     <string name="online_map_settings_descr">Konfigurácia online mapových zdrojov</string>
     <string name="osmand_rastermaps_plugin_description">"S týmto modulom môžete použiť rozličné online (tiež nazývané dlaždicové alebo rastrové) mapy, od preddefinovaných dlaždíc OpenStreetMap (ako Mapnik) po satelitné snímky a špeciálne vrstvy ako mapy počasia, klimatické, geologické, tieňované svahy a pod.
-
-
-Všetky tieto mapy môžu byť použité ako hlavná (základná) mapa na obrazovke OsmAnd alebo ako prekrývacia / podkladová mapa k inej základnej mape (napr. štandardné offline mapy z OsmAnd). Pre lepšie zviditeľnenie podkladových máp je možné vypnúť niektoré objekty z vektorových máp OsmAnd, cez menu \"Nastaviť mapu\".
-
-
-Dlaždicové mapy môžete získať priamo zo zdrojov na Internete, alebo ich môžete pripraviť na použitie offline (skopírovať ručne do dátového priečinka OsmAnd) ako SQLite databázu, ktorú vedia vytvoriť viaceré programy na prípravu máp.
- "</string>
+\n
+\nVšetky tieto mapy môžu byť použité ako hlavná (základná) mapa na obrazovke OsmAnd alebo ako prekrývacia / podkladová mapa k inej základnej mape (napr. štandardné offline mapy z OsmAnd). Pre lepšie zviditeľnenie podkladových máp je možné vypnúť niektoré objekty z vektorových máp OsmAnd, cez menu \"Nastaviť mapu\".
+\n
+\nDlaždicové mapy môžete získať priamo zo zdrojov na Internete, alebo ich môžete pripraviť na použitie offline (skopírovať ručne do dátového priečinka OsmAnd) ako SQLite databázu, ktorú vedia vytvoriť viaceré programy na prípravu máp. "</string>
     <string name="osmand_background_plugin_description">Zobrazí nastavenia na povolenie stopovania a navigácie v pozadí systému (vypnutá obrazovka) pravidelným prebúdzaním GPS zariadenia.</string>
     <string name="osmand_accessibility_description">Tento modul zobrazí funkcie uľahčenia prístupu priamo v OsmAnd. Napr. je možné zmeniť rýchlosť TTS hlasu, použiť trackball na približovanie, alebo automaticky oznamovať polohu hlasom.</string>
     <string name="osmand_development_plugin_description">Tento modul zobrazí nastavenia pre funkcie vývoja a ladenia, ako simulácia trasy, zobrazenie výkonu vykresľovania alebo hlasové oznamy. Tieto nastavenia sú určené pre vývojárov a nie sú potrebné pre bežné použitie programu.</string>
@@ -411,7 +408,7 @@ Dlaždicové mapy môžete získať priamo zo zdrojov na Internete, alebo ich m�
     <string name="osmand_service">Režim na pozadí</string>
     <string name="osmand_service_descr">OsmAnd bude bežať v systéme aj počas vypnutej obrazovky</string>
     <string name="fast_route_mode">Najrýchlejšia trasa</string>
-    <string name="fast_route_mode_descr">"Zapnite na výpočet najrýchlejšej trasy alebo vypnite ekonomickú trasu "</string>
+    <string name="fast_route_mode_descr">Zapnite na výpočet najrýchlejšej trasy alebo vypnite pre ekonomickú trasu</string>
     <string name="tiles_to_download_estimated_size">Pri priblížení {0} sa stiahne {1} dlaždíc ({2} Mb )</string>
     <string name="shared_string_download_map">Stiahnuť mapu</string>
     <string name="select_max_zoom_preload_area">Vybrať max. priblíženie viditeľnej oblasti na načítanie</string>
@@ -916,20 +913,16 @@ Niektoré z hlavných funkcií:
     <string name="map_widget_av_notes">Mediálne poznámky</string>
     <string name="osmand_srtm_short_description_80_chars">OsmAnd modul pre offline vrstevnice</string>
     <string name="osmand_srtm_long_description_1000_chars">"Tento modul poskytuje vrstevnice a tieňované reliéfy, ktoré môžu byť zobrazené ponad štandardné mapy. Táto funkcia je vhodná pre atlétov, turistov, chodcov a všetkých, ktorých zaujíma reliéf terénu.
-
-
-Globálne údaje (medzi 70 stupňami severne a 70 stupňami južne) sú založené na meraní SRTM (Shuttle Radar Topography Mission) a ASTER (Advanced Spaceborne Thermal Emission and Reflection Radiometer), zobrazovacieho nástroja na palube Terra, vlajkového satelitu NASA Earth Observing System. ASTER je kooperatívne úsilie medzi NASA, Japonským ministerstvom hospodárstva, obchodu a priemyslu (METI) a Japonských vesmírnych systémov (J-spacesystems).
- "</string>
+\n
+\nGlobálne údaje (medzi 70 stupňami severne a 70 stupňami južne) sú založené na meraní SRTM (Shuttle Radar Topography Mission) a ASTER (Advanced Spaceborne Thermal Emission and Reflection Radiometer), zobrazovacieho nástroja na palube Terra, vlajkového satelitu NASA Earth Observing System. ASTER je kooperatívne úsilie medzi NASA, Japonským ministerstvom hospodárstva, obchodu a priemyslu (METI) a Japonských vesmírnych systémov (J-spacesystems). "</string>
     <string name="map_widget_distancemeasurement">Meranie vzdialenosti</string>
     <string name="audionotes_location_not_defined">Umiestnenie na spojenie s poznámkou ešte nie je definované. Ak chcete priradiť poznámku k vybranému umiestneniu, použite \"Použiť umiestnenie…\".</string>
     <string name="map_widget_audionotes">Zvukové poznámky</string>
     <string name="audionotes_plugin_description">Modul Audio/video poznámok poskytuje funkcie na vytváranie obrazových/zvukových/video poznámok počas výletu, buď tlačidlom na obrazovke mapy alebo priamo v kontextovom menu bodu na mape.</string>
     <string name="audionotes_plugin_name">Audio/video poznámky</string>
     <string name="srtm_plugin_description">"Tento modul poskytuje vrstevnice a tieňované reliéfy, ktoré môžu byť zobrazené ponad štandardné mapy. Táto funkcia je vhodná pre atlétov, turistov, chodcov a všetkých, ktorých zaujíma reliéf terénu. (Samotné vrstevnice sú samostatnými dátami, ktoré je potrebné stiahnuť po aktivovaní modulu.)
-
-
-Globálne údaje (medzi 70 stupňami severne a 70 stupňami južne) sú založené na meraní SRTM (Shuttle Radar Topography Mission) a ASTER (Advanced Spaceborne Thermal Emission and Reflection Radiometer), zobrazovacieho nástroja na palube Terra, vlajkového satelitu NASA Earth Observing System. ASTER je kooperatívne úsilie medzi NASA, Japonským ministerstvom hospodárstva, obchodu a priemyslu (METI) a Japonských vesmírnych systémov (J-spacesystems).
- "</string>
+\n
+\nGlobálne údaje (medzi 70 stupňami severne a 70 stupňami južne) sú založené na meraní SRTM (Shuttle Radar Topography Mission) a ASTER (Advanced Spaceborne Thermal Emission and Reflection Radiometer), zobrazovacieho nástroja na palube Terra, vlajkového satelitu NASA Earth Observing System. ASTER je kooperatívne úsilie medzi NASA, Japonským ministerstvom hospodárstva, obchodu a priemyslu (METI) a Japonských vesmírnych systémov (J-spacesystems). "</string>
     <string name="srtm_plugin_name">Vrstevnice</string>
     <string name="download_select_map_types">Ďalšie mapy</string>
     <string name="download_srtm_maps">Údaje vrstevníc</string>
@@ -1323,13 +1316,10 @@ Afganistan, Albánsko, Alžírsko, Andora, Angola, Anguilla, Antigua a Barbuda, 
     <string name="osmo_settings_uuid">Jedinečné ID zariadenia</string>
     <string name="osmo_settings_descr">Zmeniť nastavenia monitorovania a nastaviť osobný monitorovací kanál</string>
     <string name="osmo_plugin_description">"Tento modul poskytuje časť funkcií pokročilého sledovania naživo cez OpenStreetMap sledovanie, pozrite na http://osmo.mobi
-
-
-Môžete sledovať všetky zariadenia účastníkov v skupine. Môžete tiež vidieť body a stopy odoslané do skupiny, v ktorej ste členom.
-
-
-Skupiny nie sú vymazané ani po dlhej dobe. Skupiny sa vytvárajú na stránke OsMo.mobi
- "</string>
+\n
+\nMôžete sledovať všetky zariadenia účastníkov v skupine. Môžete tiež vidieť body a stopy odoslané do skupiny, v ktorej ste členom.
+\n
+\nSkupiny nie sú vymazané ani po dlhej dobe. Skupiny sa vytvárajú na stránke OsMo.mobi "</string>
     <string name="osmo_plugin_name">OpenStreetMap sledovanie</string>
     <string name="osmo_settings">OsMo</string>
     <string name="keep_informing_never">Len ručne (použiť šípku)</string>
@@ -1533,10 +1523,8 @@ Chcete pokračovať v novej registrácii?</string>
     <string name="shared_string_all">Všetky</string>
     <string name="index_tours">Výlety</string>
     <string name="record_plugin_description">"Tento modul zapne funkciu nahratia a uloženia vašich stôp stlačením tlačidla záznamu GPX na mape. Taktiež umožňuje nastaviť automatické zaznamenávanie navigačných trás do GPX súboru.
-
-
-Zaznamenané stopy môžete zdieľať s priateľmi alebo odoslať ako príspevok do OSM. Atléti môžu použiť záznamy na sledovanie svojich tréningov. Základná analýza môže byť vykonaná už priamo v OsmAnd, napr. trvanie stopy, priemerná rýchlosť. Stopy môžu následne skúmať ďalšie špecializované programy.
- "</string>
+\n
+\nZaznamenané stopy môžete zdieľať s priateľmi alebo odoslať ako príspevok do OSM. Atléti môžu použiť záznamy na sledovanie svojich tréningov. Základná analýza môže byť vykonaná už priamo v OsmAnd, napr. trvanie stopy, priemerná rýchlosť. Stopy môžu následne skúmať ďalšie špecializované programy. "</string>
     <string name="record_plugin_name">Zaznamenávanie výletov</string>
     <string name="int_hour">hod</string>
     <string name="duration">Trvanie</string>
@@ -1665,18 +1653,13 @@ Zaznamenané stopy môžete zdieľať s priateľmi alebo odoslať ako príspevok
     <string name="online_map">Online mapa</string>
     <string name="roads_only">Iba cesty</string>
     <string name="plugin_nautical_descr">"Tento modul obohatí OsmAnd o možnosť zobrazenia námorných máp pre lode, plachetnice a iné vodné športy.
-
-
-Poskytuje navigačné značky a mapové symboly pre vnútrozemskú aj pobrežnú navigáciu. Popis každej navigačnej značky poskytne podrobnosti potrebné na jej identifikáciu a význam (kategóriu, tvar, farbu, poradie, číslo, atď.).
-
-
-Tento pohľad môže byť vypnutý deaktivovaním modulu tu alebo zmenou hodnoty v \"Štýl vykresľovania\" v \"Nastaviť mapu\".
- "</string>
+\n
+\nPoskytuje navigačné značky a mapové symboly pre vnútrozemskú aj pobrežnú navigáciu. Popis každej navigačnej značky poskytne podrobnosti potrebné na jej identifikáciu a význam (kategóriu, tvar, farbu, poradie, číslo, atď.).
+\n
+\nTento pohľad môže byť vypnutý deaktivovaním modulu tu alebo zmenou hodnoty v \"Štýl vykresľovania\" v \"Nastaviť mapu\". "</string>
     <string name="plugin_ski_descr">"Tento modul vám sprístupní celosvetové zjazdovky, bežecké trate, alpinistické trasy, lanovky a lyžiarske vleky. Trasy a zjazdovky sú farebne rozlíšené podľa obtiažnosti a zobrazené v špeciálnom \"zimnom\" štýle, ktorý pripomína zasneženú krajinu. 
-
-
-Aktivovanie tohto pohľadu zmení štýl mapy na \"Zima a lyžovanie\", ktorý zobrazuje krajinné útvary v zimných podmienkach. Tento pohľad môže byť vypnutý jeho deaktivovaním tu alebo zmenou hodnoty v \"Štýl vykresľovania\" v \"Nastaviť mapu\".
- "</string>
+\n
+\nAktivovanie tohto pohľadu zmení štýl mapy na \"Zima a lyžovanie\", ktorý zobrazuje krajinné útvary v zimných podmienkach. Tento pohľad môže byť vypnutý jeho deaktivovaním tu alebo zmenou hodnoty v \"Štýl vykresľovania\" v \"Nastaviť mapu\". "</string>
     <string name="plugin_touringview_descr">"Aktivovaním tohto pohľadu sa zmení štýl mapy na \"Touring view\", ktorý obsahuje viac detailov pre cestovateľov a profesionálnych vodičov.
 \n\nTento pohľad poskytuje vo všetkých priblíženiach mapy maximum cestovných detailov (napr. cesty, chodníky a orientačné značky).
 \n\nTaktiež zobrazuje typy ciest v jednoznačne odlišných farbách, čo je užitočné napríklad pre veľké vozidlá.
@@ -2050,33 +2033,23 @@ Dĺžka %2$s</string>
     <string name="context_menu_item_delete_waypoint">Odstrániť bod GPX?</string>
     <string name="context_menu_item_edit_waypoint">Upraviť bod GPX</string>
     <string name="copied_to_clipboard">Skopírované do schránky</string>
-    <string name="release_2_2">"
- • Nové kontextovo závislé rozhranie pre označenie umiestnení na mape a iných obrazovkách
-
-
- • Obrazovka mapy je priamo spustená ak nie je zvolené \'Zobraziť úvodný panel pri štarte\'
-
-
- • Je možné nastaviť ktoré karty sú zobrazené na úvodnom paneli
-
-
- • Úvodný panel je možné obísť, ak preferujete ovládanie aplikácie cez menu
-
-
- • Pre stiahnutie máp je možne priamo označiť oblasť na mape sveta
-
-
- • Hľadanie bodov záujmu (POI) umožňuje presnejšie špecifikácie
-
-
- • Vylepšené možnosti úpravy POI a OSM poznámok
-
-
- • Prepracované rozhranie sťahovania máp
-
-
- a ďalšie vylepšenia…
- "</string>
+    <string name="release_2_2">" • Nové kontextovo závislé rozhranie pre označenie umiestnení na mape a iných obrazovkách
+\n
+\n • Obrazovka mapy je priamo spustená ak nie je zvolené \'Zobraziť úvodný panel pri štarte\'
+\n
+\n • Je možné nastaviť ktoré karty sú zobrazené na úvodnom paneli
+\n
+\n • Úvodný panel je možné obísť, ak preferujete ovládanie aplikácie cez menu
+\n
+\n • Pre stiahnutie máp je možne priamo označiť oblasť na mape sveta
+\n
+\n • Hľadanie bodov záujmu (POI) umožňuje presnejšie špecifikácie
+\n
+\n • Vylepšené možnosti úpravy POI a OSM poznámok
+\n
+\n • Prepracované rozhranie sťahovania máp
+\n
+\n a ďalšie vylepšenia… "</string>
     <string name="osm_save_offline">Uložiť offline</string>
     <string name="osm_edit_modified_poi">Upravený OSM POI</string>
     <string name="osm_edit_deleted_poi">Odstránený OSM POI</string>
@@ -2382,27 +2355,19 @@ Ak potrebuje pomoc s aplikáciou OsmAnd, kontaktuje podporu: support@osmand.net.
     <string name="share_history_subject">" zdieľaná cez OsmAnd"</string>
     <string name="confirmation_to_delete_history_items">Chcete vymazať vybrané položky histórie?</string>
     <string name="show_something_on_map">Zobraziť %1$s na mape</string>
-    <string name="release_2_4">"
- • Nové mocné vyhľadávanie ľubovoľného textu
-
-
- • Prepojenie s audiosystémom v aute cez Bluetooth
-
-
- • Vylepšená hlasová navigácia a indikácia jazdných pruhov
-
-
- • Vylepšená vrstva hromadnej dopravy s vykresľovaním trás
-
-
- • Pridané ďalšie jazykové a regionálne verzie
-
-
- • Mnohé ďalšie vylepšenia a opravy chýb
-
-
- a ďalšie…
- "</string>
+    <string name="release_2_4">" • Nové mocné vyhľadávanie ľubovoľného textu
+\n
+\n • Prepojenie s audiosystémom v aute cez Bluetooth
+\n
+\n • Vylepšená hlasová navigácia a indikácia jazdných pruhov
+\n
+\n • Vylepšená vrstva hromadnej dopravy s vykresľovaním trás
+\n
+\n • Pridané ďalšie jazykové a regionálne verzie
+\n
+\n • Mnohé ďalšie vylepšenia a opravy chýb
+\n
+\n a ďalšie… "</string>
     <string name="dist_away_from_my_location">Hľadať do vzdialenosti %1$s</string>
     <string name="show_on_map">Zobraziť na mape</string>
     <string name="back_to_search">Späť na vyhľadávanie</string>
@@ -2484,24 +2449,19 @@ Ak potrebuje pomoc s aplikáciou OsmAnd, kontaktuje podporu: support@osmand.net.
     <string name="trip_rec_notification_settings">Záznam výletu (žiadne dáta)</string>
     <string name="trip_rec_notification_settings_desc">Zobraziť oznámenie, ktoré umožňuje spustiť nahrávanie stlačením tlačidla Nahrať</string>
     <string name="shared_string_notifications">Oznámenia</string>
-    <string name="release_2_5">"
- • Aktivovateľné ikony na mape
-
-
- • Podrobné vyhľadávanie bodov záujmu: hľadajte reštaurácie podľa druhu kuchyne, kempingy so špeciálnymi službami
-
-
- • Nový štýl Topo pre cyklistov a chodcov
-
-
- • Vylepšené nahrávanie výletu
-
-
- • Vylepšené oznámenia navigácie (Android Wear)
-
-
- • Mnohé ďalšie vylepšenia a opravy chýb
- "</string>
+    <string name="release_2_5">" • Aktivovateľné ikony na mape
+\n
+\n • Podrobné vyhľadávanie bodov záujmu: hľadajte reštaurácie podľa druhu kuchyne, kempingy so špeciálnymi službami
+\n
+\n • Nový štýl Topo pre cyklistov a chodcov
+\n
+\n • Vylepšené nahrávanie výletu
+\n
+\n • Vylepšené oznámenia navigácie (Android Wear)
+\n
+\n • Mnohé ďalšie vylepšenia a opravy chýb
+\n
+\n a ďalšie… "</string>
     <string name="osmo_share_location">Zdieľať</string>
     <string name="osmo_pause_location">Pozastaviť</string>
     <string name="osmo_service_running">Služba OsMo beží</string>
@@ -2617,39 +2577,27 @@ Zodpovedá oblasti: %1$s x %2$s</string>
 	<string name="shared_string_action_name">Názov akcie</string>
 <string name="auto_split_recording_title">Automaticky prerušiť nahrávku po medzere</string>
 	<string name="auto_split_recording_descr">Začať nový úsek po prestávke 6 minút, novú stopu po prestávke 2 hodín alebo nový súbor po dlhšej prestávke ak sa zmenil dátum.</string>
-    <string name="release_2_6">"
- • Nová funkcia: Tlačidlo rýchlej akcie
-
-
- • Vylepšené reakcie na dotykové gestá (napr. súbežné posúvanie a približovanie)
-
-
- • Nové písma pre mapu, ktoré pokryjú viaceré národné prostredia
-
-
- • Podpora TTS pre regionálne nárečia
-
-
- • Zlepšenie viditeľnosti vo viacerých mapových štýloch a Wikipedii
-
-
- • Podpora pre Otvorený kód pre polohu (Open Location Code - OLC)
-
-
- • Zobrazenie prevýšenia, sklonu a rýchlosti pre zaznamenané GPX stopy a vypočítané trasy
-
-
- • Nastavenie \"Štýlu jazdy\" a vylepšenia logiky cyklistickej navigácie
-
-
- • Nastavenia pre použitie výškových údajov pri navigácii bicykla
-
-
- • Ďalšie vylepšenia a opravy chýb
-
-
- a dalšie…
- "</string>
+    <string name="release_2_6">" • Nová funkcia: Tlačidlo rýchlej akcie
+\n
+\n • Vylepšené reakcie na dotykové gestá (napr. súbežné posúvanie a približovanie)
+\n
+\n • Nové písma pre mapu, ktoré pokryjú viaceré národné prostredia
+\n
+\n • Podpora TTS pre regionálne nárečia
+\n
+\n • Zlepšenie viditeľnosti vo viacerých mapových štýloch a Wikipedii
+\n
+\n • Podpora pre Otvorený kód pre polohu (Open Location Code - OLC)
+\n
+\n • Zobrazenie prevýšenia, sklonu a rýchlosti pre zaznamenané GPX stopy a vypočítané trasy
+\n
+\n • Nastavenie \"Štýlu jazdy\" a vylepšenia logiky cyklistickej navigácie
+\n
+\n • Nastavenia pre použitie výškových údajov pri navigácii bicykla
+\n
+\n • Ďalšie vylepšenia a opravy chýb
+\n
+\n a ďalšie… "</string>
 	<string name="rendering_attr_depthContours_description">Zobraziť hĺbkové úrovne a body</string>
     <string name="rendering_attr_depthContours_name">Námorné hĺbkové vrstevnice</string>
 	<string name="routing_attr_height_relief_smoothness_factor_name">Úroveň vyhladenia reliéfu</string>
@@ -2851,7 +2799,7 @@ Zodpovedá oblasti: %1$s x %2$s</string>
  Od Afganistanu po Zimbabwe, od Austrálie po USA. Argentína, Brazília, Kanada, Francúzsko, Nemecko, Mexiko, Spojené kráľovstvo, Španielsko, Slovensko, …
  "</string>
     <string name="restore_purchases">Obnoviť nákupy</string>
-    <string name="depth_contour_descr">Sada máp obsahuje hĺbkové vrstevnice (izobaty) a body v moriach (založené na mriežke po 30 uhlových sekundách).</string>
+    <string name="depth_contour_descr">Sada máp obsahuje hĺbkové vrstevnice (izobaty) a body v moriach.</string>
     <string name="sea_depth_thanks">Ďakujeme za zakúpenie námorných hĺbkových vrstevníc!</string>
     <string name="index_item_depth_contours_osmand_ext">Námorné hĺbkové vrstevnice</string>
     <string name="index_item_depth_points_southern_hemisphere">Námorné hĺbkové body južnej pologule</string>
@@ -2885,7 +2833,7 @@ Zodpovedá oblasti: %1$s x %2$s</string>
     <string name="shared_string_in_name">v %1$s</string>
     <string name="shared_string_overview">Prehľad</string>
     <string name="animate_my_location">Animovať moju polohu</string>
-    <string name="animate_my_location_desc">Povoliť extrapoláciu mojej polohu počas dočasného výpadku polohového signálu</string>
+    <string name="animate_my_location_desc">Povoliť animáciu mojej polohy počas navigácie</string>
     <string name="favorite_group_name">Názov skupiny</string>
     <string name="change_color">Zmeniť farbu</string>
     <string name="edit_name">Upraviť názov</string>
@@ -2912,6 +2860,26 @@ Zodpovedá oblasti: %1$s x %2$s</string>
     <string name="restart_search">Znovu začať hľadanie</string>
     <string name="increase_search_radius">Zväčšiť okruh hľadania</string>
     <string name="nothing_found">Nič sa nenašlo :(</string>
-    <string name="nothing_found_descr">Skúste zmeniť vyhľadávacie kritérium alebo oblasť hľadania</string>
+    <string name="nothing_found_descr">Zmeňte vyhľadávacie kritérium alebo polomer hľadania</string>
     <string name="mapillary">Mapillary</string>
+    <string name="open_mapillary">Otvoriť Mapillary</string>
+    <string name="shared_string_install">Inštalovať</string>
+    <string name="improve_coverage_mapillary">Zlepšiť pokrytie fotografií s Mapillary</string>
+    <string name="improve_coverage_install_mapillary_desc">Môžete zosnímať vlastné fotografie alebo sady fotografií a pridať ich na toto miesto na mape. 
+\n 
+\nK tomu je potrebné nainštalovať aplikáciu Mapillary z Google Play.</string>
+    <string name="online_photos">Online fotografie</string>
+    <string name="shared_string_add_photos">Pridať fotografie</string>
+    <string name="no_photos_descr">Nemáme fotografie pre toto miesto</string>
+    <string name="mapillary_action_descr">Prispejte vlastnými pohľadmi na toto miesto z úrovne ulice cez Mapillary.</string>
+    <string name="mapillary_widget_descr">Umožňuje rýchle prispievanie do Mapillary</string>
+    <string name="mapillary_descr">Online fotografie z ulíc pre každého. Objavte miesta, spolupracuje, zachyťte svet.</string>
+    <string name="plugin_mapillary_descr">Fotografie z ulíc pre každého. Objavte miesta, spolupracuje, zachyťte svet.</string>
+    <string name="mapillary_widget">Nástroj Mapillary</string>
+    <string name="mapillary_image">Obrázok Mapillary</string>
+    <string name="distance_moving">Vzdialenosť opravená</string>
+    <string name="shared_string_permissions">Povolenia</string>
+    <string name="import_gpx_failed_descr">OsmAnd nemôže naimportovať súbor. Prosím skontrolujte, či OsmAnd má oprávnenie čítať súbor z tohto umiestnenia.</string>
+    <string name="map_widget_ruler_control_first_mode">Režim pripojenia</string>
+    <string name="map_widget_ruler_control_second_mode">Režim polomeru</string>
     </resources>

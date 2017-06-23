@@ -3,6 +3,8 @@ package net.osmand.plus;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
+import android.content.pm.PackageInfo;
+import 	android.content.pm.PackageManager;
 
 public class Version {
 	
@@ -47,7 +49,16 @@ public class Version {
 	}
 	
 	private Version(OsmandApplication ctx) {
-		appVersion = ctx.getString(R.string.app_version);
+		String appVersion = "";
+		int versionCode = -1;
+		try {
+			PackageInfo packageInfo = ctx.getPackageManager().getPackageInfo(ctx.getPackageName(), 0);
+			appVersion = packageInfo.versionName;  //Version suffix  ctx.getString(R.string.app_version_suffix)  already appended in build.gradle
+			versionCode = packageInfo.versionCode;
+		} catch (PackageManager.NameNotFoundException e) {
+			e.printStackTrace();
+		}
+		this.appVersion = appVersion;
 		appName = ctx.getString(R.string.app_name);
 	}
 

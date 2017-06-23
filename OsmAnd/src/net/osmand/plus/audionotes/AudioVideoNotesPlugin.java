@@ -171,7 +171,7 @@ public class AudioVideoNotesPlugin extends OsmandPlugin {
 
 	private AudioVideoNoteRecordingMenu recordingMenu;
 	private CurrentRecording currentRecording;
-	private boolean recordingDone;
+	private boolean recordingDone = true;
 
 	private MediaPlayer player;
 	private Recording recordingPlaying;
@@ -1075,17 +1075,29 @@ public class AudioVideoNotesPlugin extends OsmandPlugin {
 		}
 	}
 
-	private boolean stopCameraRecording(boolean restart) {
+	private boolean stopMediaRecording(boolean restart) {
 		boolean res = true;
+		AVActionType type = null;
+		if (isRecording()) {
+			type = currentRecording.type;
+		}
+		if (type == null || type == AVActionType.REC_AUDIO) {
+			unmuteStreamMusicAndOutputGuidance();
+		}
 		if (mediaRec != null) {
-			mediaRec.stop();
-			AVActionType type = currentRecording.type;
+			try {
+				mediaRec.stop();
+			} catch (IllegalStateException e) {
+				e.printStackTrace();
+			}
 			indexFile(true, mediaRecFile);
 			mediaRec.release();
 			mediaRec = null;
 			mediaRecFile = null;
 
-			if (restart) {
+			if (type == null) {
+				res = false;
+			} else if (restart) {
 				try {
 					cam.lock();
 					if (AV_RECORDER_SPLIT.get()) {
@@ -1118,6 +1130,7 @@ public class AudioVideoNotesPlugin extends OsmandPlugin {
 	public void recordAudio(double lat, double lon, final MapActivity mapActivity) {
 		if (ActivityCompat.checkSelfPermission(mapActivity, Manifest.permission.RECORD_AUDIO)
 				== PackageManager.PERMISSION_GRANTED) {
+
 			initRecMenu(AVActionType.REC_AUDIO, lat, lon);
 			MediaRecorder mr = new MediaRecorder();
 			final File f = getBaseFileName(lat, lon, app, THREEGP_EXTENSION);
@@ -1126,9 +1139,12 @@ public class AudioVideoNotesPlugin extends OsmandPlugin {
 			mr.setAudioEncoder(AV_AUDIO_FORMAT.get());
 			mr.setAudioEncodingBitRate(AV_AUDIO_BITRATE.get());
 			mr.setOutputFile(f.getAbsolutePath());
+
+			muteStreamMusicAndOutputGuidance();
 			try {
 				runMediaRecorder(mapActivity, mr, f);
 			} catch (Exception e) {
+                unmuteStreamMusicAndOutputGuidance();
 				log.error("Error starting audio recorder ", e);
 				Toast.makeText(app, app.getString(R.string.recording_error) + " : "
 						+ e.getMessage(), Toast.LENGTH_LONG).show();
@@ -1141,6 +1157,34 @@ public class AudioVideoNotesPlugin extends OsmandPlugin {
 					AUDIO_REQUEST_CODE);
 		}
 	}
+
+	private void muteStreamMusicAndOutputGuidance() {
+        AudioManager am = (AudioManager)app.getSystemService(Context.AUDIO_SERVICE);
+        int voiceGuidanceOutput = app.getSettings().AUDIO_STREAM_GUIDANCE.get();
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M){
+            am.adjustStreamVolume(AudioManager.STREAM_MUSIC, AudioManager.ADJUST_MUTE, 0);
+            if (voiceGuidanceOutput != AudioManager.STREAM_MUSIC)
+                am.adjustStreamVolume(voiceGuidanceOutput, AudioManager.ADJUST_MUTE, 0);
+        } else {
+            am.setStreamMute(AudioManager.STREAM_MUSIC, true);
+            if (voiceGuidanceOutput != AudioManager.STREAM_MUSIC)
+                am.setStreamMute(voiceGuidanceOutput, true);
+        }
+    }
+
+    private void unmuteStreamMusicAndOutputGuidance() {
+        AudioManager am = (AudioManager) app.getSystemService(Context.AUDIO_SERVICE);
+        int voiceGuidanceOutput = app.getSettings().AUDIO_STREAM_GUIDANCE.get();
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M){
+            am.adjustStreamVolume(AudioManager.STREAM_MUSIC, AudioManager.ADJUST_UNMUTE, 0);
+            if (voiceGuidanceOutput != AudioManager.STREAM_MUSIC)
+                am.adjustStreamVolume(voiceGuidanceOutput, AudioManager.ADJUST_UNMUTE, 0);
+        } else {
+            am.setStreamMute(AudioManager.STREAM_MUSIC, false);
+            if (voiceGuidanceOutput != AudioManager.STREAM_MUSIC)
+                am.setStreamMute(voiceGuidanceOutput, false);
+        }
+    }
 
 	public void takePhoto(final double lat, final double lon, final MapActivity mapActivity,
 						  final boolean forceInternal) {
@@ -1522,13 +1566,13 @@ public class AudioVideoNotesPlugin extends OsmandPlugin {
 
 	public void stopRecording(final MapActivity mapActivity, boolean restart) {
 		if (!recordingDone) {
-			if (!restart || !stopCameraRecording(true)) {
+			if (!restart || !stopMediaRecording(true)) {
 				recordingDone = true;
 				if (!recordControl.isVisible()) {
 					recordControl.setExplicitlyVisible(false);
 					mapActivity.getMapLayers().getMapInfoLayer().recreateControls();
 				}
-				stopCameraRecording(false);
+				stopMediaRecording(false);
 				if (recordControl != null) {
 					setRecordListener(recordControl, mapActivity);
 				}
@@ -1783,7 +1827,10 @@ public class AudioVideoNotesPlugin extends OsmandPlugin {
 		app.runInUIThread(new Runnable() {
 			@Override
 			public void run() {
-				getMapActivity().getContextMenu().updateMenuUI();
+				MapActivity activity = getMapActivity();
+				if (activity != null) {
+					activity.getContextMenu().updateMenuUI();
+				}
 			}
 		});
 	}

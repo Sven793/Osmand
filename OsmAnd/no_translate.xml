@@ -2,14 +2,7 @@
 <resources>
     <string name="app_name">OsmAnd~</string>
     <string name="app_name_free">OsmAndF~</string>
-    <string name="app_version">2.7.0</string>
-    <!--
-    Note: For our dev build apk's, the above "app_version" is provided (via osmand/build.xml) as the base version prefix to our build number in the format:
-             X.X.X#YYYYZ , where
-             X.X.X         is the above base (released) "app_version",
-                   YYYY    is the build number of build branch Z
-                       Z : M=-master, D=-main-default, B=-Blackberry, Des=-design, MQA=-main-qt-arm, MQDA=-main-qt-default-arm, S=-sherpafy
-    -->
+    <!-- string name="app_version_suffix"></string -->
 
     <!-- Not translatable -->
     <string name="full_version_price">€5,99</string>
