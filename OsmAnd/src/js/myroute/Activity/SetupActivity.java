@@ -1,13 +1,18 @@
 package js.myroute.Activity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
+import android.text.Editable;
+import android.text.TextWatcher;
+import android.view.KeyEvent;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.SeekBar;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -23,7 +28,7 @@ import js.myroute.Routing.Logic.Vertex;
 
 public class SetupActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
-    private double l = 2.0;
+    private int l = 5;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -68,19 +73,43 @@ public class SetupActivity extends AppCompatActivity implements AdapterView.OnIt
         else
             checkBox.setChecked(false);
 
-        SeekBar seekBar2 = (SeekBar) findViewById(R.id.seekBar2);
-        final TextView textView5 = (TextView) findViewById(R.id.textView5);
-        l = (2.0 + (Singleton.getInstance().getLengthIn()-2000)/1000.0);
-        textView5.setText( l + " km");
-        seekBar2.setProgress((Singleton.getInstance().getLengthIn()-2000)/100);
+        final SeekBar seekBar2 = (SeekBar) findViewById(R.id.seekBar2);
+        final EditText editText = (EditText) findViewById(R.id.editText);
+        l = ((Singleton.getInstance().getLengthIn())/1000);
+        editText.setText( String.valueOf(l) );
+        editText.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+            @Override
+            public boolean onEditorAction(TextView textView, int i, KeyEvent keyEvent) {
+                String text = textView.getText().toString();
+                try {
+                    l = Integer.parseInt(text);
+                    if (l < 1) {
+                        l = Singleton.getInstance().getLengthIn()/1000;
+                        editText.setText( String.valueOf(l) );
+                        return true;
+                    }
+                    Singleton.getInstance().setLengthIn(l*1000);
+                    seekBar2.setProgress(l);
+                    InputMethodManager imm =  (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+                    imm.hideSoftInputFromWindow(textView.getWindowToken(), 0);
+                    editText.clearFocus();
+                } catch (NumberFormatException e) {
+                    return true;
+                }
+                return true;
+            }
+        });
+        seekBar2.setProgress((Singleton.getInstance().getLengthIn())/1000);
         seekBar2.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
-            int progress = (Singleton.getInstance().getLengthIn()-2000)/100;
+            int progress = (Singleton.getInstance().getLengthIn())/1000;
 
             @Override
             public void onProgressChanged(SeekBar seekBar, int progresValue, boolean fromUser) {
-                progress = progresValue;
-                l = (2.0 + progress/10.0);
-                textView5.setText( l + " km");
+                if (fromUser) {
+                    progress = progresValue;
+                    l = progress;
+                    editText.setText( String.valueOf(l) );
+                }
             }
 
             @Override
@@ -88,9 +117,13 @@ public class SetupActivity extends AppCompatActivity implements AdapterView.OnIt
 
             @Override
             public void onStopTrackingTouch(SeekBar seekBar) {
-                l = (2.0 + progress/10.0);
-                textView5.setText( l + " km");
-                Singleton.getInstance().setLengthIn((int)(l*1000));
+                if (progress < 1) {
+                    l = 1;
+                    setProgress(l);
+                } else
+                    l = progress;
+                editText.setText( String.valueOf(l) );
+                Singleton.getInstance().setLengthIn(l*1000);
             }
         });
     }

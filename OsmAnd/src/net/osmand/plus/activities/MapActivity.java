@@ -1899,7 +1899,7 @@ public class MapActivity extends OsmandActionBarActivity implements DownloadEven
    	 * SMART ROUTE
 	 * -------------------------------------------------------------------------------------------*/
 
-    private final String TAG = "MainActivity";
+    private final String TAG = "SmartRoute";
     private LocationManager locationManager;
     private ProgressDialog progressDialog;
     private Marker startMarker; //to display the starting point on the map              //@linggi
@@ -2180,7 +2180,6 @@ public class MapActivity extends OsmandActionBarActivity implements DownloadEven
     }
 
     public void startInitialRouteGeneration() {
-        final String TAG = "PortedCode";
         class MyTask extends AsyncTask<Void, Void, Void> {
             @Override protected Void doInBackground(Void... params) {
                 long startTime = System.nanoTime(); //measure time for route generation
@@ -2229,7 +2228,6 @@ public class MapActivity extends OsmandActionBarActivity implements DownloadEven
         MyRoad route;
         try {
             route = routeGenerator.generateRoute(start, end, length, routeCriteria, routeCleaner);
-            android.util.Log.d("PortedCode", "route generated successfully");
         } catch (RouteGeneratationFailedException e) {
             return null;
         }
@@ -2246,6 +2244,10 @@ public class MapActivity extends OsmandActionBarActivity implements DownloadEven
             if (settings.APPLICATION_MODE.get() != ApplicationMode.PEDESTRIAN)
                 settings.APPLICATION_MODE.set(ApplicationMode.PEDESTRIAN);
             getMapActions().enterRoutePlanningModeGivenGpx(f,null,null, false, false);
+			if (Singleton.getInstance().getTypeOfActivity() == 0 || Singleton.getInstance().getTypeOfActivity() == 2)
+				getRoutingHelper().setAppMode(ApplicationMode.BICYCLE);
+			else
+				getRoutingHelper().setAppMode(ApplicationMode.PEDESTRIAN);
             getMapLayers().getMapControlsLayer().startNavigation();
 //				enterRoutingMode(mapActivity, gpxRoute);
         }
@@ -2497,9 +2499,11 @@ public class MapActivity extends OsmandActionBarActivity implements DownloadEven
         try {
             FileOutputStream fOut = openFileOutput("LastUsedLength",Context.MODE_PRIVATE);
             fOut.write(len.getBytes());
+			fOut.close();
 
             fOut = openFileOutput("LastUsedPosLat",Context.MODE_PRIVATE);
             fOut.write(lat.getBytes());
+			fOut.close();
 
             fOut = openFileOutput("LastUsedPosLon",Context.MODE_PRIVATE);
             fOut.write(lon.getBytes());
