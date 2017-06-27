@@ -51,6 +51,7 @@ import java.util.Map;
 import java.util.Map.Entry;
 
 import gnu.trove.list.array.TIntArrayList;
+import js.myroute.Config.Singleton;
 
 public class ContextMenuLayer extends OsmandMapLayer {
 	//private static final Log LOG = PlatformUtil.getLog(ContextMenuLayer.class);
@@ -677,8 +678,12 @@ public class ContextMenuLayer extends OsmandMapLayer {
 
 	@Override
 	public boolean onSingleTap(PointF point, RotatedTileBox tileBox) {
-        LatLon latLon = getLatLon(point, tileBox);
+
+		if (!Singleton.getInstance().getSingleTapActivated())
+			return true;
+		LatLon latLon = getLatLon(point, tileBox);
         menu.init(latLon, null, null);
+
 		if (mInChangeMarkerPositionMode || mInGpxDetailsMode) {
 			return true;
 		}

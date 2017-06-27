@@ -147,7 +147,8 @@
                         android:gravity="center_horizontal"
                         android:lineSpacingMultiplier="0.9"
                         android:textSize="@dimen/map_widget_text_size_small"
-                        tools:text="100 m"/>
+                        android:visibility="gone"
+                        tools:text="100 m" />
 
                     <TextView
                         android:id="@+id/map_ruler_text"
@@ -157,7 +158,8 @@
                         android:gravity="center_horizontal"
                         android:lineSpacingMultiplier="0.9"
                         android:textSize="@dimen/map_widget_text_size_small"
-                        tools:text="100 m"/>
+                        android:visibility="gone"
+                        tools:text="100 m" />
 
                 </FrameLayout>
 
@@ -166,7 +168,8 @@
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom"
-                    android:background="@drawable/ruler"/>
+                    android:background="@drawable/ruler"
+                    android:visibility="invisible" />
             </FrameLayout>
         </LinearLayout>
 

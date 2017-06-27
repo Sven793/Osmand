@@ -210,6 +210,11 @@ public class TextInfoWidget  {
 	}
 	
 	public static void updateTextColor(TextView tv, TextView shadow, int textColor, int textShadowColor, boolean textBold, int rad) {
+		if (tv.getId() == R.id.map_ruler_text) {
+			tv.setVisibility(View.GONE);
+			shadow.setVisibility(View.GONE);
+			return;
+		}
 		if(shadow != null) {
 			if(rad > 0) {
 				shadow.setVisibility(View.VISIBLE);

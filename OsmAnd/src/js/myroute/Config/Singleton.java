@@ -120,6 +120,17 @@ public class Singleton {
     public void setTypeOfActivity(int typeOfActivity) {
         this.typeOfActivity = typeOfActivity;
     }
+
+    private boolean singleTapActivated = false;
+    public boolean getSingleTapActivated() {
+        return singleTapActivated;
+    }
+    public void setSingleTapActivated(boolean set) {
+        singleTapActivated = set;
+    }
+
+
+
     /*private boolean bAlg1Checked = true;
     private boolean bAlg2Checked = false;
     private boolean bAlg3Checked = false;

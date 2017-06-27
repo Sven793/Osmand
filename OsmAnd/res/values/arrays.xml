@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="spinner_selection">
-        <item>Not important</item>
-        <item>Normal</item>
-        <item>Very important</item>
+        <item>Insignificant</item>
+        <item>Slightly important</item>
+        <item>Fairly important</item>
     </string-array>
     <string-array name="spinner_selection_activity">
         <item>Biking</item>
@@ -14,7 +14,7 @@
     </string-array>
     <string-array name="spinner_selection_elevation">
         <item>Flat</item>
-        <item>Not important</item>
+        <item>Insignificant</item>
         <item>Steep</item>
     </string-array>
 </resources>

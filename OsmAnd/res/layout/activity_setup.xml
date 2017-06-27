@@ -39,24 +39,26 @@
         android:layout_alignParentEnd="true" />
 
     <TextView
-        android:text="Where would you like to start your route?"
+        android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textView9"
-        android:textAppearance="@style/TextAppearance.AppCompat"
         android:layout_above="@+id/checkBox"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="12dp" />
+        android:layout_marginBottom="12dp"
+        android:text="Where would you like to start your route?"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="16sp" />
 
     <TextView
-        android:text="Choose a lenght for your route:"
+        android:id="@+id/textView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="26dp"
-        android:id="@+id/textView10"
-        android:textAppearance="@style/TextAppearance.AppCompat"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:text="Choose a lenght for your route:"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="16sp" />
 
     <SeekBar
         android:layout_width="match_parent"
@@ -85,7 +87,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/checkBox"
         android:onClick="clickCheckboxSameEndAsStart"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="8dp"
         android:layout_above="@+id/button_current_location"
         android:layout_centerHorizontal="true" />
 
@@ -93,12 +95,13 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="29dp"
+        android:layout_marginTop="18dp"
         android:layout_weight="1"
         android:text="Importance of parameters:"
         android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="16sp"
         android:layout_below="@+id/editText"
-        android:layout_centerHorizontal="true" />
+        android:layout_toEndOf="@+id/textView_environment" />
 
     <TextView
         android:id="@+id/textView_view"
@@ -109,11 +112,12 @@
         android:textAppearance="@style/TextAppearance.AppCompat"
         android:layout_marginTop="25dp"
         android:layout_below="@+id/textView_elevation"
-        android:layout_toStartOf="@+id/textView9" />
+        android:layout_toStartOf="@+id/checkBox"
+        android:layout_marginEnd="9dp" />
 
     <Spinner
         android:id="@+id/spinner_view"
-        android:layout_width="180dp"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignTop="@+id/textView_view"
@@ -133,7 +137,7 @@
 
     <Spinner
         android:id="@+id/spinner_elevation"
-        android:layout_width="180dp"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/textView_elevation"
         android:layout_marginTop="-10dp"
@@ -151,7 +155,7 @@
 
     <Spinner
         android:id="@+id/spinner_environment"
-        android:layout_width="180dp"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/textView_environment"
         android:layout_marginTop="-10dp"
@@ -161,7 +165,7 @@
         android:id="@+id/textView_activity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="35dp"
         android:text="Type of Activity:"
         android:textAppearance="@style/TextAppearance.AppCompat"
         android:layout_below="@+id/textView4"
@@ -169,7 +173,7 @@
 
     <Spinner
         android:id="@+id/spinner_activity"
-        android:layout_width="180dp"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_marginTop="-10dp"

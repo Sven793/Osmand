@@ -386,7 +386,8 @@ public class MapActivity extends OsmandActionBarActivity implements DownloadEven
         btnGenRoute.setOnClickListener( new Button.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(btnGenRoute.getText().equals("Start Routing")){
+                if(btnGenRoute.getText().equals("Setup")){
+					getContextMenu().close();
                     Intent myIntent = new Intent(MapActivity.this, SetupActivity.class);
                     startActivity(myIntent);
                 }else{
@@ -405,7 +406,7 @@ public class MapActivity extends OsmandActionBarActivity implements DownloadEven
                             }else{
                                 Singleton.getInstance().initState = Singleton.state.FINISHEDINIT;
                                 hideHelpLine();
-                                showRouteGenButton("Get Route Now");
+                                showRouteGenButton("Get Route");
                             }
                         }
                     }else{
@@ -418,7 +419,7 @@ public class MapActivity extends OsmandActionBarActivity implements DownloadEven
                             }else{
                                 Singleton.getInstance().initState = Singleton.state.FINISHEDINIT;
                                 hideHelpLine();
-                                showRouteGenButton("Get Route Now");
+                                showRouteGenButton("Get Route");
                             }
                         }else{
                             if(internetInit) {
@@ -426,6 +427,7 @@ public class MapActivity extends OsmandActionBarActivity implements DownloadEven
                                     saveUserData();
                                     hideRouteGenButton();
                                     setProgressDialog();
+									getContextMenu().close();
                                     new getAndPrintRoute().execute();
                                 } else {
                                     showToast("Please wait for routing to finish before requesting a new route.");
@@ -708,7 +710,7 @@ public class MapActivity extends OsmandActionBarActivity implements DownloadEven
 
             case FINISHEDINIT:
                 Singleton.getInstance().initState = Singleton.state.INIT;
-                showRouteGenButton("Start Routing");
+                showRouteGenButton("Setup");
 
                 Singleton.getInstance().removeStart();
 //                if (startMarker != null && startMarker.isVisible())
@@ -718,7 +720,6 @@ public class MapActivity extends OsmandActionBarActivity implements DownloadEven
 //                if (endMarker != null && endMarker.isVisible())
 //                    endMarker.setVisible(false);
 //                endMarker = null;
-                removeMarkerOverlays();
                 break;
 
             case ROUTESETTINGS:
@@ -1930,8 +1931,6 @@ public class MapActivity extends OsmandActionBarActivity implements DownloadEven
     private final String TAG = "SmartRoute";
     private LocationManager locationManager;
     private ProgressDialog progressDialog;
-    private Marker startMarker; //to display the starting point on the map              //@linggi
-    private Marker endMarker;   //to display the end point on the map                   //@linggi
     private Vertex lastClickedLocation; //the location where the user last clicked    //@linggi
     private RouteCleaner routeCleaner;
     private RouteGeneratorTemp routeGenerator;
@@ -1956,16 +1955,8 @@ public class MapActivity extends OsmandActionBarActivity implements DownloadEven
 
         protected void onPreExecute() {
             Singleton.getInstance().removeFollowOrientation();
-
-            if(endMarker!=null){
-                setEndMarker(new Vertex(endMarker.getPosition().getLatitude(), endMarker.getPosition().getLongitude()));
-            }
-
             if (Singleton.getInstance().getUseCurrentLocation()) {
                 Singleton.getInstance().removeStart();
-                startMarker = null;
-                removeMarkerOverlays();
-
                 if(locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER) || locationManager.isProviderEnabled(LocationManager.NETWORK_PROVIDER)) {
                     if (Singleton.getInstance().initState == Singleton.state.INIT)
                         Singleton.getInstance().initState = Singleton.state.INITSETSTARTTOCURRPOS;
@@ -1975,9 +1966,6 @@ public class MapActivity extends OsmandActionBarActivity implements DownloadEven
                 }
             } else {
                 Singleton.getInstance().removeStart();
-                startMarker = null;
-                removeMarkerOverlays();
-
                 showHelpLine("Tap screen to set start");
                 hideRouteGenButton();
                 if(Singleton.getInstance().initState == Singleton.state.INIT)
@@ -2019,28 +2007,23 @@ public class MapActivity extends OsmandActionBarActivity implements DownloadEven
 
             if(Singleton.getInstance().getSameEndAsStart()) {
                 Singleton.getInstance().removeEnd();
-                endMarker = null;
-                setStartMarker(Singleton.getInstance().getStartVertex());
-
                 if(Singleton.getInstance().initState == Singleton.state.INIT2) {
                     if(askForLength) {
                         Singleton.getInstance().initState = Singleton.state.INITSETLENGTH;
 //                        new InitLength().execute();
                     }else{
                         Singleton.getInstance().initState = Singleton.state.FINISHEDINIT;
-                        showRouteGenButton("Get Route Now");
+                        showRouteGenButton("Get Route");
                     }
                 }
                 else {
                     Singleton.getInstance().initState = Singleton.state.ROUTESETTINGS;
-                    showRouteGenButton("Get Route Now");
+                    showRouteGenButton("Get Route");
                 }
                 Singleton.getInstance().setEndSet();
                 Singleton.getInstance().setEndVertex(Singleton.getInstance().getStartVertex());
             } else {
                 Singleton.getInstance().removeEnd();
-                endMarker = null;
-                setStartMarker(Singleton.getInstance().getStartVertex());
                 hideRouteGenButton();
                 showHelpLine("Tap screen to set end");
                 if(Singleton.getInstance().initState== Singleton.state.INIT2)
@@ -2056,6 +2039,14 @@ public class MapActivity extends OsmandActionBarActivity implements DownloadEven
 
         protected void onPostExecute(final Boolean result) {
         }
+    }
+
+    private void activateSingleTap() {
+        Singleton.getInstance().setSingleTapActivated(true);
+    }
+
+    private void deactivateSingleTap() {
+        Singleton.getInstance().setSingleTapActivated(false);
     }
 
     /*
@@ -2082,13 +2073,13 @@ public class MapActivity extends OsmandActionBarActivity implements DownloadEven
 //                            new InitLength().execute();
                     }else{
                         Singleton.getInstance().initState = Singleton.state.FINISHEDINIT;
-                        showRouteGenButton("Get Route Now");
+                        showRouteGenButton("Get Route");
                     }
                 }
             }
             else{
                 Singleton.getInstance().initState = Singleton.state.ROUTESETTINGS;
-                showRouteGenButton("Start Routing");
+                showRouteGenButton("Setup");
             }
         }
     }
@@ -2265,18 +2256,18 @@ public class MapActivity extends OsmandActionBarActivity implements DownloadEven
 
     private void displayRoute() {
         generateGPXFile();
-        final RouteProvider.GPXRouteParamsBuilder OgpxRoute;
         GPXUtilities.GPXFile f = GPXUtilities.loadGPXFile(app, new File(getApplicationContext().getCacheDir() + "/route.gpx"));
         if (f != null) {
-            OgpxRoute = new RouteProvider.GPXRouteParamsBuilder(f, settings);
-            if (settings.APPLICATION_MODE.get() != ApplicationMode.PEDESTRIAN)
-                settings.APPLICATION_MODE.set(ApplicationMode.PEDESTRIAN);
-            getMapActions().enterRoutePlanningModeGivenGpx(f,null,null, false, false);
-			if (Singleton.getInstance().getTypeOfActivity() == 0 || Singleton.getInstance().getTypeOfActivity() == 2)
+            LatLon start = new LatLon(Singleton.getInstance().getStartVertex().getLatitude(), Singleton.getInstance().getStartVertex().getLongitude());
+            getMapActions().enterRoutePlanningModeGivenGpx(f,start,null, false, false);
+			if (Singleton.getInstance().getTypeOfActivity() == 0 || Singleton.getInstance().getTypeOfActivity() == 2 || Singleton.getInstance().getTypeOfActivity() == 4)
 				getRoutingHelper().setAppMode(ApplicationMode.BICYCLE);
+			else if (Singleton.getInstance().getTypeOfActivity() == 3)
+				getRoutingHelper().setAppMode(ApplicationMode.HIKING);
 			else
 				getRoutingHelper().setAppMode(ApplicationMode.PEDESTRIAN);
-            getMapLayers().getMapControlsLayer().startNavigation();
+            if (Singleton.getInstance().getUseCurrentLocation())
+                getMapLayers().getMapControlsLayer().startNavigation();
 //				enterRoutingMode(mapActivity, gpxRoute);
         }
     }
@@ -2349,40 +2340,16 @@ public class MapActivity extends OsmandActionBarActivity implements DownloadEven
     * sets the start position (coords & marker)
     */
     private void setStartPosition(@NotNull Vertex position) {
-
         Singleton.getInstance().setStartVertex(position);
         Singleton.getInstance().setstartSet();
-
-        setStartMarker(position);
     }
 
     /* //@linggi
      * sets the end position (coords & marker)
      */
     private void setEndPosition(@NotNull Vertex position) {
-
         Singleton.getInstance().setEndVertex(position);
         Singleton.getInstance().setEndSet();
-
-        setEndMarker(position);
-    }
-
-    /* //@linggi
-     * set a parker at the provided position which indicates the start position
-     */
-    private void setStartMarker(@NotNull Vertex position) {
-        removeMarkerOverlays();
-//        startMarker = map.addMarker(new MarkerOptions().position(new LatLng(position.getLatitude(), position.getLongitude())).title("Start"));
-//        startMarker.setIcon(BitmapDescriptorFactory.fromResource(R.drawable.point_start));
-    }
-
-    /* //@linggi
-     * set a parker at the provided position which indicates the start position
-     */
-    private void setEndMarker(@NotNull Vertex position) {
-        removeMarkerOverlays();
-//        endMarker = map.addMarker(new MarkerOptions().position(new LatLng(position.getLatitude(), position.getLongitude())).title("End"));
-//        endMarker.setIcon(BitmapDescriptorFactory.fromResource(R.drawable.point_end));
     }
 
     public void setLastClickedLocation(Vertex location) {
@@ -2402,27 +2369,21 @@ public class MapActivity extends OsmandActionBarActivity implements DownloadEven
     }
 
     private void hideHelpLine(){
+        deactivateSingleTap();
         LinearLayout LLhelpLine = (LinearLayout) findViewById(R.id.LLhelpBar);
+//		LLhelpLine.setVisibility(View.INVISIBLE);
         LLhelpLine.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT,0));
     }
 
     private void showHelpLine(String text){
+        activateSingleTap();
         TextView tv = (TextView) findViewById(R.id.tVhelpLine);
         LinearLayout LLhelpLine = (LinearLayout) findViewById(R.id.LLhelpBar);
-        //LLhelpLine.setVisibility(View.VISIBLE);
+//        LLhelpLine.setVisibility(View.VISIBLE);
         LLhelpLine.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT));
         tv.setTextColor(Color.RED);
+        tv.setVisibility(View.VISIBLE);
         tv.setText(text);
-    }
-
-    private void removeMarkerOverlays() {
-           /* if (map != null && map.getOverlays() != null) {
-                for (Overlay o : map.getOverlays()) {
-                    if (o instanceof Marker)
-                        map.getOverlays().remove(o);
-                }
-                map.invalidate();
-            } */
     }
 
     private void onMapClicked() {
@@ -2450,7 +2411,7 @@ public class MapActivity extends OsmandActionBarActivity implements DownloadEven
             case SETSTART:
                 setStartPosition(lastClickedLocation);
                 Singleton.getInstance().initState = Singleton.state.ROUTESETTINGS;
-                showRouteGenButton("Get Route Now");
+                showRouteGenButton("Get Route");
                 hideHelpLine();
                 break;
 
@@ -2461,7 +2422,7 @@ public class MapActivity extends OsmandActionBarActivity implements DownloadEven
             case SETEND:
                 setEndPosition(lastClickedLocation);
                 Singleton.getInstance().initState = Singleton.state.ROUTESETTINGS;
-                showRouteGenButton("Get Route Now");
+                showRouteGenButton("Get Route");
                 hideHelpLine();
                 break;
 

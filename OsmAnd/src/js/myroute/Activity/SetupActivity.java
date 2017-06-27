@@ -29,6 +29,9 @@ import js.myroute.Routing.Logic.Vertex;
 public class SetupActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
     private int l = 5;
+    private Spinner environment;
+    private Spinner elevation;
+    private Spinner view;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,9 +40,9 @@ public class SetupActivity extends AppCompatActivity implements AdapterView.OnIt
 
         readUserData();
 
-        Spinner environment = (Spinner) findViewById(R.id.spinner_environment);
-        Spinner elevation = (Spinner) findViewById(R.id.spinner_elevation);
-        Spinner view = (Spinner) findViewById(R.id.spinner_view);
+        environment = (Spinner) findViewById(R.id.spinner_environment);
+        elevation = (Spinner) findViewById(R.id.spinner_elevation);
+        view = (Spinner) findViewById(R.id.spinner_view);
         Spinner activity = (Spinner) findViewById(R.id.spinner_activity);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.spinner_selection, R.layout.spinner_dropdown_item);
         ArrayAdapter<CharSequence> adapter2 = ArrayAdapter.createFromResource(this, R.array.spinner_selection_elevation, R.layout.spinner_dropdown_item);
@@ -184,7 +187,6 @@ public class SetupActivity extends AppCompatActivity implements AdapterView.OnIt
         Singleton.getInstance().setLengthIn((int)(l*1000));
         Singleton.getInstance().setSetupComplete(true);
         Intent myIntent = new Intent(this, MapActivity.class);
-        // Todo: put additional input parameters
         startActivity(myIntent);
         // Todo: maybe do differently?
     }
@@ -194,7 +196,6 @@ public class SetupActivity extends AppCompatActivity implements AdapterView.OnIt
         Singleton.getInstance().setLengthIn((int)(l*1000));
         Singleton.getInstance().setSetupComplete(true);
         Intent myIntent = new Intent(this, MapActivity.class);
-        // Todo: put additional input parameters
         startActivity(myIntent);
     }
 
@@ -207,7 +208,7 @@ public class SetupActivity extends AppCompatActivity implements AdapterView.OnIt
     }
 
     @Override
-    public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+    public void onItemSelected(AdapterView<?> adapterView, View v, int i, long l) {
         if (adapterView.equals(findViewById(R.id.spinner_environment))) {
             Singleton.getInstance().setEnvironmentImportance(i);
         } else if (adapterView.equals(findViewById(R.id.spinner_elevation))) {
@@ -216,6 +217,11 @@ public class SetupActivity extends AppCompatActivity implements AdapterView.OnIt
             Singleton.getInstance().setViewImportance(i);
         } else if (adapterView.equals(findViewById(R.id.spinner_activity))) {
             Singleton.getInstance().setTypeOfActivity(i);
+            if (i == 3) // Hiking
+                view.setSelection(2);
+            else if (i == 2 || i == 4)
+                elevation.setSelection(0);
+
         }
     }
 

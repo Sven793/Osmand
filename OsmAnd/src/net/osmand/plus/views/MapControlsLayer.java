@@ -71,6 +71,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import gnu.trove.list.array.TIntArrayList;
+import js.myroute.Activity.SetupActivity;
+import js.myroute.Config.Singleton;
 
 public class MapControlsLayer extends OsmandMapLayer {
 
@@ -693,21 +695,19 @@ public class MapControlsLayer extends OsmandMapLayer {
 
 			final boolean dash = settings.SHOW_DASHBOARD_ON_MAP_SCREEN.get();
 			menuControl = createHudButton(backToMenuButton,
-					!dash ? R.drawable.map_drawer : R.drawable.map_dashboard).setBg(
+					!dash ? R.drawable.map_action_settings : R.drawable.map_dashboard).setBg(
 					R.drawable.btn_circle_trans_35_new, R.drawable.btn_circle_night_new);
 			controls.add(menuControl);
 			backToMenuButton.setOnClickListener(new View.OnClickListener() {
 				@Override
 				public void onClick(View v) {
 					MapActivity.clearPrevActivityIntent();
-					if (dash) {
-						mapActivity.getDashboard().setDashboardVisibility(true, DashboardType.DASHBOARD);
-					} else {
-						bottomSheetBehavior.setState(BottomSheetBehavior.STATE_COLLAPSED);
-						bottomSheetBehavior.setHideable(false);
-                        mapBottomButtonsDialogFragment = new MapBottomButtonsDialogFragment();
-                        mapBottomButtonsDialogFragment.show(mapActivity.getSupportFragmentManager(), null);
-					}
+					mapActivity.getContextMenu().close();
+					Singleton.getInstance().initState = Singleton.state.INIT;
+					Singleton.getInstance().removeStart();
+					Singleton.getInstance().removeEnd();
+					Intent myIntent = new Intent(mapActivity, SetupActivity.class);
+					mapActivity.startActivity(myIntent);
 				}
 			});
 			zoomText = (TextView) mapActivity.findViewById(R.id.map_app_mode_text);
@@ -744,18 +744,19 @@ public class MapControlsLayer extends OsmandMapLayer {
 
 			final boolean dash = settings.SHOW_DASHBOARD_ON_MAP_SCREEN.get();
 			menuControl = createHudButton(backToMenuButton,
-					!dash ? R.drawable.map_drawer : R.drawable.map_dashboard).setBg(
+					!dash ? R.drawable.map_action_settings : R.drawable.map_dashboard).setBg(
 					R.drawable.btn_round, R.drawable.btn_round_night);
 			controls.add(menuControl);
 			backToMenuButton.setOnClickListener(new View.OnClickListener() {
 				@Override
 				public void onClick(View v) {
 					MapActivity.clearPrevActivityIntent();
-					if (dash) {
-						mapActivity.getDashboard().setDashboardVisibility(true, DashboardType.DASHBOARD);
-					} else {
-						mapActivity.openDrawer();
-					}
+					mapActivity.getContextMenu().close();
+					Singleton.getInstance().initState = Singleton.state.INIT;
+					Singleton.getInstance().removeStart();
+					Singleton.getInstance().removeEnd();
+					Intent myIntent = new Intent(mapActivity, SetupActivity.class);
+					mapActivity.startActivity(myIntent);
 				}
 			});
 			zoomText = (TextView) mapActivity.findViewById(R.id.map_app_mode_text);
