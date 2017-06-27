@@ -710,7 +710,8 @@ public class MapActivity extends OsmandActionBarActivity implements DownloadEven
 
             case FINISHEDINIT:
                 Singleton.getInstance().initState = Singleton.state.INIT;
-                showRouteGenButton("Setup");
+//                showRouteGenButton("Setup");
+				hideRouteGenButton();
 
                 Singleton.getInstance().removeStart();
 //                if (startMarker != null && startMarker.isVisible())
@@ -2079,7 +2080,8 @@ public class MapActivity extends OsmandActionBarActivity implements DownloadEven
             }
             else{
                 Singleton.getInstance().initState = Singleton.state.ROUTESETTINGS;
-                showRouteGenButton("Setup");
+//                showRouteGenButton("Setup");
+				hideRouteGenButton();
             }
         }
     }

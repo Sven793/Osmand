@@ -67,7 +67,8 @@
                         android:layout_gravity="center"
                         android:layout_marginBottom="@dimen/map_button_margin"
                         android:layout_weight="1"
-                        android:text="Setup" />
+                        android:text="Setup"
+                        android:visibility="invisible" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
