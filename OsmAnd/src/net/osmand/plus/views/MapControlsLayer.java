@@ -2,7 +2,6 @@ package net.osmand.plus.views;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
-import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -12,7 +11,6 @@ import android.graphics.ColorFilter;
 import android.graphics.PointF;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
-import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomSheetBehavior;
 import android.support.v4.app.ActivityCompat;
@@ -20,15 +18,14 @@ import android.support.v4.view.ViewCompat;
 import android.support.v4.view.ViewPropertyAnimatorCompat;
 import android.support.v4.view.ViewPropertyAnimatorListener;
 import android.support.v7.app.AlertDialog;
+import android.support.v7.widget.PopupMenu;
 import android.util.DisplayMetrics;
 import android.util.Log;
-import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
-import android.view.Window;
-import android.view.WindowManager;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -966,63 +963,143 @@ public class MapControlsLayer extends OsmandMapLayer {
 	private void initZooms() {
 		if (settings.NEW_MAP_VIEW.get()) {
 			final OsmandMapTileView view = mapActivity.getMapView();
-			View zoomInButton = mapActivity.findViewById(R.id.map_zoom_in_button);
-			mapZoomIn = createHudButton(zoomInButton, R.drawable.map_zoom_in).
-					setIconsId(R.drawable.map_zoom_in, R.drawable.map_zoom_in_night).setBg(
-					R.drawable.btn_circle_trans_35_new, R.drawable.btn_circle_night_new);;
+			final View zoomInButton = mapActivity.findViewById(R.id.map_zoom_in_button);
+			mapZoomIn = createHudButton(zoomInButton, R.drawable.list_destination).
+					setIconsId(R.drawable.list_destination, R.drawable.list_destination);
 			controls.add(mapZoomIn);
 			zoomInButton.setOnClickListener(new View.OnClickListener() {
 				@Override
 				public void onClick(View v) {
-					if (view.isZooming()) {
-						mapActivity.changeZoom(2, System.currentTimeMillis());
-					} else {
-						mapActivity.changeZoom(1, System.currentTimeMillis());
-					}
-
+					PopupMenu popup = new PopupMenu(mapActivity.getApplicationContext(), zoomInButton);
+					popup.getMenuInflater().inflate(R.menu.setendpopup, popup.getMenu());
+					popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+						public boolean onMenuItemClick(MenuItem item) {
+							switch (item.getTitle().toString()) {
+                                case "Choose End on map":
+                                    Singleton.getInstance().setChooseEnd(true);
+									Singleton.getInstance().setEndToCurrentPosition(false);
+                                    Singleton.getInstance().initState = Singleton.state.INIT2;
+                                    break;
+								case "Use current location":
+									Singleton.getInstance().setEndToCurrentPosition(true);
+                                    Singleton.getInstance().initState = Singleton.state.INIT2;
+									break;
+								case "Same Start and End":
+									Singleton.getInstance().setChooseEnd(false);
+									Singleton.getInstance().setEndToCurrentPosition(false);
+									break;
+                            }
+							mapActivity.runInitEnd();
+							return true;
+						}
+					});
+					popup.show();
 				}
 			});
 			final View.OnLongClickListener listener = MapControlsLayer.getOnClickMagnifierListener(view);
 			zoomInButton.setOnLongClickListener(listener);
-			View zoomOutButton = mapActivity.findViewById(R.id.map_zoom_out_button);
-			mapZoomOut = createHudButton(zoomOutButton, R.drawable.map_zoom_out).
-					setIconsId(R.drawable.map_zoom_out, R.drawable.map_zoom_out_night).setBg(
-					R.drawable.btn_circle_trans_35_new, R.drawable.btn_circle_night_new);
+			final View zoomOutButton = mapActivity.findViewById(R.id.map_zoom_out_button);
+			mapZoomOut = createHudButton(zoomOutButton, R.drawable.list_startpoint).
+					setIconsId(R.drawable.list_startpoint, R.drawable.list_startpoint);
 			controls.add(mapZoomOut);
 			zoomOutButton.setOnClickListener(new View.OnClickListener() {
 				@Override
 				public void onClick(View v) {
-					mapActivity.changeZoom(-1, System.currentTimeMillis());
+					PopupMenu popup = new PopupMenu(mapActivity.getApplicationContext(), zoomOutButton);
+					popup.getMenuInflater().inflate(R.menu.setstartpopup, popup.getMenu());
+					popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+						public boolean onMenuItemClick(MenuItem item) {
+							switch (item.getTitle().toString()) {
+								case "Choose Start on map":
+									Singleton.getInstance().setChooseStart(true);
+									Singleton.getInstance().setStartToCurrentPosition(false);
+									Singleton.getInstance().initState = Singleton.state.INIT;
+									break;
+								case "Use current location":
+									Singleton.getInstance().setStartToCurrentPosition(true);
+                                    Singleton.getInstance().initState = Singleton.state.INIT;
+									break;
+								case "Same Start and End":
+									Singleton.getInstance().setChooseStart(false);
+									Singleton.getInstance().setStartToCurrentPosition(false);
+									break;
+							}
+							mapActivity.runInitStart();
+							return true;
+						}
+					});
+					popup.show();
 				}
 			});
 			zoomOutButton.setOnLongClickListener(listener);
 		} else {
 			final OsmandMapTileView view = mapActivity.getMapView();
-			View zoomInButton = mapActivity.findViewById(R.id.map_zoom_in_button);
-			mapZoomIn = createHudButton(zoomInButton, R.drawable.map_zoom_in).
-					setIconsId(R.drawable.map_zoom_in, R.drawable.map_zoom_in_night).setRoundTransparent();
+			final View zoomInButton = mapActivity.findViewById(R.id.map_zoom_in_button);
+			mapZoomIn = createHudButton(zoomInButton, R.drawable.list_destination).
+					setIconsId(R.drawable.list_destination, R.drawable.list_destination).setRoundTransparent();
 			controls.add(mapZoomIn);
 			zoomInButton.setOnClickListener(new View.OnClickListener() {
 				@Override
 				public void onClick(View v) {
-					if (view.isZooming()) {
-						mapActivity.changeZoom(2, System.currentTimeMillis());
-					} else {
-						mapActivity.changeZoom(1, System.currentTimeMillis());
-					}
-
+                    PopupMenu popup = new PopupMenu(mapActivity.getApplicationContext(), zoomInButton);
+                    popup.getMenuInflater().inflate(R.menu.setendpopup, popup.getMenu());
+                    popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+                        public boolean onMenuItemClick(MenuItem item) {
+                            switch (item.getTitle().toString()) {
+                                case "Choose End on map":
+                                    Singleton.getInstance().setChooseEnd(true);
+                                    Singleton.getInstance().setEndToCurrentPosition(false);
+                                    Singleton.getInstance().initState = Singleton.state.INIT2;
+                                    break;
+                                case "Use current location":
+                                    Singleton.getInstance().setEndToCurrentPosition(true);
+                                    Singleton.getInstance().initState = Singleton.state.INIT2;
+                                    break;
+                                case "Same Start and End":
+                                    Singleton.getInstance().setChooseEnd(false);
+                                    Singleton.getInstance().setEndToCurrentPosition(false);
+                                    break;
+                            }
+                            mapActivity.runInitEnd();
+                            return true;
+                        }
+                    });
+                    popup.show();
 				}
 			});
 			final View.OnLongClickListener listener = MapControlsLayer.getOnClickMagnifierListener(view);
 			zoomInButton.setOnLongClickListener(listener);
-			View zoomOutButton = mapActivity.findViewById(R.id.map_zoom_out_button);
-			mapZoomOut = createHudButton(zoomOutButton, R.drawable.map_zoom_out).
-					setIconsId(R.drawable.map_zoom_out, R.drawable.map_zoom_out_night).setRoundTransparent();
+			final View zoomOutButton = mapActivity.findViewById(R.id.map_zoom_out_button);
+			mapZoomOut = createHudButton(zoomOutButton, R.drawable.list_startpoint).
+					setIconsId(R.drawable.list_startpoint, R.drawable.list_startpoint).setRoundTransparent();
 			controls.add(mapZoomOut);
 			zoomOutButton.setOnClickListener(new View.OnClickListener() {
 				@Override
 				public void onClick(View v) {
-					mapActivity.changeZoom(-1, System.currentTimeMillis());
+                    PopupMenu popup = new PopupMenu(mapActivity.getApplicationContext(), zoomOutButton);
+                    popup.getMenuInflater().inflate(R.menu.setstartpopup, popup.getMenu());
+                    popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+                        public boolean onMenuItemClick(MenuItem item) {
+                            switch (item.getTitle().toString()) {
+                                case "Choose Start on map":
+                                    Singleton.getInstance().setChooseStart(true);
+                                    Singleton.getInstance().setStartToCurrentPosition(false);
+                                    Singleton.getInstance().initState = Singleton.state.INIT;
+                                    break;
+                                case "Use current location":
+                                    Singleton.getInstance().setStartToCurrentPosition(true);
+                                    Singleton.getInstance().initState = Singleton.state.INIT;
+                                    break;
+                                case "Same Start and End":
+                                    Singleton.getInstance().setChooseStart(false);
+                                    Singleton.getInstance().setStartToCurrentPosition(false);
+                                    break;
+                            }
+                            mapActivity.runInitStart();
+                            return true;
+                        }
+                    });
+                    popup.show();
 				}
 			});
 			zoomOutButton.setOnLongClickListener(listener);

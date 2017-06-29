@@ -36,10 +36,6 @@ public class Singleton {
         this.length = len;
     }
 
-    private boolean useCurrentLocation = true;
-    public boolean getUseCurrentLocation() {return useCurrentLocation;}
-    public void setUseCurrentLocation(boolean use) {this.useCurrentLocation = use;}
-
     private Vertex start;
     public Vertex getStartVertex() {
         return start;
@@ -79,10 +75,6 @@ public class Singleton {
     private Vertex currPos = new Vertex(47.3764545, 8.5481666); //ETH Coordinates
     public void setCurrPos(Vertex pos){currPos = pos;}
     public Vertex getCurrPos(){return currPos;}
-
-    private boolean sameEndAsStart = true;
-    public void setSameEndAsStart(boolean sameEndAsStart) {this.sameEndAsStart = sameEndAsStart;}
-    public boolean getSameEndAsStart() {return sameEndAsStart;}
 
     private boolean switchMultiWindow = false;
     public void setSwitchMultiWindow(boolean switchMultiWindow) {this.switchMultiWindow = switchMultiWindow;}
@@ -127,6 +119,40 @@ public class Singleton {
     }
     public void setSingleTapActivated(boolean set) {
         singleTapActivated = set;
+    }
+
+    private boolean chooseEnd = false;
+    public boolean getChooseEnd() {
+        return chooseEnd;
+    }
+    public void setChooseEnd(boolean set) { chooseEnd = set; }
+
+    private boolean chooseStart = false;
+    public boolean getChooseStart() {
+        return chooseStart;
+    }
+    public void setChooseStart(boolean set) { chooseStart = set; }
+
+    private boolean endToCurrentPosition = true;
+    public void setEndToCurrentPosition(boolean endToCurrentPosition) {
+        this.endToCurrentPosition = endToCurrentPosition;
+    }
+    public boolean getEndToCurrentPosition() {
+        return endToCurrentPosition;
+    }
+
+    private boolean startToCurrentPosition = true;
+    public void setStartToCurrentPosition(boolean startToCurrentPosition) {
+        this.startToCurrentPosition = startToCurrentPosition;
+    }
+    public boolean getStartToCurrentPosition() {
+        return startToCurrentPosition;
+    }
+
+    private boolean GPS = false;
+    public boolean getGPS() { return GPS; }
+    public void setGPS(boolean set) {
+        this.GPS = set;
     }
 
 

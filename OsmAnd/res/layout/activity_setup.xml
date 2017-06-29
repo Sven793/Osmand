@@ -14,40 +14,13 @@
 
 
     <Button
-        android:text="Choose on map"
-        android:layout_width="wrap_content"
+        android:id="@+id/button_save"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="chooseOnMap"
-        android:id="@+id/button_choose_on_map"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <Button
-        android:text="Current Location"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="useCurrentLocation"
-        android:id="@+id/button_current_location"
-        android:layout_marginBottom="48dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
-
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/checkBox"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="12dp"
-        android:text="Where would you like to start your route?"
-        android:textAppearance="@style/TextAppearance.AppCompat"
-        android:textSize="16sp" />
+        android:onClick="onClickSave"
+        android:text="Save" />
 
     <TextView
         android:id="@+id/textView10"
@@ -81,27 +54,17 @@
         android:maxLines="1"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
-    <CheckBox
-        android:text="Use same location for start and end"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/checkBox"
-        android:onClick="clickCheckboxSameEndAsStart"
-        android:layout_marginBottom="8dp"
-        android:layout_above="@+id/button_current_location"
-        android:layout_centerHorizontal="true" />
-
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="18dp"
+        android:layout_marginTop="38dp"
         android:layout_weight="1"
         android:text="Importance of parameters:"
         android:textAppearance="@style/TextAppearance.AppCompat"
         android:textSize="16sp"
         android:layout_below="@+id/editText"
-        android:layout_toEndOf="@+id/textView_environment" />
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:id="@+id/textView_view"
@@ -111,9 +74,9 @@
         android:text="View:"
         android:textAppearance="@style/TextAppearance.AppCompat"
         android:layout_marginTop="25dp"
+        android:layout_marginEnd="18dp"
         android:layout_below="@+id/textView_elevation"
-        android:layout_toStartOf="@+id/checkBox"
-        android:layout_marginEnd="9dp" />
+        android:layout_toStartOf="@+id/textView10" />
 
     <Spinner
         android:id="@+id/spinner_view"

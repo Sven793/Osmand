@@ -4,20 +4,18 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.text.Editable;
-import android.text.TextWatcher;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.SeekBar;
 import android.widget.Spinner;
 import android.widget.TextView;
 
 import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
 
 import js.myroute.Config.Singleton;
@@ -69,12 +67,6 @@ public class SetupActivity extends AppCompatActivity implements AdapterView.OnIt
 
         view.setOnItemSelectedListener(this);
         environment.setSelection(Singleton.getInstance().getEnvironmentImportance());
-
-        CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox);
-        if (Singleton.getInstance().getSameEndAsStart())
-            checkBox.setChecked(true);
-        else
-            checkBox.setChecked(false);
 
         final SeekBar seekBar2 = (SeekBar) findViewById(R.id.seekBar2);
         final EditText editText = (EditText) findViewById(R.id.editText);
@@ -182,29 +174,13 @@ public class SetupActivity extends AppCompatActivity implements AdapterView.OnIt
         }
     }
 
-    public void chooseOnMap(View view) {
-        Singleton.getInstance().setUseCurrentLocation(false);
+    public void onClickSave(View view) {
+        Singleton.getInstance().setStartToCurrentPosition(true);
         Singleton.getInstance().setLengthIn((int)(l*1000));
         Singleton.getInstance().setSetupComplete(true);
+        saveUserData();
         Intent myIntent = new Intent(this, MapActivity.class);
         startActivity(myIntent);
-        // Todo: maybe do differently?
-    }
-
-    public void useCurrentLocation(View view) {
-        Singleton.getInstance().setUseCurrentLocation(true);
-        Singleton.getInstance().setLengthIn((int)(l*1000));
-        Singleton.getInstance().setSetupComplete(true);
-        Intent myIntent = new Intent(this, MapActivity.class);
-        startActivity(myIntent);
-    }
-
-    public void clickCheckboxSameEndAsStart(View view) {
-        CheckBox box = (CheckBox) view;
-        if (box.isChecked())
-            Singleton.getInstance().setSameEndAsStart(true);
-        else if (!box.isChecked())
-            Singleton.getInstance().setSameEndAsStart(false);
     }
 
     @Override
@@ -222,6 +198,30 @@ public class SetupActivity extends AppCompatActivity implements AdapterView.OnIt
             else if (i == 2 || i == 4)
                 elevation.setSelection(0);
 
+        }
+    }
+
+    public void saveUserData(){
+        //save user data
+        String len = Integer.toString(Singleton.getInstance().getLengthIn());
+        String lat = Double.toString(Singleton.getInstance().getCurrPos().getLatitude());
+        String lon = Double.toString(Singleton.getInstance().getCurrPos().getLongitude());
+
+        try {
+            FileOutputStream fOut = openFileOutput("LastUsedLength",Context.MODE_PRIVATE);
+            fOut.write(len.getBytes());
+            fOut.close();
+
+            fOut = openFileOutput("LastUsedPosLat",Context.MODE_PRIVATE);
+            fOut.write(lat.getBytes());
+            fOut.close();
+
+            fOut = openFileOutput("LastUsedPosLon",Context.MODE_PRIVATE);
+            fOut.write(lon.getBytes());
+
+            fOut.close();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 

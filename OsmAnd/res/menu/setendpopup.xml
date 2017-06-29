@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/chooseEnd"
+        android:title="Choose End on map"/>
+
+    <item
+        android:id="@+id/useCurrentLocation"
+        android:title="Use current location"/>
+
+    <item
+        android:id="@+id/sameAsStart"
+        android:title="Same Start and End"/>
+</menu>
