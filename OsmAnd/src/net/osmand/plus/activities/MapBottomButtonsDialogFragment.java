@@ -15,7 +15,7 @@ import android.widget.ImageView;
 import net.osmand.plus.IconsCache;
 import net.osmand.plus.OsmAndLocationProvider;
 import net.osmand.plus.OsmandSettings;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.base.BottomSheetDialogFragment;
 import net.osmand.plus.dashboard.DashboardOnMap;
 import net.osmand.plus.views.MapControlsLayer;

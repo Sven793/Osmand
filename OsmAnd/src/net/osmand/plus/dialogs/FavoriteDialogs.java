@@ -27,7 +27,7 @@ import net.osmand.data.PointDescription;
 import net.osmand.plus.FavouritesDbHelper;
 import net.osmand.plus.FavouritesDbHelper.FavoriteGroup;
 import net.osmand.plus.OsmandApplication;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.activities.FavoritesListFragment.FavouritesAdapter;
 import net.osmand.plus.activities.MapActivity;
 import net.osmand.util.MapUtils;

@@ -14,7 +14,7 @@ import net.osmand.data.Amenity;
 import net.osmand.osm.MapPoiTypes;
 import net.osmand.osm.io.NetworkUtils;
 import net.osmand.plus.OsmandApplication;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.util.MapUtils;
 import net.sf.junidecode.Junidecode;
 

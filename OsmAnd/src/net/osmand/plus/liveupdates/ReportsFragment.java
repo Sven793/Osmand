@@ -28,7 +28,7 @@ import com.google.gson.JsonSyntaxException;
 import net.osmand.AndroidUtils;
 import net.osmand.PlatformUtil;
 import net.osmand.osm.io.NetworkUtils;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.base.BaseOsmAndFragment;
 import net.osmand.plus.liveupdates.CountrySelectionFragment.CountryItem;
 

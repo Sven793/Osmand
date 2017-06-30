@@ -5,7 +5,7 @@ import android.net.Uri;
 import android.os.Bundle;
 
 import net.osmand.data.LatLon;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.activities.MapActivity;
 import net.osmand.plus.activities.actions.ShareDialog;
 import net.osmand.plus.mapcontextmenu.BaseMenuController;

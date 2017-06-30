@@ -25,7 +25,7 @@ import android.widget.Toast;
 import net.osmand.plus.IconsCache;
 import net.osmand.plus.OsmandApplication;
 import net.osmand.plus.OsmandPlugin;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.activities.MapActivity;
 import net.osmand.plus.dialogs.ProgressDialogFragment;
 import net.osmand.plus.osmedit.dialogs.SendPoiDialogFragment;

@@ -22,7 +22,7 @@ import net.osmand.osm.PoiCategory;
 import net.osmand.osm.PoiFilter;
 import net.osmand.osm.PoiType;
 import net.osmand.osm.edit.OSMSettings;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.base.BaseOsmAndFragment;
 import net.osmand.util.Algorithms;
 

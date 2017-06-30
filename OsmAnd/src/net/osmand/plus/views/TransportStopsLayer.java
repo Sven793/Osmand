@@ -20,7 +20,7 @@ import net.osmand.data.TransportRoute;
 import net.osmand.data.TransportStop;
 import net.osmand.osm.edit.Node;
 import net.osmand.osm.edit.Way;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.activities.MapActivity;
 
 import java.util.ArrayList;

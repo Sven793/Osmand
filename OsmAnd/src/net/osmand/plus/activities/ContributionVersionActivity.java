@@ -17,7 +17,7 @@ import android.widget.Toast;
 
 import net.osmand.AndroidUtils;
 import net.osmand.osm.io.NetworkUtils;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserFactory;
@@ -238,7 +238,7 @@ public class ContributionVersionActivity extends OsmandListActivity {
 			View v = convertView;
 			if (v == null) {
 				LayoutInflater inflater = getLayoutInflater();
-				v = inflater.inflate(net.osmand.plus.R.layout.download_build_list_item, parent, false);
+				v = inflater.inflate(sd.smartroute.R.layout.download_build_list_item, parent, false);
 			}
 			final View row = v;
 			OsmAndBuild build = getItem(position);

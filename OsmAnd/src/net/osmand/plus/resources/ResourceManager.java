@@ -32,7 +32,7 @@ import net.osmand.plus.AppInitializer;
 import net.osmand.plus.AppInitializer.InitEvents;
 import net.osmand.plus.OsmandApplication;
 import net.osmand.plus.OsmandPlugin;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.Version;
 import net.osmand.plus.render.MapRenderRepositories;
 import net.osmand.plus.render.NativeOsmandLibrary;

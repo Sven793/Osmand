@@ -13,7 +13,7 @@ import android.widget.Spinner;
 
 import net.osmand.plus.OsmandApplication;
 import net.osmand.plus.OsmandSettings;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 
 public abstract class ActionBarPreferenceActivity extends AppCompatPreferenceActivity {
 	private Toolbar tb;

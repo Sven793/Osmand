@@ -8,8 +8,7 @@ import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 
 import net.osmand.AndroidUtils;
-import net.osmand.plus.R;
-import net.osmand.plus.myplaces.FavoritesActivity;
+import sd.smartroute.R;
 
 public class ActionBarProgressActivity extends OsmandActionBarActivity {
 

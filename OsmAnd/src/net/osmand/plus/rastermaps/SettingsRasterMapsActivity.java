@@ -12,7 +12,7 @@ import android.preference.PreferenceScreen;
 import net.osmand.ResultMatcher;
 import net.osmand.map.TileSourceManager.TileSourceTemplate;
 import net.osmand.plus.OsmandApplication;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.activities.SettingsBaseActivity;
 import net.osmand.plus.views.SeekBarPreference;
 

@@ -41,7 +41,7 @@ android {
 		targetSdkVersion 23
 		versionCode 1337
 		multiDexEnabled true
-		versionName "3.7"
+		versionName "1.0"
 	}
 
     packagingOptions {
@@ -141,11 +141,11 @@ android {
 		}
 		full {
 			dimension "version"
-			applicationId "net.osmand.plus"
+			applicationId "sd.smartroute"
 		}
         fulldev {
             dimension "version"
-            applicationId "net.osmand.plus"
+            applicationId "sd.smartroute"
             resConfig "en"
             //resConfigs "xxhdpi", "nodpi"
         }

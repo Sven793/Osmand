@@ -13,7 +13,7 @@ import net.osmand.plus.NavigationService;
 import net.osmand.plus.OsmAndFormatter;
 import net.osmand.plus.OsmandApplication;
 import net.osmand.plus.OsmandPlugin;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.monitoring.OsmandMonitoringPlugin;
 import net.osmand.util.Algorithms;
 

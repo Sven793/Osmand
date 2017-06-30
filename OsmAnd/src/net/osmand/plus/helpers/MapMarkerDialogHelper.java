@@ -34,7 +34,7 @@ import net.osmand.plus.MapMarkersHelper;
 import net.osmand.plus.MapMarkersHelper.MapMarker;
 import net.osmand.plus.OsmAndFormatter;
 import net.osmand.plus.OsmandApplication;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.activities.MapActivity;
 import net.osmand.plus.dashboard.DashLocationFragment;
 import net.osmand.plus.dashboard.DashboardOnMap;
@@ -43,7 +43,6 @@ import net.osmand.plus.views.DirectionDrawable;
 import net.osmand.plus.views.controls.DynamicListView;
 import net.osmand.plus.views.controls.ListDividerShape;
 import net.osmand.plus.views.controls.StableArrayAdapter;
-import net.osmand.util.Algorithms;
 import net.osmand.util.MapUtils;
 
 import java.io.File;

@@ -8,6 +8,8 @@ import android.view.animation.Animation;
 import android.view.animation.Interpolator;
 import android.view.animation.RotateAnimation;
 
+import sd.smartroute.R;
+
 public class BusyIndicator {
 	
 	private View bar;

@@ -1,6 +1,6 @@
 package net.osmand.plus.mapcontextmenu.builders.cards;
 
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.activities.MapActivity;
 
 public class ProgressCard extends AbstractCard {

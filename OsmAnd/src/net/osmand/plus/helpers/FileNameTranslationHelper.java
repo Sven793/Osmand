@@ -4,7 +4,7 @@ import android.content.Context;
 import net.osmand.IndexConstants;
 import net.osmand.PlatformUtil;
 import net.osmand.map.OsmandRegions;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.download.DownloadResources;
 
 import org.apache.commons.logging.Log;

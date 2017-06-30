@@ -1,10 +1,8 @@
 package net.osmand.plus.dialogs;
 
 import android.annotation.SuppressLint;
-import android.content.ContentResolver;
 import android.content.Context;
 import android.os.Bundle;
-import android.provider.Settings;
 import android.support.annotation.NonNull;
 import android.support.v4.app.DialogFragment;
 import android.support.v7.widget.Toolbar;
@@ -17,7 +15,7 @@ import android.webkit.WebViewClient;
 import net.osmand.PlatformUtil;
 import net.osmand.plus.OsmandApplication;
 import net.osmand.plus.OsmandSettings;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 
 import org.apache.commons.logging.Log;
 

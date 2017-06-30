@@ -10,7 +10,7 @@ import android.media.SoundPool;
 
 import net.osmand.plus.OsmandApplication;
 import net.osmand.plus.OsmandPlugin;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.activities.MapActivity;
 
 public class AccessibilityPlugin extends OsmandPlugin {

@@ -2,7 +2,7 @@ package net.osmand.plus.mapcontextmenu.builders.cards;
 
 import android.view.View;
 
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.activities.MapActivity;
 import net.osmand.plus.mapillary.MapillaryPlugin;
 

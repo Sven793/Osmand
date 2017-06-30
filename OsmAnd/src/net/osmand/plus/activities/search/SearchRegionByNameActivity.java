@@ -6,7 +6,7 @@ import java.util.Comparator;
 
 import net.osmand.data.LatLon;
 import net.osmand.plus.OsmandApplication;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.helpers.FileNameTranslationHelper;
 import net.osmand.plus.resources.RegionAddressRepository;
 import android.os.Bundle;

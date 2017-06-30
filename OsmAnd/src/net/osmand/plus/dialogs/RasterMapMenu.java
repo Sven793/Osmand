@@ -11,14 +11,12 @@ import net.osmand.plus.OsmandApplication;
 import net.osmand.plus.OsmandPlugin;
 import net.osmand.plus.OsmandSettings;
 import net.osmand.plus.OsmandSettings.LayerTransparencySeekbarMode;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.activities.MapActivity;
 import net.osmand.plus.activities.MapActivityLayers;
 import net.osmand.plus.rastermaps.OsmandRasterMapsPlugin;
 import net.osmand.plus.rastermaps.OsmandRasterMapsPlugin.OnMapSelectedCallback;
 import net.osmand.plus.rastermaps.OsmandRasterMapsPlugin.RasterMapType;
-import net.osmand.plus.views.GPXLayer;
-import net.osmand.plus.views.RouteLayer;
 
 public class RasterMapMenu {
 	private static final String TAG = "RasterMapMenu";

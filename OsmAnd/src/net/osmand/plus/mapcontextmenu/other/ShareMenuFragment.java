@@ -15,7 +15,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import net.osmand.AndroidUtils;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.activities.MapActivity;
 import net.osmand.plus.mapcontextmenu.other.ShareMenu.ShareItem;
 

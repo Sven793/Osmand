@@ -14,7 +14,6 @@ import net.osmand.IProgress;
 import net.osmand.IndexConstants;
 import net.osmand.PlatformUtil;
 import net.osmand.aidl.OsmandAidlApi;
-import net.osmand.binary.BinaryMapIndexReader;
 import net.osmand.map.OsmandRegions;
 import net.osmand.map.OsmandRegions.RegionTranslation;
 import net.osmand.map.WorldRegion;
@@ -45,7 +44,6 @@ import net.osmand.plus.voice.MediaCommandPlayerImpl;
 import net.osmand.plus.voice.TTSCommandPlayerImpl;
 import net.osmand.render.RenderingRulesStorage;
 import net.osmand.router.RoutingConfiguration;
-import net.osmand.search.SearchUICore;
 import net.osmand.util.Algorithms;
 
 import org.xmlpull.v1.XmlPullParserException;
@@ -60,6 +58,8 @@ import java.util.List;
 import java.util.Random;
 
 import btools.routingapp.BRouterServiceConnection;
+import sd.smartroute.R;
+
 import static net.osmand.plus.liveupdates.LiveUpdatesHelper.getPendingIntent;
 import static net.osmand.plus.liveupdates.LiveUpdatesHelper.preferenceLastCheck;
 import static net.osmand.plus.liveupdates.LiveUpdatesHelper.preferenceLiveUpdatesOn;

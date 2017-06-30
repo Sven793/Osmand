@@ -18,6 +18,8 @@ import net.osmand.util.MapUtils;
 import java.util.ArrayList;
 import java.util.List;
 
+import sd.smartroute.R;
+
 public class TargetPointsHelper {
 
 	private List<TargetPoint> intermediatePoints = new ArrayList<>();
@@ -81,7 +83,7 @@ public class TargetPointsHelper {
 		@SuppressLint("StringFormatInvalid")
 		public PointDescription getPointDescription(Context ctx) {
 			if (!intermediate) {
-				return new PointDescription(PointDescription.POINT_TYPE_TARGET, ctx.getString(R.string.destination_point, ""), 
+				return new PointDescription(PointDescription.POINT_TYPE_TARGET, ctx.getString(R.string.destination_point, ""),
 						getOnlyName());
 			} else {
 				return new PointDescription(PointDescription.POINT_TYPE_TARGET, (index + 1) + ". " + ctx.getString(R.string.intermediate_point, ""), 

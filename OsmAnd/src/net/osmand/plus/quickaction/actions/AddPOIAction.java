@@ -36,7 +36,7 @@ import net.osmand.osm.edit.Node;
 import net.osmand.plus.OsmandApplication;
 import net.osmand.plus.OsmandPlugin;
 import net.osmand.plus.OsmandSettings;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.activities.MapActivity;
 import net.osmand.plus.osmedit.EditPoiData;
 import net.osmand.plus.osmedit.EditPoiDialogFragment;

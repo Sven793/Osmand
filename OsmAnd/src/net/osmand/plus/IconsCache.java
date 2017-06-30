@@ -8,9 +8,9 @@ import android.support.annotation.ColorRes;
 import android.support.annotation.DrawableRes;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.graphics.drawable.DrawableCompat;
-import android.view.MenuItem;
 
 import gnu.trove.map.hash.TLongObjectHashMap;
+import sd.smartroute.R;
 
 public class IconsCache {
 

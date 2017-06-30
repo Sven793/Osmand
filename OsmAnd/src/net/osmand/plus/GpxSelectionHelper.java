@@ -27,6 +27,8 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
+import sd.smartroute.R;
+
 public class GpxSelectionHelper {
 
 	private static final String CURRENT_TRACK = "currentTrack";

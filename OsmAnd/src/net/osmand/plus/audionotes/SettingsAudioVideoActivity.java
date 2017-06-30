@@ -14,7 +14,7 @@ import android.preference.PreferenceScreen;
 import net.osmand.PlatformUtil;
 import net.osmand.plus.OsmandApplication;
 import net.osmand.plus.OsmandPlugin;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.activities.SettingsBaseActivity;
 
 import org.apache.commons.logging.Log;

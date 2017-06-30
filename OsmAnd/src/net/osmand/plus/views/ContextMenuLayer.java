@@ -35,7 +35,7 @@ import net.osmand.osm.PoiFilter;
 import net.osmand.osm.PoiType;
 import net.osmand.plus.ContextMenuAdapter;
 import net.osmand.plus.ContextMenuItem;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.activities.MapActivity;
 import net.osmand.plus.mapcontextmenu.MapContextMenu;
 import net.osmand.plus.mapcontextmenu.other.MapMultiSelectionMenu;
@@ -51,7 +51,7 @@ import java.util.Map;
 import java.util.Map.Entry;
 
 import gnu.trove.list.array.TIntArrayList;
-import js.myroute.Config.Singleton;
+import sd.smartroute.Config.Singleton;
 
 public class ContextMenuLayer extends OsmandMapLayer {
 	//private static final Log LOG = PlatformUtil.getLog(ContextMenuLayer.class);

@@ -8,7 +8,7 @@ import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
 import net.osmand.plus.OsmandPlugin;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.audionotes.AudioVideoNotesPlugin;
 import net.osmand.plus.audionotes.TakeAudioNoteAction;
 import net.osmand.plus.audionotes.TakePhotoNoteAction;

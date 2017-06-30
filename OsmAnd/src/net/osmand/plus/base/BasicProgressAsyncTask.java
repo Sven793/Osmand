@@ -3,7 +3,7 @@ package net.osmand.plus.base;
 import net.osmand.IProgress;
 import net.osmand.plus.OsmAndConstants;
 import net.osmand.plus.OsmandApplication;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import android.os.AsyncTask;
 import android.os.Handler;
 import android.os.Message;

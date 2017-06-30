@@ -52,6 +52,8 @@ import java.util.Map;
 import java.util.Set;
 import java.util.StringTokenizer;
 
+import sd.smartroute.R;
+
 public class OsmandSettings {
 
 	public interface OsmandPreference<T> {

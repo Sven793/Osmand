@@ -42,6 +42,8 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AlertDialog;
 import android.util.Log;
 
+import sd.smartroute.R;
+
 public class OsmAndLocationProvider implements SensorEventListener {
 
 	public static final int REQUEST_LOCATION_PERMISSION = 100;

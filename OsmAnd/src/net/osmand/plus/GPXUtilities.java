@@ -47,6 +47,8 @@ import java.util.Map;
 import java.util.Stack;
 import java.util.TimeZone;
 
+import sd.smartroute.R;
+
 public class GPXUtilities {
 	public final static Log log = PlatformUtil.getLog(GPXUtilities.class);
 

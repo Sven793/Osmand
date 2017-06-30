@@ -4,7 +4,7 @@ import net.osmand.IndexConstants;
 import net.osmand.PlatformUtil;
 import net.osmand.binary.BinaryMapIndexReader;
 import net.osmand.osm.io.NetworkUtils;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.util.Algorithms;
 
 import org.xmlpull.v1.XmlPullParser;

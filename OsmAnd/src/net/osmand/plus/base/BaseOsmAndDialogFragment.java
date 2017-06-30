@@ -14,7 +14,7 @@ import android.widget.ImageView;
 import net.osmand.plus.IconsCache;
 import net.osmand.plus.OsmandApplication;
 import net.osmand.plus.OsmandSettings;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.activities.OsmandActionBarActivity;
 
 public class BaseOsmAndDialogFragment extends DialogFragment {

@@ -1,6 +1,6 @@
 package net.osmand.view;
 
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.util.AttributeSet;

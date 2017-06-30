@@ -3,7 +3,7 @@ package net.osmand.plus.search.listitems;
 import android.view.View.OnClickListener;
 
 import net.osmand.plus.OsmandApplication;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 
 public class QuickSearchMoreListItem extends QuickSearchListItem {
 

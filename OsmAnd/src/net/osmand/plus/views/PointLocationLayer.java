@@ -15,7 +15,7 @@ import net.osmand.data.PointDescription;
 import net.osmand.data.RotatedTileBox;
 import net.osmand.plus.ApplicationMode;
 import net.osmand.plus.OsmAndLocationProvider;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.base.MapViewTrackingUtilities;
 
 import org.apache.commons.logging.Log;

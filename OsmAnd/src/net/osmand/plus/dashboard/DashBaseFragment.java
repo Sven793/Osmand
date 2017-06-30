@@ -15,7 +15,7 @@ import android.widget.FrameLayout;
 
 import net.osmand.plus.OsmAndAppCustomization;
 import net.osmand.plus.OsmandApplication;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.activities.MapActivity;
 import net.osmand.plus.widgets.InterceptorFrameLayout;
 import net.osmand.plus.widgets.tools.SwipeDismissTouchListener;

@@ -13,7 +13,7 @@ import net.osmand.plus.GPXUtilities;
 import net.osmand.plus.GPXUtilities.GPXFile;
 import net.osmand.plus.OsmandApplication;
 import net.osmand.plus.OsmandPlugin;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.activities.OsmandListActivity;
 import net.osmand.plus.helpers.GpxUiHelper;
 import net.osmand.plus.routepointsnavigation.RoutePointsPlugin.RoutePoint;

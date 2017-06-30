@@ -8,7 +8,7 @@ import android.widget.EditText;
 
 import net.osmand.data.LatLon;
 import net.osmand.plus.OsmandPlugin;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.activities.MapActivity;
 import net.osmand.plus.osmedit.OsmEditingPlugin;
 import net.osmand.plus.quickaction.QuickAction;

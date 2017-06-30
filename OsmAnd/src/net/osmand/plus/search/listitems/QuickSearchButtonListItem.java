@@ -8,7 +8,7 @@ import android.text.Spanned;
 import android.view.View;
 
 import net.osmand.plus.OsmandApplication;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 
 public class QuickSearchButtonListItem extends QuickSearchListItem {
 

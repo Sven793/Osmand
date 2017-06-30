@@ -21,7 +21,7 @@ import android.widget.TextView;
 
 import net.osmand.map.WorldRegion;
 import net.osmand.plus.OsmandApplication;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.base.BaseOsmAndDialogFragment;
 import net.osmand.util.Algorithms;
 

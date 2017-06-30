@@ -29,7 +29,7 @@ import net.osmand.plus.OsmandPlugin;
 import net.osmand.plus.OsmandSettings;
 import net.osmand.plus.OsmandSettings.CommonPreference;
 import net.osmand.plus.OsmandSettings.LayerTransparencySeekbarMode;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.Version;
 import net.osmand.plus.activities.DownloadTilesDialog;
 import net.osmand.plus.activities.MapActivity;

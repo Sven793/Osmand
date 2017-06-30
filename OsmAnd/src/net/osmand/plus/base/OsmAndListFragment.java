@@ -5,7 +5,7 @@ import android.support.v4.app.ListFragment;
 import android.widget.ArrayAdapter;
 
 import net.osmand.plus.OsmandApplication;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 
 public abstract class OsmAndListFragment extends ListFragment {
 	

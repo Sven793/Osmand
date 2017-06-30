@@ -42,7 +42,7 @@ import android.widget.ListView;
 import android.widget.PopupWindow;
 import android.widget.TextView;
 
-import net.osmand.plus.R;
+import sd.smartroute.R;
 
 import java.util.ArrayList;
 import java.util.Collections;

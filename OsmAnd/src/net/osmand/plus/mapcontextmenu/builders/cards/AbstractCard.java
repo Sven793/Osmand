@@ -17,7 +17,7 @@ import android.webkit.WebView;
 import android.widget.LinearLayout;
 
 import net.osmand.plus.OsmandApplication;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.activities.MapActivity;
 
 public abstract class AbstractCard {

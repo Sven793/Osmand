@@ -20,7 +20,7 @@ import net.osmand.access.AccessibilityAssistant;
 import net.osmand.data.Amenity;
 import net.osmand.data.LatLon;
 import net.osmand.plus.OsmandApplication;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.dashboard.DashLocationFragment;
 import net.osmand.plus.search.listitems.QuickSearchHeaderListItem;
 import net.osmand.plus.search.listitems.QuickSearchListItem;

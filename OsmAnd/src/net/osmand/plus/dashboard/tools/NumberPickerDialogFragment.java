@@ -11,7 +11,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import net.osmand.PlatformUtil;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 
 public class NumberPickerDialogFragment extends DialogFragment {
 	public static final String TAG = "NumberPickerDialogFragment";

@@ -8,7 +8,7 @@ import android.support.v7.app.AlertDialog;
 import net.osmand.IndexConstants;
 import net.osmand.plus.OsmandApplication;
 import net.osmand.plus.OsmandPlugin;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.download.DownloadActivity;
 import net.osmand.plus.download.DownloadResources;
 import net.osmand.plus.render.RendererRegistry;
@@ -37,12 +37,12 @@ public class NauticalMapsPlugin extends OsmandPlugin {
 
 	@Override
 	public String getDescription() {
-		return app.getString(net.osmand.plus.R.string.plugin_nautical_descr);
+		return app.getString(sd.smartroute.R.string.plugin_nautical_descr);
 	}
 
 	@Override
 	public String getName() {
-		return app.getString(net.osmand.plus.R.string.plugin_nautical_name);
+		return app.getString(sd.smartroute.R.string.plugin_nautical_name);
 	}
 
 	@Override
@@ -59,7 +59,7 @@ public class NauticalMapsPlugin extends OsmandPlugin {
 			if(!app.getResourceManager().getIndexFileNames().containsKey(DownloadResources.WORLD_SEAMARKS_NAME+
 					 IndexConstants.BINARY_MAP_INDEX_EXT)){
 				AlertDialog.Builder dlg = new AlertDialog.Builder(activity);
-				dlg.setMessage(net.osmand.plus.R.string.nautical_maps_missing);
+				dlg.setMessage(sd.smartroute.R.string.nautical_maps_missing);
 				dlg.setPositiveButton(R.string.shared_string_ok, new OnClickListener() {
 					
 					@Override

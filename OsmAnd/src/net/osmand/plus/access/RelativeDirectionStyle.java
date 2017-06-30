@@ -1,6 +1,6 @@
 package net.osmand.plus.access;
 
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import android.content.Context;
 
 public enum RelativeDirectionStyle {

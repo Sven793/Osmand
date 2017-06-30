@@ -2,7 +2,7 @@ package net.osmand.plus.views;
 
 import java.util.Map;
 
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.router.TurnType;
 import android.content.res.Resources;
 import android.graphics.Bitmap;

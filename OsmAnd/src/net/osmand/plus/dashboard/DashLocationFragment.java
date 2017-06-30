@@ -13,7 +13,7 @@ import net.osmand.Location;
 import net.osmand.data.LatLon;
 import net.osmand.plus.OsmAndFormatter;
 import net.osmand.plus.OsmandApplication;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.views.DirectionDrawable;
 
 import java.util.ArrayList;

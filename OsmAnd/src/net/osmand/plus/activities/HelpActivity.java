@@ -21,7 +21,7 @@ import net.osmand.plus.ContextMenuAdapter;
 import net.osmand.plus.ContextMenuItem;
 import net.osmand.plus.OsmandApplication;
 import net.osmand.plus.OsmandPlugin;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.Version;
 import net.osmand.plus.dialogs.HelpArticleDialogFragment;
 

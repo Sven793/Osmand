@@ -13,7 +13,7 @@ import android.support.v7.app.AlertDialog;
 import net.osmand.PlatformUtil;
 import net.osmand.plus.ApplicationMode;
 import net.osmand.plus.OsmandApplication;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.activities.SettingsActivity;
 import net.osmand.plus.routing.VoiceRouter;
 import net.osmand.util.Algorithms;

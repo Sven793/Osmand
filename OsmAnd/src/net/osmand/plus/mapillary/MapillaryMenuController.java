@@ -3,7 +3,7 @@ package net.osmand.plus.mapillary;
 import android.graphics.drawable.Drawable;
 
 import net.osmand.data.PointDescription;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.activities.MapActivity;
 import net.osmand.plus.mapcontextmenu.MenuBuilder;
 import net.osmand.plus.mapcontextmenu.MenuController;

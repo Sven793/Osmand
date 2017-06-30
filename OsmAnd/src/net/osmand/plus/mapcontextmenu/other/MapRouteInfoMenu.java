@@ -33,7 +33,7 @@ import net.osmand.plus.MapMarkersHelper.MapMarker;
 import net.osmand.plus.OsmAndFormatter;
 import net.osmand.plus.OsmandApplication;
 import net.osmand.plus.OsmandSettings.OsmandPreference;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.TargetPointsHelper;
 import net.osmand.plus.TargetPointsHelper.TargetPoint;
 import net.osmand.plus.activities.FavoritesListFragment.FavouritesAdapter;

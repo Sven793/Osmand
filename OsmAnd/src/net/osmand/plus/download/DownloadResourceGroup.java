@@ -7,7 +7,7 @@ import net.osmand.OsmAndCollator;
 import net.osmand.map.OsmandRegions;
 import net.osmand.map.WorldRegion;
 import net.osmand.plus.OsmandApplication;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 
 import java.util.ArrayList;
 import java.util.Collections;

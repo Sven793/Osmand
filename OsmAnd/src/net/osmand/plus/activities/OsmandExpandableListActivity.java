@@ -1,7 +1,7 @@
 package net.osmand.plus.activities;
 
 import net.osmand.plus.OsmandApplication;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import android.app.ActionBar;
 import android.graphics.Shader.TileMode;
 import android.graphics.drawable.BitmapDrawable;

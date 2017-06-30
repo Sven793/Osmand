@@ -17,7 +17,7 @@ import net.osmand.plus.OsmAndLocationProvider;
 import net.osmand.plus.OsmAndLocationProvider.OsmAndLocationListener;
 import net.osmand.plus.OsmandApplication;
 import net.osmand.plus.OsmandSettings;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.activities.FavoritesListActivity;
 import net.osmand.plus.activities.FavoritesListFragment;
 import net.osmand.plus.activities.NavigatePointFragment;

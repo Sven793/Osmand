@@ -1,6 +1,5 @@
 package net.osmand.plus.dashboard;
 
-import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
@@ -9,11 +8,10 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import net.osmand.AndroidUtils;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.activities.MapActivity;
 import net.osmand.plus.activities.MapActivity.ShowQuickSearchMode;
 import net.osmand.plus.dashboard.tools.DashFragmentData;
-import net.osmand.plus.helpers.FontCache;
 
 public class DashSearchFragment extends DashBaseFragment {
 	public static final String TAG = "DASH_SEARCH_FRAGMENT";

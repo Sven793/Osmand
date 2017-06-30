@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:tools="http://schemas.android.com/tools"
 	android:installLocation="auto"
-	package="net.osmand.plus">
+	package="sd.smartroute">
 
 	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
@@ -14,9 +14,7 @@
 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 	<uses-permission android:name="android.permission.WAKE_LOCK" />
-	<uses-permission android:name="android.permission.CAMERA" />
 	<uses-permission android:name="android.permission.VIBRATE" />
-	<uses-permission android:name="android.permission.RECORD_AUDIO" />
 	<uses-permission android:name="com.android.vending.BILLING" />
 
 	<uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
@@ -703,7 +701,7 @@
 
 		<!-- keep android:process on a separate line !! -->
 		<service
-		    android:process="net.osmand.plus" 
+		    android:process="sd.smartroute"
 		    android:label="@string/process_navigation_service"
 			android:name="net.osmand.plus.NavigationService"
 			android:stopWithTask="false">
@@ -740,7 +738,7 @@
         <activity android:name=".liveupdates.OsmLiveActivity"
             android:label="@string/osm_live"/>
         <receiver android:name="net.osmand.plus.liveupdates.LiveUpdatesAlarmReceiver"/>
-		<activity android:name="js.myroute.Activity.SetupActivity"
+		<activity android:name="sd.smartroute.Activity.SetupActivity"
 			android:theme="@style/OsmandLightTheme"
 			android:label="Smart Route Setup"/>
 </application>

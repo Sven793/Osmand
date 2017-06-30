@@ -16,7 +16,7 @@ import net.osmand.AndroidUtils;
 import net.osmand.data.LatLon;
 import net.osmand.plus.ApplicationMode;
 import net.osmand.plus.IconsCache;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.TargetPointsHelper;
 import net.osmand.plus.TargetPointsHelper.TargetPoint;
 import net.osmand.plus.activities.MapActivity;

@@ -1,7 +1,7 @@
 package net.osmand.plus.views.mapwidgets;
 
 import net.osmand.plus.OsmandApplication;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.views.OsmandMapLayer.DrawSettings;
 import android.app.Activity;
 import android.graphics.Paint.Style;

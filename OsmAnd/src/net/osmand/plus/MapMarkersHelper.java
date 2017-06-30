@@ -11,6 +11,8 @@ import net.osmand.util.Algorithms;
 import java.util.ArrayList;
 import java.util.List;
 
+import sd.smartroute.R;
+
 public class MapMarkersHelper {
 	public static final int MAP_MARKERS_COLORS_COUNT = 7;
 

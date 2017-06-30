@@ -23,10 +23,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import net.osmand.AndroidUtils;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.Version;
 import net.osmand.plus.activities.MapActivity;
-import net.osmand.plus.views.OsmandMapTileView;
 
 public class StartGPSStatus extends OsmAndAction {
 

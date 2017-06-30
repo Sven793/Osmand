@@ -16,6 +16,8 @@ import java.text.DecimalFormat;
 import java.text.MessageFormat;
 import java.util.Map.Entry;
 
+import sd.smartroute.R;
+
 public class OsmAndFormatter {
 	public final static float METERS_IN_KILOMETER = 1000f;
 	public final static float METERS_IN_ONE_MILE = 1609.344f; // 1609.344

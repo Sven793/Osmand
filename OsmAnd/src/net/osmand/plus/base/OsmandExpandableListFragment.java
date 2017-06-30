@@ -13,7 +13,7 @@ import android.widget.ExpandableListView;
 import android.widget.ExpandableListView.OnChildClickListener;
 
 import net.osmand.plus.OsmandApplication;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.activities.OsmandActionBarActivity;
 
 public abstract class OsmandExpandableListFragment extends BaseOsmAndFragment

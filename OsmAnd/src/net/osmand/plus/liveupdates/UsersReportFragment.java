@@ -1,8 +1,6 @@
 package net.osmand.plus.liveupdates;
 
-import java.util.Arrays;
-
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.base.BaseOsmAndDialogFragment;
 import net.osmand.plus.liveupdates.Protocol.RankingUserByMonthResponse;
 import net.osmand.plus.liveupdates.Protocol.UserRankingByMonth;

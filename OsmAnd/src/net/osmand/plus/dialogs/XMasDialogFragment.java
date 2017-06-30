@@ -11,7 +11,7 @@ import android.widget.Button;
 
 import net.osmand.osm.PoiCategory;
 import net.osmand.plus.OsmandApplication;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.activities.MapActivity;
 
 import java.util.Date;

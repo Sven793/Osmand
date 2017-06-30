@@ -13,7 +13,7 @@ import java.util.concurrent.ConcurrentLinkedQueue;
 import net.osmand.Location;
 import net.osmand.data.LatLon;
 import net.osmand.plus.OsmandSettings.OsmandPreference;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 
 import org.json.JSONArray;
 import org.json.JSONException;

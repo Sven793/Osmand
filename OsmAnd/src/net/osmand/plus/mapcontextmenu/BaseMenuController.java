@@ -3,7 +3,7 @@ package net.osmand.plus.mapcontextmenu;
 import android.graphics.drawable.Drawable;
 
 import net.osmand.plus.IconsCache;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.activities.MapActivity;
 import net.osmand.plus.helpers.AndroidUiHelper;
 

@@ -21,6 +21,8 @@ import net.osmand.plus.routing.RouteProvider.GPXRouteParamsBuilder;
 import java.util.ArrayList;
 import java.util.List;
 
+import sd.smartroute.R;
+
 public class OsmAndLocationSimulation {
 
 	private Thread routeAnimation;

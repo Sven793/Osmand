@@ -11,10 +11,9 @@ import net.osmand.data.LatLon;
 import net.osmand.data.LocationPoint;
 import net.osmand.plus.ApplicationMode;
 import net.osmand.plus.OsmandApplication;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.router.RouteSegmentResult;
 import net.osmand.router.TurnType;
-import net.osmand.util.Algorithms;
 import net.osmand.util.MapUtils;
 import android.content.Context;
 

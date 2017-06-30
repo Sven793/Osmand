@@ -14,13 +14,11 @@ import net.osmand.plus.OsmandApplication;
 import net.osmand.plus.OsmandPlugin;
 import net.osmand.plus.OsmandSettings;
 import net.osmand.plus.OsmandSettings.CommonPreference;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.activities.MapActivity;
 import net.osmand.plus.activities.SettingsActivity;
 import net.osmand.plus.dashboard.DashboardOnMap;
-import net.osmand.plus.views.GPXLayer;
 import net.osmand.plus.views.OsmandMapTileView;
-import net.osmand.plus.views.RouteLayer;
 import net.osmand.render.RenderingRuleProperty;
 import net.osmand.util.Algorithms;
 

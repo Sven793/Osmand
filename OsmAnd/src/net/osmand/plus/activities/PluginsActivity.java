@@ -16,7 +16,7 @@ import android.widget.TextView;
 
 import net.osmand.plus.OsmandApplication;
 import net.osmand.plus.OsmandPlugin;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 
 public class PluginsActivity extends OsmandListActivity {
 	public static final int ACTIVE_PLUGINS_LIST_MODIFIED = 1;

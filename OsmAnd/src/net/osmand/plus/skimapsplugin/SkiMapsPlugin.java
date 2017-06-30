@@ -4,7 +4,7 @@ import android.app.Activity;
 
 import net.osmand.plus.OsmandApplication;
 import net.osmand.plus.OsmandPlugin;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.render.RendererRegistry;
 
 public class SkiMapsPlugin extends OsmandPlugin {
@@ -20,12 +20,12 @@ public class SkiMapsPlugin extends OsmandPlugin {
 
 	@Override
 	public String getDescription() {
-		return app.getString(net.osmand.plus.R.string.plugin_ski_descr);
+		return app.getString(sd.smartroute.R.string.plugin_ski_descr);
 	}
 
 	@Override
 	public String getName() {
-		return app.getString(net.osmand.plus.R.string.plugin_ski_name);
+		return app.getString(sd.smartroute.R.string.plugin_ski_name);
 	}
 	
 	@Override

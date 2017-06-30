@@ -24,7 +24,7 @@ import net.osmand.osm.PoiCategory;
 import net.osmand.plus.GPXUtilities;
 import net.osmand.plus.OsmAndFormatter;
 import net.osmand.plus.OsmandApplication;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.activities.MapActivity;
 import net.osmand.plus.base.OsmAndListFragment;
 import net.osmand.plus.dashboard.DashLocationFragment;

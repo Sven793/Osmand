@@ -19,14 +19,12 @@ import net.osmand.data.LatLon;
 import net.osmand.data.PointDescription;
 import net.osmand.plus.OsmAndFormatter;
 import net.osmand.plus.OsmandApplication;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.activities.MapActivity;
 import net.osmand.plus.mapcontextmenu.MapContextMenu;
 import net.osmand.plus.routing.RoutingHelper;
 import net.osmand.plus.views.AnimateDraggingMapThread;
 import net.osmand.plus.views.ContextMenuLayer;
-import net.osmand.router.RoutingConfiguration;
-import net.osmand.router.RoutingConfiguration.Builder;
 import net.osmand.util.MapUtils;
 
 import java.util.ArrayList;

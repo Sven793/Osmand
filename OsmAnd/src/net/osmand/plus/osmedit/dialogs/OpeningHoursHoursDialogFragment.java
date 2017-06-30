@@ -13,7 +13,7 @@ import android.view.Gravity;
 import android.widget.TextView;
 import android.widget.TimePicker;
 
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.osmedit.BasicEditPoiFragment;
 import net.osmand.util.OpeningHoursParser;
 

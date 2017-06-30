@@ -17,7 +17,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import net.osmand.plus.OsmandApplication;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.activities.SettingsBaseActivity;
 import net.osmand.plus.activities.actions.ShareDialog;
 import net.osmand.plus.osmo.OsMoService.SessionInfo;

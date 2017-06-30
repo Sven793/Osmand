@@ -17,11 +17,8 @@ import android.widget.LinearLayout;
 import net.osmand.plus.FavouritesDbHelper;
 import net.osmand.plus.IconsCache;
 import net.osmand.plus.OsmandApplication;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.activities.MapActivity;
-import net.osmand.plus.quickaction.QuickAction;
-import net.osmand.plus.quickaction.QuickActionFactory;
-import net.osmand.plus.quickaction.QuickActionRegistry;
 
 import java.util.List;
 

@@ -3,7 +3,7 @@ package net.osmand.plus.mapcontextmenu.editors;
 import android.support.v4.app.Fragment;
 
 import net.osmand.plus.OsmandApplication;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.activities.MapActivity;
 import net.osmand.plus.helpers.AndroidUiHelper;
 

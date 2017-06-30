@@ -22,7 +22,7 @@ import net.osmand.plus.GPXUtilities.GPXFile;
 import net.osmand.plus.GPXUtilities.WptPt;
 import net.osmand.plus.OsmAndFormatter;
 import net.osmand.plus.OsmandApplication;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.activities.search.SearchHistoryFragment;
 import net.osmand.plus.base.FavoriteImageDrawable;
 import net.osmand.plus.helpers.SearchHistoryHelper.HistoryEntry;

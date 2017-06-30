@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Random;
 
 import net.osmand.plus.OsmandApplication;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 
 import android.app.Activity;
 import android.content.Context;
@@ -20,7 +20,6 @@ import android.view.ViewGroup;
 import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.CheckedTextView;
 import android.widget.Spinner;
 import android.widget.TextView;
 

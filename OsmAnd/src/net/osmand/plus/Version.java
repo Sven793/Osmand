@@ -6,6 +6,8 @@ import java.net.URLEncoder;
 import android.content.pm.PackageInfo;
 import 	android.content.pm.PackageManager;
 
+import sd.smartroute.R;
+
 public class Version {
 	
 	private final String appVersion; 

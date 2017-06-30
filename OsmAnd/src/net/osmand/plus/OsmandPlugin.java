@@ -43,6 +43,8 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+import sd.smartroute.R;
+
 public abstract class OsmandPlugin {
 	private static List<OsmandPlugin> allPlugins = new ArrayList<OsmandPlugin>();
 	private static final Log LOG = PlatformUtil.getLog(OsmandPlugin.class);

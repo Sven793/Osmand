@@ -3,7 +3,7 @@ package net.osmand.data;
 import net.osmand.LocationConvert;
 import net.osmand.plus.OsmandApplication;
 import net.osmand.plus.OsmandSettings;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.util.Algorithms;
 import android.content.Context;
 import android.support.annotation.NonNull;

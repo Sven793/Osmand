@@ -18,7 +18,7 @@ import android.widget.Toast;
 import net.osmand.plus.OsmAndAppCustomization;
 import net.osmand.plus.OsmandApplication;
 import net.osmand.plus.OsmandPlugin;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.activities.SettingsBaseActivity;
 
 public class SettingsOsmEditingActivity extends SettingsBaseActivity {

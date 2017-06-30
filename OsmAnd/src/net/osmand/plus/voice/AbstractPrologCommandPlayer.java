@@ -13,7 +13,7 @@ import net.osmand.plus.ApplicationMode;
 import net.osmand.plus.OsmandApplication;
 import net.osmand.plus.OsmandSettings;
 import net.osmand.plus.OsmandSettings.MetricsConstants;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.api.AudioFocusHelper;
 
 import org.apache.commons.logging.Log;

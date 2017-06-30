@@ -6,7 +6,7 @@ import android.widget.BaseExpandableListAdapter;
 import android.widget.ImageView;
 
 import net.osmand.plus.OsmandApplication;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 
 public abstract class OsmandBaseExpandableListAdapter extends BaseExpandableListAdapter {
 

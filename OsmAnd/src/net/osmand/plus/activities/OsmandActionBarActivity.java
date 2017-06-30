@@ -9,7 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import net.osmand.plus.OsmandApplication;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 
 public class OsmandActionBarActivity extends AppCompatActivity {
 

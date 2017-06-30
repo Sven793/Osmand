@@ -26,7 +26,7 @@ import net.osmand.plus.MapMarkersHelper.MapMarker;
 import net.osmand.plus.MapMarkersHelper.MapMarkerChangedListener;
 import net.osmand.plus.OsmandPlugin;
 import net.osmand.plus.OsmandSettings;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.TargetPointsHelper.TargetPoint;
 import net.osmand.plus.TargetPointsHelper.TargetPointChangedListener;
 import net.osmand.plus.activities.MapActivity;
@@ -55,7 +55,7 @@ import java.lang.ref.WeakReference;
 import java.util.LinkedList;
 import java.util.List;
 
-import js.myroute.Routing.Logic.Vertex;
+import sd.smartroute.Routing.Logic.Vertex;
 
 public class MapContextMenu extends MenuTitleController implements StateChangedListener<ApplicationMode>,
 		MapMarkerChangedListener, TargetPointChangedListener {

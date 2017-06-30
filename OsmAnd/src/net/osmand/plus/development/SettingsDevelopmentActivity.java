@@ -14,12 +14,11 @@ import android.preference.PreferenceCategory;
 import android.preference.PreferenceScreen;
 import android.support.v7.app.AlertDialog;
 import android.view.View;
-import android.widget.Toast;
 
 import net.osmand.plus.ApplicationMode;
 import net.osmand.plus.OsmAndLocationSimulation;
 import net.osmand.plus.OsmandApplication;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.activities.SettingsBaseActivity;
 import net.osmand.plus.activities.actions.AppModeDialog;
 import net.osmand.util.SunriseSunset;

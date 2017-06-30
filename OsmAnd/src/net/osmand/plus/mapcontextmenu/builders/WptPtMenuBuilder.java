@@ -4,10 +4,9 @@ import android.view.View;
 
 import net.osmand.plus.GPXUtilities.WptPt;
 import net.osmand.plus.OsmAndFormatter;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.activities.MapActivity;
 import net.osmand.plus.mapcontextmenu.MenuBuilder;
-import net.osmand.plus.mapillary.MapillaryPlugin;
 import net.osmand.plus.views.POIMapLayer;
 import net.osmand.util.Algorithms;
 

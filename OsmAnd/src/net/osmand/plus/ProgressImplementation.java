@@ -10,6 +10,8 @@ import android.os.Message;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import sd.smartroute.R;
+
 public class ProgressImplementation implements IProgress {
 	
 	private static final int HANDLER_START_TASK = OsmAndConstants.UI_HANDLER_PROGRESS + 1;

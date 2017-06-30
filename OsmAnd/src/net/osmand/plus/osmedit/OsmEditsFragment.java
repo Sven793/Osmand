@@ -34,7 +34,7 @@ import net.osmand.osm.edit.Node;
 import net.osmand.plus.OsmandApplication;
 import net.osmand.plus.OsmandPlugin;
 import net.osmand.plus.OsmandSettings;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.activities.ActionBarProgressActivity;
 import net.osmand.plus.activities.MapActivity;
 import net.osmand.plus.activities.OsmandActionBarActivity;
@@ -381,7 +381,7 @@ public class OsmEditsFragment extends OsmAndListFragment
 
 
 		public OsmEditsAdapter(List<OsmPoint> points) {
-			super(getActivity(), net.osmand.plus.R.layout.note, points);
+			super(getActivity(), sd.smartroute.R.layout.note, points);
 			dataPoints = points;
 		}
 
@@ -412,7 +412,7 @@ public class OsmEditsFragment extends OsmAndListFragment
 			final OsmPoint child = getItem(position);
 			if (v == null) {
 				LayoutInflater inflater = getActivity().getLayoutInflater();
-				v = inflater.inflate(net.osmand.plus.R.layout.note, parent, false);
+				v = inflater.inflate(sd.smartroute.R.layout.note, parent, false);
 			}
 			getOsmEditView(v, child, getMyApplication());
 

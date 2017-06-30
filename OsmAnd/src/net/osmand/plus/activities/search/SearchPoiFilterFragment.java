@@ -33,7 +33,7 @@ import net.osmand.osm.PoiType;
 import net.osmand.plus.IconsCache;
 import net.osmand.plus.OsmandApplication;
 import net.osmand.plus.OsmandPlugin;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.activities.search.SearchActivity.SearchActivityChild;
 import net.osmand.plus.base.OsmAndListFragment;
 import net.osmand.plus.poi.NominatimPoiFilter;

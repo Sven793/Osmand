@@ -5,7 +5,7 @@ import net.osmand.Location;
 import net.osmand.binary.BinaryMapRouteReaderAdapter.RouteTypeRule;
 import net.osmand.data.LocationPoint;
 import net.osmand.data.PointDescription;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 
 public class AlarmInfo implements LocationPoint {
 	public enum AlarmInfoType {

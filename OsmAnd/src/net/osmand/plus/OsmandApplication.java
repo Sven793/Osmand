@@ -14,7 +14,6 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
-import android.preference.PreferenceManager;
 import android.support.multidex.MultiDex;
 import android.support.multidex.MultiDexApplication;
 import android.support.v7.app.AlertDialog;
@@ -72,6 +71,7 @@ import java.util.Map;
 
 import btools.routingapp.BRouterServiceConnection;
 import btools.routingapp.IBRouterService;
+import sd.smartroute.R;
 
 public class OsmandApplication extends MultiDexApplication {
 	public static final String EXCEPTION_PATH = "exception.log"; //$NON-NLS-1$

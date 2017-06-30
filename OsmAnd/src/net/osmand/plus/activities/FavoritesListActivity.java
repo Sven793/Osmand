@@ -2,7 +2,7 @@ package net.osmand.plus.activities;
 
 import android.view.MenuItem;
 import net.osmand.plus.OsmandApplication;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 
 import android.os.Bundle;
 

@@ -12,7 +12,7 @@ import android.support.v7.app.AlertDialog;
 import net.osmand.PlatformUtil;
 import net.osmand.plus.AppInitializer;
 import net.osmand.plus.OsmandApplication;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.Version;
 
 import org.apache.commons.logging.Log;

@@ -21,7 +21,7 @@ import net.osmand.data.QuadTree;
 import net.osmand.data.RotatedTileBox;
 import net.osmand.plus.FavouritesDbHelper;
 import net.osmand.plus.OsmandSettings;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.base.FavoriteImageDrawable;
 import net.osmand.plus.views.ContextMenuLayer.ApplyMovedObjectCallback;
 import net.osmand.plus.views.MapTextLayer.MapTextProvider;

@@ -9,7 +9,7 @@ import android.widget.LinearLayout;
 import net.osmand.AndroidUtils;
 import net.osmand.plus.LockableViewPager;
 import net.osmand.plus.OsmandApplication;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.activities.MapActivity;
 import net.osmand.plus.mapcontextmenu.MenuBuilder;
 

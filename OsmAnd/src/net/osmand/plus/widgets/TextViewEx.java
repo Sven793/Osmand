@@ -10,7 +10,7 @@ import android.support.v7.text.AllCapsTransformationMethod;
 import android.util.AttributeSet;
 import android.widget.TextView;
 
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.helpers.FontCache;
 
 public class TextViewEx extends TextView {

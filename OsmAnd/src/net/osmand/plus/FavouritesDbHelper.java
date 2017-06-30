@@ -25,6 +25,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+import sd.smartroute.R;
+
 public class FavouritesDbHelper {
 
 	public interface FavoritesUpdatedListener {

@@ -6,7 +6,7 @@ import net.osmand.osm.io.Base64;
 import net.osmand.osm.io.NetworkUtils;
 import net.osmand.plus.OsmandApplication;
 import net.osmand.plus.OsmandSettings;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.Version;
 import net.osmand.plus.osmedit.OsmPoint.Action;
 import net.osmand.util.Algorithms;

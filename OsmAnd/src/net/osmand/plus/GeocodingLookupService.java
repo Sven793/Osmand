@@ -15,6 +15,8 @@ import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentLinkedQueue;
 
+import sd.smartroute.R;
+
 public class GeocodingLookupService {
 
 	private OsmandApplication app;

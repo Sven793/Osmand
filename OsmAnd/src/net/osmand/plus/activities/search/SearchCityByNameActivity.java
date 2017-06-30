@@ -20,7 +20,7 @@ import net.osmand.data.Postcode;
 import net.osmand.plus.OsmAndFormatter;
 import net.osmand.plus.OsmandApplication;
 import net.osmand.plus.OsmandSettings;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.resources.RegionAddressRepository;
 import net.osmand.util.MapUtils;
 

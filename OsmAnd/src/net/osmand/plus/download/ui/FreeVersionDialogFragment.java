@@ -9,12 +9,10 @@ import android.support.v7.view.ContextThemeWrapper;
 import android.view.View;
 
 import net.osmand.plus.OsmandApplication;
-import net.osmand.plus.R;
-import net.osmand.plus.Version;
+import sd.smartroute.R;
+
 import net.osmand.plus.download.DownloadActivity;
 import net.osmand.plus.download.DownloadActivity.FreeVersionDialog;
-
-import static net.osmand.plus.OsmandApplication.SHOW_PLUS_VERSION_INAPP_PARAM;
 
 public class FreeVersionDialogFragment extends DialogFragment {
 	public static final String TAG = "FreeVersionDialogFragment";

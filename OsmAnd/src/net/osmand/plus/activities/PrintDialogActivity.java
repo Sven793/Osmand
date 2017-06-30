@@ -3,9 +3,8 @@
  */
 package net.osmand.plus.activities;
 
-import android.view.Window;
 import net.osmand.plus.OsmandApplication;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;

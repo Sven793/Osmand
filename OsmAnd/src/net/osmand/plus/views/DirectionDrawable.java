@@ -2,7 +2,7 @@ package net.osmand.plus.views;
 
 import net.osmand.plus.IconsCache;
 import net.osmand.plus.OsmandApplication;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.ColorFilter;

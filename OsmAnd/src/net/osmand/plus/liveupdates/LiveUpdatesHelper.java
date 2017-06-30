@@ -7,7 +7,7 @@ import android.content.Intent;
 import android.support.annotation.NonNull;
 
 import net.osmand.plus.OsmandSettings;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.activities.OsmandActionBarActivity;
 import net.osmand.plus.helpers.FileNameTranslationHelper;
 import net.osmand.util.Algorithms;

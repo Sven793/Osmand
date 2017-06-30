@@ -24,13 +24,13 @@ import android.widget.TextView;
 
 import net.osmand.plus.IconsCache;
 import net.osmand.plus.OsmandApplication;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.helpers.AndroidUiHelper;
 import net.osmand.plus.quickaction.actions.NewAction;
 
 import java.util.List;
 
-import static net.osmand.plus.R.id.imageView;
+import static sd.smartroute.R.id.imageView;
 
 
 public class QuickActionsWidget extends LinearLayout {

@@ -20,7 +20,7 @@ import android.widget.Toast;
 import net.osmand.plus.OnDismissDialogFragmentListener;
 import net.osmand.plus.OsmandApplication;
 import net.osmand.plus.OsmandSettings;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.base.BottomSheetDialogFragment;
 import net.osmand.plus.dashboard.DashChooseAppDirFragment;
 import net.osmand.plus.download.DownloadActivity;

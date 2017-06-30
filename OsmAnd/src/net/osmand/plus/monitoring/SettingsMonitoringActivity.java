@@ -3,7 +3,7 @@ package net.osmand.plus.monitoring;
 
 import net.osmand.plus.OsmAndTaskManager.OsmAndTaskRunnable;
 import net.osmand.plus.OsmandApplication;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.activities.SavingTrackHelper;
 import net.osmand.plus.activities.SettingsBaseActivity;
 import net.osmand.plus.OsmAndFormatter;

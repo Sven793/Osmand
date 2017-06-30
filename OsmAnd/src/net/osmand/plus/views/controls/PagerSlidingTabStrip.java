@@ -44,7 +44,7 @@ import android.widget.HorizontalScrollView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.helpers.FontCache;
 
 import java.util.Locale;

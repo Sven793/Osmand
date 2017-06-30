@@ -3,12 +3,11 @@ package net.osmand.plus.mapillary;
 import android.view.View;
 import android.view.View.OnClickListener;
 
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.activities.MapActivity;
 import net.osmand.plus.mapcontextmenu.builders.cards.ImageCard;
 import net.osmand.util.Algorithms;
 
-import org.json.JSONException;
 import org.json.JSONObject;
 
 public class MapillaryImageCard extends ImageCard {

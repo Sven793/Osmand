@@ -19,7 +19,7 @@ import android.view.View;
 import net.osmand.plus.NavigationService;
 import net.osmand.plus.OsmAndFormatter;
 import net.osmand.plus.OsmandApplication;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.TargetPointsHelper.TargetPoint;
 import net.osmand.plus.routing.RouteCalculationResult;
 import net.osmand.plus.routing.RouteCalculationResult.NextDirectionInfo;

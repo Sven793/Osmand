@@ -31,7 +31,7 @@ import net.osmand.ValueHolder;
 import net.osmand.plus.OsmandApplication;
 import net.osmand.plus.OsmandSettings;
 import net.osmand.plus.ProgressImplementation;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.download.DownloadActivity;
 import net.osmand.util.Algorithms;
 

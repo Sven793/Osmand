@@ -9,7 +9,7 @@ import android.support.v7.app.AlertDialog;
 import android.text.format.DateFormat;
 
 import net.osmand.PlatformUtil;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.osmedit.BasicEditPoiFragment;
 import net.osmand.util.OpeningHoursParser;
 

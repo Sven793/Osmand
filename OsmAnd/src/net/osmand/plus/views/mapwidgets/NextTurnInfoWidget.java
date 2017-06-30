@@ -2,10 +2,9 @@ package net.osmand.plus.views.mapwidgets;
 
 import net.osmand.plus.OsmAndFormatter;
 import net.osmand.plus.OsmandApplication;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.routing.RoutingHelper;
 import net.osmand.plus.views.OsmandMapLayer.DrawSettings;
-import net.osmand.plus.views.mapwidgets.MapInfoWidgetsFactory.TopTextView;
 import net.osmand.plus.views.TurnPathHelper;
 import net.osmand.router.TurnType;
 import android.app.Activity;

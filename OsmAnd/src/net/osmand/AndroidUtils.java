@@ -18,7 +18,7 @@ import android.view.ViewParent;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.TextView;
 
-import net.osmand.plus.R;
+import sd.smartroute.R;
 
 import java.io.BufferedReader;
 import java.io.File;

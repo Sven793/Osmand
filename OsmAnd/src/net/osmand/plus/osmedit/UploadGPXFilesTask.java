@@ -3,7 +3,7 @@ package net.osmand.plus.osmedit;
 import java.io.File;
 
 import net.osmand.plus.OsmandApplication;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.myplaces.AvailableGPXFragment.GpxInfo;
 import net.osmand.plus.osmedit.OsmEditingPlugin.UploadVisibility;
 import android.app.Activity;

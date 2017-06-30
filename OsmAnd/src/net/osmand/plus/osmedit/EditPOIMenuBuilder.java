@@ -4,7 +4,7 @@ import android.view.View;
 
 import net.osmand.data.PointDescription;
 import net.osmand.osm.PoiType;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.activities.MapActivity;
 import net.osmand.plus.mapcontextmenu.MenuBuilder;
 import net.osmand.plus.render.RenderingIcons;

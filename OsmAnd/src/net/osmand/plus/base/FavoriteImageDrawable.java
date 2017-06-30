@@ -14,7 +14,7 @@ import android.graphics.PorterDuffColorFilter;
 import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
 import android.support.v4.content.res.ResourcesCompat;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 
 import java.util.TreeMap;
 

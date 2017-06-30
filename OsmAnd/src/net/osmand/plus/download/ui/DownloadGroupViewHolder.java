@@ -5,7 +5,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import net.osmand.plus.IconsCache;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.download.DownloadActivity;
 import net.osmand.plus.download.DownloadActivityType;
 import net.osmand.plus.download.DownloadResourceGroup;

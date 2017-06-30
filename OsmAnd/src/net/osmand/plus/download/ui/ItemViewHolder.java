@@ -21,7 +21,7 @@ import android.widget.Toast;
 
 import net.osmand.map.WorldRegion;
 import net.osmand.plus.OsmandPlugin;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.activities.LocalIndexHelper.LocalIndexType;
 import net.osmand.plus.activities.LocalIndexInfo;
 import net.osmand.plus.download.CityItem;

@@ -20,7 +20,7 @@ import android.widget.TextView;
 
 import net.osmand.PlatformUtil;
 import net.osmand.osm.edit.OSMSettings;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.base.BaseOsmAndFragment;
 import net.osmand.plus.osmedit.dialogs.OpeningHoursDaysDialogFragment;
 import net.osmand.plus.osmedit.dialogs.OpeningHoursHoursDialogFragment;

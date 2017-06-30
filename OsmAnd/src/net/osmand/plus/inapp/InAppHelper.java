@@ -10,7 +10,7 @@ import net.osmand.AndroidNetworkUtils;
 import net.osmand.AndroidNetworkUtils.OnRequestResultListener;
 import net.osmand.plus.OsmandApplication;
 import net.osmand.plus.OsmandSettings;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.Version;
 import net.osmand.plus.inapp.util.IabHelper;
 import net.osmand.plus.inapp.util.IabHelper.OnIabPurchaseFinishedListener;

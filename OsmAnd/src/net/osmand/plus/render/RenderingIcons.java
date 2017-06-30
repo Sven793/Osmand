@@ -7,8 +7,8 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 
 import net.osmand.PlatformUtil;
-import net.osmand.plus.R;
-import net.osmand.plus.R.drawable;
+import sd.smartroute.R;
+import sd.smartroute.R.drawable;
 
 import org.apache.commons.logging.Log;
 

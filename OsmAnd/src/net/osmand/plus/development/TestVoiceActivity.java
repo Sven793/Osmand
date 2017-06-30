@@ -19,7 +19,7 @@ import android.widget.Toast;
 
 import net.osmand.IndexConstants;
 import net.osmand.plus.OsmandApplication;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.activities.OsmandActionBarActivity;
 import net.osmand.plus.voice.AbstractPrologCommandPlayer;
 import net.osmand.plus.voice.TTSCommandPlayerImpl;

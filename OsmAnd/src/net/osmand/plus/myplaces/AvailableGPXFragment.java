@@ -61,7 +61,7 @@ import net.osmand.plus.OsmAndFormatter;
 import net.osmand.plus.OsmandApplication;
 import net.osmand.plus.OsmandPlugin;
 import net.osmand.plus.OsmandSettings;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.activities.MapActivity;
 import net.osmand.plus.activities.OsmandActionBarActivity;
 import net.osmand.plus.activities.OsmandBaseExpandableListAdapter;
@@ -1103,7 +1103,7 @@ public class AvailableGPXFragment extends OsmandExpandableListFragment {
 			String group = getGroup(groupPosition);
 			if (v == null) {
 				LayoutInflater inflater = getActivity().getLayoutInflater();
-				v = inflater.inflate(net.osmand.plus.R.layout.expandable_list_item_category, parent, false);
+				v = inflater.inflate(sd.smartroute.R.layout.expandable_list_item_category, parent, false);
 			}
 			v.findViewById(R.id.group_divider).setVisibility(groupPosition == 0 ? View.GONE : View.VISIBLE);
 

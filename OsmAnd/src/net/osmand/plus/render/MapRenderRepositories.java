@@ -42,7 +42,7 @@ import net.osmand.plus.OsmandApplication;
 import net.osmand.plus.OsmandPlugin;
 import net.osmand.plus.OsmandSettings;
 import net.osmand.plus.OsmandSettings.CommonPreference;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.development.OsmandDevelopmentPlugin;
 import net.osmand.plus.render.OsmandRenderer.RenderingContext;
 import net.osmand.plus.views.OsmandMapLayer.DrawSettings;

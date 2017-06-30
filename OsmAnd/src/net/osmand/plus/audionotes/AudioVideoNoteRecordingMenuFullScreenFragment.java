@@ -9,7 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
 
-import net.osmand.plus.R;
+import sd.smartroute.R;
 
 public class AudioVideoNoteRecordingMenuFullScreenFragment extends Fragment {
 	public static final String TAG = "AudioVideoNoteRecordingMenuFullScreenFragment";

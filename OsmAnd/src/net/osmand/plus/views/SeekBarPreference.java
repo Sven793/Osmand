@@ -5,7 +5,7 @@
  */
 package net.osmand.plus.views;
 
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import android.content.Context;
 import android.preference.DialogPreference;
 import android.util.AttributeSet;

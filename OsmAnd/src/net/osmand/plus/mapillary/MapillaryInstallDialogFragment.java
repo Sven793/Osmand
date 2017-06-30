@@ -6,11 +6,8 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.DialogFragment;
 import android.support.v7.app.AlertDialog;
-import android.view.View;
-import android.widget.Button;
 
-import net.osmand.osm.PoiCategory;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.activities.MapActivity;
 
 public class MapillaryInstallDialogFragment extends DialogFragment {

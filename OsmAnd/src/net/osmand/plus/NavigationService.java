@@ -23,6 +23,8 @@ import net.osmand.PlatformUtil;
 import net.osmand.plus.notifications.OsmandNotification;
 import net.osmand.plus.osmo.OsMoPlugin;
 
+import sd.smartroute.R;
+
 public class NavigationService extends Service implements LocationListener {
 
 	public static class NavigationServiceBinder extends Binder {

@@ -44,7 +44,7 @@ import net.osmand.plus.OsmandPlugin;
 import net.osmand.plus.OsmandSettings;
 import net.osmand.plus.OsmandSettings.CommonPreference;
 import net.osmand.plus.OsmandSettings.LayerTransparencySeekbarMode;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.TargetPointsHelper;
 import net.osmand.plus.TargetPointsHelper.TargetPoint;
 import net.osmand.plus.Version;
@@ -68,8 +68,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import gnu.trove.list.array.TIntArrayList;
-import js.myroute.Activity.SetupActivity;
-import js.myroute.Config.Singleton;
+import sd.smartroute.Activity.SetupActivity;
+import sd.smartroute.Config.Singleton;
 
 public class MapControlsLayer extends OsmandMapLayer {
 

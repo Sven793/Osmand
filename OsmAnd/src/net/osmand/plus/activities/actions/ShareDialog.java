@@ -15,7 +15,7 @@ import android.text.Html;
 import android.widget.Toast;
 
 import net.osmand.plus.OsmandApplication;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.plus.Version;
 
 import java.util.ArrayList;

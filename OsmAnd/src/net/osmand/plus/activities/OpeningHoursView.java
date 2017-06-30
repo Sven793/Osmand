@@ -17,7 +17,7 @@ import android.widget.TimePicker;
 import android.widget.TimePicker.OnTimeChangedListener;
 
 import net.osmand.plus.OsmandApplication;
-import net.osmand.plus.R;
+import sd.smartroute.R;
 import net.osmand.util.OpeningHoursParser.BasicOpeningHourRule;
 import net.osmand.util.OpeningHoursParser.OpeningHoursRule;
 
