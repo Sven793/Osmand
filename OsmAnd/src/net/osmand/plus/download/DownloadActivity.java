@@ -361,6 +361,25 @@ public class DownloadActivity extends AbstractDownloadActivity implements Downlo
 				((DownloadEvents) f).downloadHasFinished();
 			}
 		}
+
+		final IndexItem switzerland = downloadThread.getIndexes().getIndexItem("Switzerland_europe_2.obf.zip");
+		final IndexItem worldBaseMapItem = downloadThread.getIndexes().getWorldBaseMapItem();
+		if (switzerland != null && worldBaseMapItem != null && !getMyApplication().getResourceManager().isMapInstalled("Switzerland_europe.obf") && !downloadThread.isDownloading(switzerland)) {
+			android.app.AlertDialog.Builder dialog = new android.app.AlertDialog.Builder(this);
+			dialog.setMessage("Download required Maps? Please make sure to be connected to Wifi.");
+			dialog.setPositiveButton("Download", new DialogInterface.OnClickListener() {
+				@Override
+				public void onClick(DialogInterface paramDialogInterface, int paramInt) {
+					startDownload(switzerland, worldBaseMapItem);
+				}
+			});
+			dialog.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+				@Override
+				public void onClick(DialogInterface paramDialogInterface, int paramInt) {
+				}
+			});
+			dialog.show();
+		}
 	}
 
 	@Override

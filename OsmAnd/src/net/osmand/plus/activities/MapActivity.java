@@ -70,6 +70,7 @@ import net.osmand.plus.MapMarkersHelper.MapMarker;
 import net.osmand.plus.MapMarkersHelper.MapMarkerChangedListener;
 import net.osmand.plus.OnDismissDialogFragmentListener;
 import net.osmand.plus.OsmAndConstants;
+import net.osmand.plus.OsmAndLocationProvider;
 import net.osmand.plus.OsmandApplication;
 import net.osmand.plus.OsmandPlugin;
 import net.osmand.plus.OsmandSettings;
@@ -367,6 +368,13 @@ public class MapActivity extends OsmandActionBarActivity implements DownloadEven
         intentFilter.addAction(Config.USE_CURRENT_POSITION_ACTION);
         askInternet();
         removeAllMapMarkers();
+		if (OsmAndLocationProvider.isLocationPermissionAvailable(this)) {
+			getMapViewTrackingUtilities().backToLocationImpl();
+		} else {
+			ActivityCompat.requestPermissions(this,
+					new String[]{Manifest.permission.ACCESS_FINE_LOCATION},
+					OsmAndLocationProvider.REQUEST_LOCATION_PERMISSION);
+		}
         final Button btnGenRoute = (Button) findViewById(R.id.btnGenRoute);
         btnGenRoute.setOnClickListener( new Button.OnClickListener() {
             @Override
@@ -815,10 +823,14 @@ public class MapActivity extends OsmandActionBarActivity implements DownloadEven
 			enableDrawer();
 		}
 
-		if (showWelcomeScreen) {
-			getSupportFragmentManager().beginTransaction()
-					.add(R.id.fragmentContainer, new FirstUsageWelcomeFragment(),
-							FirstUsageWelcomeFragment.TAG).commitAllowingStateLoss();
+		if (!app.getResourceManager().isAnyMapIstalled()) {
+			Intent newIntent = new Intent(this, getMyApplication().getAppCustomization()
+					.getDownloadActivity());
+			newIntent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+			startActivity(newIntent);
+//			getSupportFragmentManager().beginTransaction()
+//					.add(R.id.fragmentContainer, new FirstUsageWelcomeFragment(),
+//							FirstUsageWelcomeFragment.TAG).commitAllowingStateLoss();
 		} else if (!isFirstScreenShowing() && XMasDialogFragment.shouldShowXmasDialog(app)) {
 			new XMasDialogFragment().show(getSupportFragmentManager(), XMasDialogFragment.TAG);
 		}
