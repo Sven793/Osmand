@@ -48,6 +48,8 @@ public class MapMarkersLayer extends OsmandMapLayer implements IContextMenuProvi
 	private MapMarkersWidgetsFactory widgetsFactory;
 
 	private Paint bitmapPaint;
+	private Bitmap markerBitmapStart;
+	private Bitmap markerBitmapEnd;
 	private Bitmap markerBitmapBlue;
 	private Bitmap markerBitmapGreen;
 	private Bitmap markerBitmapOrange;
@@ -92,6 +94,8 @@ public class MapMarkersLayer extends OsmandMapLayer implements IContextMenuProvi
 		bitmapPaint.setDither(true);
 		bitmapPaint.setAntiAlias(true);
 		bitmapPaint.setFilterBitmap(true);
+		markerBitmapStart = BitmapFactory.decodeResource(view.getResources(), R.drawable.map_start_point);
+		markerBitmapEnd = BitmapFactory.decodeResource(view.getResources(), R.drawable.map_target_point);
 		markerBitmapBlue = BitmapFactory.decodeResource(view.getResources(), R.drawable.map_marker_blue);
 		markerBitmapGreen = BitmapFactory.decodeResource(view.getResources(), R.drawable.map_marker_green);
 		markerBitmapOrange = BitmapFactory.decodeResource(view.getResources(), R.drawable.map_marker_orange);
@@ -158,9 +162,9 @@ public class MapMarkersLayer extends OsmandMapLayer implements IContextMenuProvi
 	private Bitmap getMapMarkerBitmap(int colorIndex) {
 		switch (colorIndex) {
 			case 0:
-				return markerBitmapBlue;
+				return markerBitmapStart;
 			case 1:
-				return markerBitmapGreen;
+				return markerBitmapEnd;
 			case 2:
 				return markerBitmapOrange;
 			case 3:

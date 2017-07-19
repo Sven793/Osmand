@@ -382,6 +382,16 @@ public class MapMarkersHelper {
 		}
 	}
 
+    public void addMapMarker(MapMarker marker) {
+        if (marker != null) {
+            if (getMapMarkers().size() < marker.index)
+                settings.insertMapMarker(marker.getLatitude(), marker.getLongitude(), marker.pointDescription, marker.colorIndex, 0, marker.selected, 0);
+            settings.insertMapMarker(marker.getLatitude(), marker.getLongitude(), marker.pointDescription, marker.colorIndex, marker.index, marker.selected, marker.index);
+            readFromSettings();
+            refresh();
+        }
+    }
+
 	public void removeMapMarkerHistory(MapMarker marker) {
 		if (marker != null) {
 			settings.deleteMapMarkerHistory(marker.index);

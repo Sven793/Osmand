@@ -679,11 +679,6 @@ public class ContextMenuLayer extends OsmandMapLayer {
 	@Override
 	public boolean onSingleTap(PointF point, RotatedTileBox tileBox) {
 
-		if (!Singleton.getInstance().getSingleTapActivated())
-			return true;
-		LatLon latLon = getLatLon(point, tileBox);
-        menu.init(latLon, null, null);
-
 		if (mInChangeMarkerPositionMode || mInGpxDetailsMode) {
 			return true;
 		}

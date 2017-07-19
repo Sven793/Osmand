@@ -42,7 +42,11 @@ import net.osmand.plus.OsmAndConstants;
 import net.osmand.plus.OsmAndFormatter;
 import net.osmand.plus.OsmandApplication;
 import net.osmand.plus.OsmandSettings;
+
+import sd.smartroute.Config.Singleton;
 import sd.smartroute.R;
+import sd.smartroute.Routing.Logic.Vertex;
+
 import net.osmand.plus.activities.MapActivity;
 import net.osmand.plus.helpers.TwoFingerTapDetector;
 import net.osmand.plus.views.MultiTouchSupport.MultiTouchZoomListener;
@@ -1220,6 +1224,12 @@ public class OsmandMapTileView implements IMapDownloaderCallback {
 				return true;
 			}
 			PointF point = new PointF(e.getX(), e.getY());
+			if (Singleton.getInstance().getSingleTapActivated()) {
+				LatLon latLon;
+				final double lat = getCurrentRotatedTileBox().getLatFromPixel((int) point.x, (int) point.y);
+				final double lon = getCurrentRotatedTileBox().getLonFromPixel((int) point.x, (int) point.y);
+				((MapActivity) activity).setLastClickedLocation(new Vertex(lat, lon));
+			}
 			if (LOG.isDebugEnabled()) {
 				LOG.debug("On click event " + point.x + " " + point.y); //$NON-NLS-1$ //$NON-NLS-2$
 			}

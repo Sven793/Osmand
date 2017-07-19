@@ -39,9 +39,9 @@ android {
 	defaultConfig {
 		minSdkVersion 23
 		targetSdkVersion 23
-		versionCode 11
+		versionCode 12
 		multiDexEnabled true
-		versionName "1.1"
+		versionName "1.2"
 	}
 
     packagingOptions {
