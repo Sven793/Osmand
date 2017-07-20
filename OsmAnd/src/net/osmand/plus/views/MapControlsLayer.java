@@ -703,10 +703,7 @@ public class MapControlsLayer extends OsmandMapLayer {
 				@Override
 				public void onClick(View v) {
 					MapActivity.clearPrevActivityIntent();
-					mapActivity.getContextMenu().close();
 					Singleton.getInstance().initState = Singleton.state.INIT;
-					Singleton.getInstance().removeStart();
-					Singleton.getInstance().removeEnd();
 					Intent myIntent = new Intent(mapActivity, SetupActivity.class);
 					mapActivity.startActivity(myIntent);
 				}
@@ -752,10 +749,7 @@ public class MapControlsLayer extends OsmandMapLayer {
 				@Override
 				public void onClick(View v) {
 					MapActivity.clearPrevActivityIntent();
-					mapActivity.getContextMenu().close();
 					Singleton.getInstance().initState = Singleton.state.INIT;
-					Singleton.getInstance().removeStart();
-					Singleton.getInstance().removeEnd();
 					Intent myIntent = new Intent(mapActivity, SetupActivity.class);
 					mapActivity.startActivity(myIntent);
 				}

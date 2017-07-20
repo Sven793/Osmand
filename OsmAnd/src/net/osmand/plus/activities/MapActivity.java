@@ -837,10 +837,6 @@ public class MapActivity extends OsmandActionBarActivity implements DownloadEven
 
         if (OsmAndLocationProvider.isLocationPermissionAvailable(this)) {
             getMapViewTrackingUtilities().backToLocationImpl();
-        } else {
-            ActivityCompat.requestPermissions(this,
-                    new String[]{Manifest.permission.ACCESS_FINE_LOCATION},
-                    OsmAndLocationProvider.REQUEST_LOCATION_PERMISSION);
         }
 	}
 
